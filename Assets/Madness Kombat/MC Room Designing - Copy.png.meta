@@ -1,0 +1,796 @@
+fileFormatVersion: 2
+guid: ecf8ce02457559c499a074068dee2f22
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 25
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MC Room Designing_0
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 4141
+        width: 2156
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 972af22ae305ba14485f8e7e8ca5feef
+      internalID: -2037285545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Room Designing_1
+      rect:
+        serializedVersion: 2
+        x: 2254
+        y: 2888
+        width: 81
+        height: 1762
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efb75e30d26baf34b91013981c292891
+      internalID: -70238843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Room Designing_2
+      rect:
+        serializedVersion: 2
+        x: 2426
+        y: 4071
+        width: 214
+        height: 570
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51c17d7058a37554bbc287924e4732a2
+      internalID: -1226829353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Room Designing_3
+      rect:
+        serializedVersion: 2
+        x: 2699
+        y: 4152
+        width: 235
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69eed0d6158d82847846c51b248afd9c
+      internalID: 1176024054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Room Designing_4
+      rect:
+        serializedVersion: 2
+        x: 2990
+        y: 4128
+        width: 214
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fae4261a79aa98469900fc29eefa1c2
+      internalID: -993673451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Room Designing_5
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 3112
+        width: 1916
+        height: 938
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e21bcc8a2193424eb8cb5c75f93ee94
+      internalID: -231343325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Room Designing_6
+      rect:
+        serializedVersion: 2
+        x: 2388
+        y: 3612
+        width: 332
+        height: 377
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b09674dfdd08754789e25c3778a58e3
+      internalID: -1421467115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Room Designing_7
+      rect:
+        serializedVersion: 2
+        x: 2788
+        y: 3680
+        width: 345
+        height: 377
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a0184e34a6f3643bc4e5e8eab679c6
+      internalID: -569598183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Room Designing_8
+      rect:
+        serializedVersion: 2
+        x: 2390
+        y: 3206
+        width: 332
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea7f972bc2bd31b49b080de2c69d0bb6
+      internalID: 1317907043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Room Designing_9
+      rect:
+        serializedVersion: 2
+        x: 2773
+        y: 2966
+        width: 166
+        height: 695
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aceb32c09071d6446b9d34cb3ee42c2e
+      internalID: -206516794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Room Designing_10
+      rect:
+        serializedVersion: 2
+        x: 2993
+        y: 2962
+        width: 172
+        height: 699
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3ff227ecfa712941acad725c8cb2a19
+      internalID: 363064913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Room Designing_11
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 2404
+        width: 2156
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0264984e47efd2c48a58d087351ebb45
+      internalID: -581364177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Room Designing_12
+      rect:
+        serializedVersion: 2
+        x: 2764
+        y: 2177
+        width: 165
+        height: 777
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 975e8108db01d9947a8599f45934242f
+      internalID: 1787443206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Room Designing_13
+      rect:
+        serializedVersion: 2
+        x: 2985
+        y: 2178
+        width: 171
+        height: 773
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0fa1a008bc42184da49f2f2cee2c788
+      internalID: -246918564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Room Designing_14
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1406
+        width: 1917
+        height: 817
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7334cc48637ca3446be4024b5a0d2024
+      internalID: 391606918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Room Designing_15
+      rect:
+        serializedVersion: 2
+        x: 1974
+        y: 80
+        width: 688
+        height: 1992
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 309714e4bd52c984aa3a5d00d687be5f
+      internalID: 1589981123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Room Designing_16
+      rect:
+        serializedVersion: 2
+        x: 2703
+        y: 23
+        width: 362
+        height: 1761
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6163153430e9259468270e335171f410
+      internalID: 941241318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Room Designing_17
+      rect:
+        serializedVersion: 2
+        x: 3143
+        y: 23
+        width: 81
+        height: 1761
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c94de5eb655c07344ad9df19cb7d8062
+      internalID: -1691589790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Room Designing_18
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 730
+        width: 526
+        height: 409
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81a5de81f4e13d242b89acc106f060ed
+      internalID: 1802839557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Room Designing_19
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 878
+        width: 232
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2bd9b834de17b741a7d35ccbcab2b9a
+      internalID: -544868578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Room Designing_20
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 177
+        width: 244
+        height: 1006
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa90965b86de9a46a4184d03e744359
+      internalID: -41128765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Room Designing_21
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 172
+        width: 505
+        height: 1010
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d165feab3c0f73418de7cca4ad4112d
+      internalID: 2044837358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Room Designing_22
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 336
+        width: 163
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0731d9d013914242895072b5bba4e67
+      internalID: 488076925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Room Designing_23
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 329
+        width: 160
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a72ca95f9ef6b84d9bdc52a5d4817a6
+      internalID: -668995073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Room Designing_24
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 319
+        width: 160
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c90025e5471ec6a44b11ee3325e94102
+      internalID: 2116561614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Room Designing_25
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 304
+        width: 203
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f947517587ed2b4a90460b141e6ba3b
+      internalID: 354309819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Room Designing_26
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 309
+        width: 206
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcb480e6501e8004cb60448d3e1f91f3
+      internalID: -1216080635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Room Designing_27
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 6
+        width: 220
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85e634963a3f577429604c3486494027
+      internalID: -848186815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Room Designing_28
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 190
+        width: 67
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc3ceffa91f7f7f4ab023303f121ee06
+      internalID: -1489043744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Room Designing_29
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 209
+        width: 364
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b9f3dc464ee51b449c7acb48fa80e90
+      internalID: -756350374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Room Designing_30
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 26
+        width: 183
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23d2075339748a54d91b8149d124d9b0
+      internalID: 625807461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      MC Room Designing_0: -2037285545
+      MC Room Designing_1: -70238843
+      MC Room Designing_10: 363064913
+      MC Room Designing_11: -581364177
+      MC Room Designing_12: 1787443206
+      MC Room Designing_13: -246918564
+      MC Room Designing_14: 391606918
+      MC Room Designing_15: 1589981123
+      MC Room Designing_16: 941241318
+      MC Room Designing_17: -1691589790
+      MC Room Designing_18: 1802839557
+      MC Room Designing_19: -544868578
+      MC Room Designing_2: -1226829353
+      MC Room Designing_20: -41128765
+      MC Room Designing_21: 2044837358
+      MC Room Designing_22: 488076925
+      MC Room Designing_23: -668995073
+      MC Room Designing_24: 2116561614
+      MC Room Designing_25: 354309819
+      MC Room Designing_26: -1216080635
+      MC Room Designing_27: -848186815
+      MC Room Designing_28: -1489043744
+      MC Room Designing_29: -756350374
+      MC Room Designing_3: 1176024054
+      MC Room Designing_30: 625807461
+      MC Room Designing_4: -993673451
+      MC Room Designing_5: -231343325
+      MC Room Designing_6: -1421467115
+      MC Room Designing_7: -569598183
+      MC Room Designing_8: 1317907043
+      MC Room Designing_9: -206516794
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

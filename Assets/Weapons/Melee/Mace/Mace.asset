@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 255ac4d918fda224da7108f89993953c, type: 3}
+  m_Name: Mace
+  m_EditorClassIdentifier: 
+  itemname: Mace
+  weaponTypes: 6
+  damage: 12
+  range: 30
+  fireRate: 0.7
+  bulletSpeed: 0
+  bulletPirecing: 0
+  statusEffectOnHit: 10
+  statusEffectCooldown: 15
+  burstCount: 0
+  bulletsPerShot: 0
+  bulletSpread: 0
+  explosionRadius: 0
+  ammoCapacity: 100
+  currentAmmoReserve: 0
+  gunReloadSpeed: 0
+  icon: {fileID: 0}
+  gunModel: {fileID: 8111357030720605686, guid: b42d634e104cff14bb6e4d64b7b24e60, type: 3}
+  shellEject: {fileID: 0}
+  equipSound: {fileID: 8300000, guid: 13d4856704c966946a828a6fb5393f0d, type: 3}
+  firingSound: {fileID: 8300000, guid: baf28471e80bd8c48bc3073714b7dcc6, type: 3}
+  reloadSound: []
+  height: 3
+  width: 2
+  rotating: 1

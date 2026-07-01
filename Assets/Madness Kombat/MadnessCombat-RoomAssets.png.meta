@@ -1,0 +1,664 @@
+fileFormatVersion: 2
+guid: a68ee42c566a43a42841edf4483577e8
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 4
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 1
+    textureFormat: 4
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MadnessCombat-RoomAssets_0
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 2440
+        width: 599
+        height: 355
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f263f8410f3a8840ab2049354054c5d
+      internalID: 1486202748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MadnessCombat-RoomAssets_1
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 2435
+        width: 94
+        height: 597
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e632d81802f16446892ea9a5626888c
+      internalID: 1645351442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MadnessCombat-RoomAssets_2
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 2431
+        width: 94
+        height: 597
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 606f39662e04a9a42abebb664d0054a2
+      internalID: -68410286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MadnessCombat-RoomAssets_3
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 2431
+        width: 597
+        height: 421
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 038b6ed117063a748b0c5a0eee7a37f8
+      internalID: 271881951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MadnessCombat-RoomAssets_4
+      rect:
+        serializedVersion: 2
+        x: 1709
+        y: 2433
+        width: 602
+        height: 492
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8e667ff1595b0940a8472116fd45c00
+      internalID: -2030452178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MadnessCombat-RoomAssets_5
+      rect:
+        serializedVersion: 2
+        x: 2335
+        y: 2405
+        width: 483
+        height: 539
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08ece813f65059c47bb9bdb930b8ecba
+      internalID: 1757048839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MadnessCombat-RoomAssets_6
+      rect:
+        serializedVersion: 2
+        x: 2934
+        y: 2440
+        width: 261
+        height: 287
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f90b0436493fba14093d3288d5ffd8f1
+      internalID: -1600068846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MadnessCombat-RoomAssets_7
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 1694
+        width: 243
+        height: 673
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db5734fcde3df434885db792b8493a9c
+      internalID: -1396975753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MadnessCombat-RoomAssets_8
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 1694
+        width: 244
+        height: 673
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbfa0b43f8600524db88d548902f7198
+      internalID: 1656108635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MadnessCombat-RoomAssets_9
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 1722
+        width: 235
+        height: 604
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b0d40f4224f7224eab116889c96a46c
+      internalID: 66740984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MadnessCombat-RoomAssets_10
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 1722
+        width: 237
+        height: 601
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f109cc3369524440bac676fc384122b
+      internalID: -713506861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MadnessCombat-RoomAssets_11
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 1716
+        width: 158
+        height: 550
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ebc5da75eb2f6341aa66658636ccc4a
+      internalID: 1326278076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MadnessCombat-RoomAssets_12
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 1720
+        width: 194
+        height: 496
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dadd1d28983a6f34b88be80c8aff9d2d
+      internalID: -907548441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MadnessCombat-RoomAssets_13
+      rect:
+        serializedVersion: 2
+        x: 1762
+        y: 1722
+        width: 193
+        height: 496
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6005080a5308b249af26d24efa63a69
+      internalID: -1569692318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MadnessCombat-RoomAssets_14
+      rect:
+        serializedVersion: 2
+        x: 1997
+        y: 1733
+        width: 180
+        height: 470
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84ce367d964cdfb4d9bb7951ef10666d
+      internalID: 1183871598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MadnessCombat-RoomAssets_15
+      rect:
+        serializedVersion: 2
+        x: 2247
+        y: 1799
+        width: 165
+        height: 325
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49d3ec2c1f752a24e888167fbdfeb346
+      internalID: -856978776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MadnessCombat-RoomAssets_16
+      rect:
+        serializedVersion: 2
+        x: 2462
+        y: 1847
+        width: 59
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f10c3ccce26c6354ea3a88cd552627a5
+      internalID: -124196322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MadnessCombat-RoomAssets_17
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1132
+        width: 1772
+        height: 463
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54ce6a9b6807a274fa5020f4cfaac963
+      internalID: -1807633000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MadnessCombat-RoomAssets_18
+      rect:
+        serializedVersion: 2
+        x: 2109
+        y: 68
+        width: 116
+        height: 1634
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d922c964fe025842a412c54f6fa5aec
+      internalID: 678760785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MadnessCombat-RoomAssets_19
+      rect:
+        serializedVersion: 2
+        x: 2277
+        y: 1178
+        width: 732
+        height: 465
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db1ed067013f2c047850f8e4146ae4e5
+      internalID: 242779531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MadnessCombat-RoomAssets_20
+      rect:
+        serializedVersion: 2
+        x: 3330
+        y: 1178
+        width: 732
+        height: 467
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c2334de873f6cc4d89d25b087c157e0
+      internalID: 1655865214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MadnessCombat-RoomAssets_21
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 616
+        width: 1773
+        height: 468
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed080498a6186334fa6a50238e9a7494
+      internalID: 1313484575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MadnessCombat-RoomAssets_22
+      rect:
+        serializedVersion: 2
+        x: 2273
+        y: 720
+        width: 334
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2526824a001868449be039bcd54266a4
+      internalID: -322863358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MadnessCombat-RoomAssets_23
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 487
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4470d9d6107f0634ea4aa3a980a60473
+      internalID: 351882203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MadnessCombat-RoomAssets_24
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 114
+        width: 1774
+        height: 463
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7e7f0c4d70cfb040a071c31b003c9cf
+      internalID: -1605591751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      MadnessCombat-RoomAssets_0: 1486202748
+      MadnessCombat-RoomAssets_1: 1645351442
+      MadnessCombat-RoomAssets_10: -713506861
+      MadnessCombat-RoomAssets_11: 1326278076
+      MadnessCombat-RoomAssets_12: -907548441
+      MadnessCombat-RoomAssets_13: -1569692318
+      MadnessCombat-RoomAssets_14: 1183871598
+      MadnessCombat-RoomAssets_15: -856978776
+      MadnessCombat-RoomAssets_16: -124196322
+      MadnessCombat-RoomAssets_17: -1807633000
+      MadnessCombat-RoomAssets_18: 678760785
+      MadnessCombat-RoomAssets_19: 242779531
+      MadnessCombat-RoomAssets_2: -68410286
+      MadnessCombat-RoomAssets_20: 1655865214
+      MadnessCombat-RoomAssets_21: 1313484575
+      MadnessCombat-RoomAssets_22: -322863358
+      MadnessCombat-RoomAssets_23: 351882203
+      MadnessCombat-RoomAssets_24: -1605591751
+      MadnessCombat-RoomAssets_3: 271881951
+      MadnessCombat-RoomAssets_4: -2030452178
+      MadnessCombat-RoomAssets_5: 1757048839
+      MadnessCombat-RoomAssets_6: -1600068846
+      MadnessCombat-RoomAssets_7: -1396975753
+      MadnessCombat-RoomAssets_8: 1656108635
+      MadnessCombat-RoomAssets_9: 66740984
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

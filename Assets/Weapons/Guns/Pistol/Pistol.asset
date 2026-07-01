@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 255ac4d918fda224da7108f89993953c, type: 3}
+  m_Name: Pistol
+  m_EditorClassIdentifier: 
+  itemname: Pistol
+  weaponTypes: 0
+  damage: 14
+  range: 200
+  fireRate: 0.7
+  bulletSpeed: 20
+  bulletPirecing: 1
+  statusEffectOnHit: 0
+  statusEffectCooldown: 0
+  burstCount: 1
+  bulletsPerShot: 1
+  bulletSpread: 5
+  explosionRadius: 0
+  ammoCapacity: 6
+  currentAmmoReserve: 100
+  gunReloadSpeed: 1
+  icon: {fileID: 0}
+  gunModel: {fileID: 8111357030720605686, guid: ca80dffd56c58f645b2f44a937317c29, type: 3}
+  shellEject: {fileID: 7874654888633943328, guid: ca3659b1c4a761250814bd69d33c85cd, type: 3}
+  equipSound: {fileID: 8300000, guid: 8ace81ba52f959240aec4a0bb04f2267, type: 3}
+  firingSound: {fileID: 8300000, guid: 74960332659667e4093a690f7ba6e6b2, type: 3}
+  reloadSound:
+  - {fileID: 8300000, guid: ce7a78a5563a8a844bbe3a8d9fd435e5, type: 3}
+  - {fileID: 8300000, guid: e051f26dbea6a614e9a2fc9e21b5ea4f, type: 3}
+  - {fileID: 8300000, guid: f9b5840479f0ea7ed9da56585a839b4d, type: 3}
+  - {fileID: 8300000, guid: cb0d557d7da07674f83457d94d46e7ad, type: 3}
+  height: 1
+  width: 1
+  rotating: 1

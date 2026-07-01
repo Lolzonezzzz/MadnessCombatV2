@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - BreakableWall
+  - Enemy
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Player
+  - Water
+  - UI
+  - Wall
+  - ItemPickUP
+  - Enemy
+  - BreakableWall
+  - PlayerHead
+  - PlayerTorso
+  - EnemyHead
+  - EnemyTorso
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Floor
+    uniqueID: 3207292615
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: GunFacingUp
+    uniqueID: 2996973561
+    locked: 0
+  - name: Player
+    uniqueID: 1483749257
+    locked: 0
+  - name: Enemy
+    uniqueID: 770736769
+    locked: 0
+  - name: Gun
+    uniqueID: 202999691
+    locked: 0
+  - name: Ammo
+    uniqueID: 2994081197
+    locked: 0
+  - name: UI
+    uniqueID: 3777897725
+    locked: 0

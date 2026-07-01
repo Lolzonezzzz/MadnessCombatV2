@@ -1,0 +1,2996 @@
+fileFormatVersion: 2
+guid: fcac1a466dc6b349cb1f45271f8eb214
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Gunz(1)_0
+      rect:
+        serializedVersion: 2
+        x: 1846
+        y: 7527
+        width: 762
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d29a60eb93f025b6db81163a4dae3402
+      internalID: 64551293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_1
+      rect:
+        serializedVersion: 2
+        x: 2843
+        y: 7597
+        width: 685
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 030678baeb9975059b1ce5bfcc18474c
+      internalID: -640455217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_2
+      rect:
+        serializedVersion: 2
+        x: 3952
+        y: 7619
+        width: 847
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29ff26459c60418bbbf4e45bf72c455d
+      internalID: 1782337075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_3
+      rect:
+        serializedVersion: 2
+        x: 5056
+        y: 7532
+        width: 786
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82929869e7753be8480e54949a4917a3
+      internalID: 1278094235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_4
+      rect:
+        serializedVersion: 2
+        x: 6039
+        y: 7503
+        width: 810
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aa3e65e2d98271f8b41757976e05312
+      internalID: -409136189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_5
+      rect:
+        serializedVersion: 2
+        x: 7306
+        y: 7657
+        width: 56
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: debba15b5888340d1a6bc9ff309d3567
+      internalID: 1494123930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_6
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 7448
+        width: 906
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f1c6f61c046d3ad498ee00c79aad782
+      internalID: 815203860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_7
+      rect:
+        serializedVersion: 2
+        x: 6974
+        y: 7619
+        width: 125
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f24288a172809b7a433fe0c7e0f1bc
+      internalID: -1893316213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_8
+      rect:
+        serializedVersion: 2
+        x: 2967
+        y: 7348
+        width: 85
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 694dae2662f122a998257ed0761d8be3
+      internalID: 1943610234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_9
+      rect:
+        serializedVersion: 2
+        x: 3203
+        y: 7363
+        width: 252
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24cf2ca03190390829671d7b62aba1f4
+      internalID: -1951503651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_10
+      rect:
+        serializedVersion: 2
+        x: 4179
+        y: 7270
+        width: 167
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6f77225daf34ea4583bbb67e3cfaece
+      internalID: -106299411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_11
+      rect:
+        serializedVersion: 2
+        x: 5239
+        y: 7319
+        width: 79
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fea1f558eb44d2ee5a3e7a5432ce71ef
+      internalID: -1619460721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_12
+      rect:
+        serializedVersion: 2
+        x: 6221
+        y: 7270
+        width: 80
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6912e38a15be670994cead7bf9499c3
+      internalID: 243277616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_13
+      rect:
+        serializedVersion: 2
+        x: 7190
+        y: 7366
+        width: 119
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7e132fa6e8a79dd1853616d96866302
+      internalID: -881057053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_14
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 7171
+        width: 87
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ea4157907011e7f0bb8e309e3cc8d30
+      internalID: -909655318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_15
+      rect:
+        serializedVersion: 2
+        x: 2068
+        y: 7132
+        width: 143
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc0a3ce13f15e51e3a32f558a06b3204
+      internalID: -1897913239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_16
+      rect:
+        serializedVersion: 2
+        x: 3107
+        y: 6999
+        width: 54
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3385e34b73972057a0e91c288097d17
+      internalID: -55193039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_17
+      rect:
+        serializedVersion: 2
+        x: 7188
+        y: 6964
+        width: 209
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e9044e1c1df49271b539619404a7fc5
+      internalID: -1383429631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_18
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 6726
+        width: 789
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d82c26e00eb67bfa9817f6147d74e8
+      internalID: 534751351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_19
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 6720
+        width: 703
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beb5998f66fba101bb471c3fd584c834
+      internalID: -525749845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_20
+      rect:
+        serializedVersion: 2
+        x: 2614
+        y: 6612
+        width: 862
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c508f172156cd4be9bb04c4becdfad6
+      internalID: 176954523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_21
+      rect:
+        serializedVersion: 2
+        x: 3650
+        y: 6639
+        width: 745
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb228ccd1c83b6b89befeb2c14a25e1d
+      internalID: -1980225130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_22
+      rect:
+        serializedVersion: 2
+        x: 4498
+        y: 6639
+        width: 836
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81735ac4d73aade99abc2abaefb4de35
+      internalID: 75338358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_23
+      rect:
+        serializedVersion: 2
+        x: 5659
+        y: 6679
+        width: 825
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6ba59638872f1d71865f50cf0744d9f
+      internalID: 294033198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_24
+      rect:
+        serializedVersion: 2
+        x: 6630
+        y: 6696
+        width: 222
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29d51826d251626e6bab1fcd85276478
+      internalID: 1204772881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_25
+      rect:
+        serializedVersion: 2
+        x: 6914
+        y: 6656
+        width: 775
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe2c34fe75d2a1938860d686f6d6d0cd
+      internalID: 1629763475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_26
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 6478
+        width: 94
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb898ad2cc87035c4af7965c37418b27
+      internalID: -508024604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_27
+      rect:
+        serializedVersion: 2
+        x: 1766
+        y: 6478
+        width: 173
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd73cbb1c7adc0d56aa1613dbb79fb16
+      internalID: -1984511174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_28
+      rect:
+        serializedVersion: 2
+        x: 3782
+        y: 6355
+        width: 96
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c96574b92b0a3a0aaa95703ce3c089e5
+      internalID: 305380418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_29
+      rect:
+        serializedVersion: 2
+        x: 4973
+        y: 6450
+        width: 71
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c24acffcbbc1d2458002ebbbf215852
+      internalID: -1605881827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_30
+      rect:
+        serializedVersion: 2
+        x: 6093
+        y: 6392
+        width: 147
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f0b4f88f7604b44486cfffea4300e2e
+      internalID: 53725375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_31
+      rect:
+        serializedVersion: 2
+        x: 7256
+        y: 6450
+        width: 98
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ec6ebfc69c0ddb2f84270a36da8f18d
+      internalID: -994523285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_32
+      rect:
+        serializedVersion: 2
+        x: 6949
+        y: 6288
+        width: 209
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9542af4eced30872f8640a427b13dc00
+      internalID: -16080475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_33
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 6008
+        width: 295
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1500253e013963129b99d5371450fc5
+      internalID: -1698586156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_34
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 6000
+        width: 590
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4a8dc9693726733e8f2a8ac46a84041
+      internalID: 902552744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_35
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 5971
+        width: 833
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 955ee911cb74353978efc380e820b583
+      internalID: 817899892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_36
+      rect:
+        serializedVersion: 2
+        x: 2671
+        y: 5955
+        width: 746
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fc990edb2e4e67d78c5f4832b660e8d
+      internalID: 1417820023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_37
+      rect:
+        serializedVersion: 2
+        x: 3636
+        y: 5952
+        width: 748
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b478c9a4527862fe2a359cdaf1567c67
+      internalID: 901274079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_38
+      rect:
+        serializedVersion: 2
+        x: 4679
+        y: 5950
+        width: 662
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3521fc8d0c9bb03008caab4e512c819a
+      internalID: 1564228122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_39
+      rect:
+        serializedVersion: 2
+        x: 5476
+        y: 6021
+        width: 230
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe005e90aad7e7759a10596644f62f90
+      internalID: 1496204520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_40
+      rect:
+        serializedVersion: 2
+        x: 5782
+        y: 5971
+        width: 543
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4f1382c6f460c8c8d82524d024048d
+      internalID: -109271996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_41
+      rect:
+        serializedVersion: 2
+        x: 6494
+        y: 6021
+        width: 199
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 473517f79de02b1ce83cc57128bb6ddc
+      internalID: -1646847191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_42
+      rect:
+        serializedVersion: 2
+        x: 6735
+        y: 5991
+        width: 753
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbbb9c839bebc596fa64be89b54f990e
+      internalID: -1285574382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_43
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 5691
+        width: 114
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bfb8f594c27dd91ea797cbd1ab93d4f
+      internalID: -2039150377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_44
+      rect:
+        serializedVersion: 2
+        x: 1717
+        y: 5757
+        width: 101
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09f9684a6929f36589502a1be1e84c9d
+      internalID: 677447808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_45
+      rect:
+        serializedVersion: 2
+        x: 2776
+        y: 5738
+        width: 84
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a0fe2948307f23e083240240a1ed4fb
+      internalID: -1763360619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_46
+      rect:
+        serializedVersion: 2
+        x: 3828
+        y: 5662
+        width: 137
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 855e8d18bebeee915b3d59a766d750aa
+      internalID: 1293877564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_47
+      rect:
+        serializedVersion: 2
+        x: 4891
+        y: 5703
+        width: 197
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5fb1bce590ae628695c4b65b2c6bd7d
+      internalID: -1701293905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_48
+      rect:
+        serializedVersion: 2
+        x: 6028
+        y: 5692
+        width: 147
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cea51f6bfae2c6141a9c601be1150bdb
+      internalID: 1928935168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_49
+      rect:
+        serializedVersion: 2
+        x: 7088
+        y: 5738
+        width: 148
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7a5aa182b50391a0af9b5624120c591
+      internalID: 2067936256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_50
+      rect:
+        serializedVersion: 2
+        x: 1487
+        y: 5336
+        width: 836
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be2d6fac290e173f381cb29009e2e90f
+      internalID: 847496066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_51
+      rect:
+        serializedVersion: 2
+        x: 2716
+        y: 5389
+        width: 907
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ebd38c809fca80fb9b2ef7aa9b7516a
+      internalID: -731974337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_52
+      rect:
+        serializedVersion: 2
+        x: 3968
+        y: 5545
+        width: 294
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 178fbd435374b829c820974c2787db9c
+      internalID: 1489530854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_53
+      rect:
+        serializedVersion: 2
+        x: 4589
+        y: 5396
+        width: 245
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4490e4227d0543aefb04756ef6acb04c
+      internalID: 513724023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_54
+      rect:
+        serializedVersion: 2
+        x: 4891
+        y: 5372
+        width: 646
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38ffd569777b7aed4a24da28ca8bf681
+      internalID: 502404744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_55
+      rect:
+        serializedVersion: 2
+        x: 5631
+        y: 5388
+        width: 823
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cdf7b16b82e842848c2c1a63b353df0
+      internalID: 248028157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_56
+      rect:
+        serializedVersion: 2
+        x: 6638
+        y: 5400
+        width: 663
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95ed451d2422dc413945e3f9cc2c5ea0
+      internalID: 1148521508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_57
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 5287
+        width: 713
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd3743d790196900481c76d664d90b94
+      internalID: 1281692632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_58
+      rect:
+        serializedVersion: 2
+        x: 3064
+        y: 5146
+        width: 156
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 425b4c79c006e63248ee65075e711cdb
+      internalID: -1849249879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_59
+      rect:
+        serializedVersion: 2
+        x: 3663
+        y: 5336
+        width: 777
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce8fe1f0307902f5da471c89fe62a0d2
+      internalID: -1763621975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_60
+      rect:
+        serializedVersion: 2
+        x: 6168
+        y: 5171
+        width: 146
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a326b25d31f68ee8fb20b1d1de26a516
+      internalID: -1276985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_61
+      rect:
+        serializedVersion: 2
+        x: 6854
+        y: 5177
+        width: 126
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e46eeefe75c93b2248e6a77ec0535855
+      internalID: -1516620391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_62
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 5045
+        width: 102
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46571cdcfa91e23708350174b33214b3
+      internalID: 307139272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_63
+      rect:
+        serializedVersion: 2
+        x: 2032
+        y: 5088
+        width: 153
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26b1dedf1168d0ef386444b3ba2ee290
+      internalID: 1149803863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_64
+      rect:
+        serializedVersion: 2
+        x: 3857
+        y: 5026
+        width: 116
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eedd8c996ef22e00b5df4718065a096
+      internalID: 249261274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_65
+      rect:
+        serializedVersion: 2
+        x: 4271
+        y: 5072
+        width: 55
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 827c28b9783ba428ba613cbed07a240d
+      internalID: 1246794053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_66
+      rect:
+        serializedVersion: 2
+        x: 4644
+        y: 5044
+        width: 172
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa1847d5807d57a83a8f6f97f92494cb
+      internalID: -1286808302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_67
+      rect:
+        serializedVersion: 2
+        x: 5250
+        y: 5156
+        width: 83
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6df9c54b4fa0216ca67bdfa23480795
+      internalID: 116885068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_68
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 4583
+        width: 808
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e83853533f966735a3ee734c6ea2fe9
+      internalID: -1074256214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_69
+      rect:
+        serializedVersion: 2
+        x: 4022
+        y: 4541
+        width: 802
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4a3ffc05e3a36f07ae00bbb3365a30b
+      internalID: 1381316771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_70
+      rect:
+        serializedVersion: 2
+        x: 6076
+        y: 4584
+        width: 147
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03722e542e8dc875283207c61bb699e0
+      internalID: -1925344135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_71
+      rect:
+        serializedVersion: 2
+        x: 6542
+        y: 4704
+        width: 200
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f6161a5d9e9c6b618ecfe68e89fee34
+      internalID: 572038615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_72
+      rect:
+        serializedVersion: 2
+        x: 6798
+        y: 4629
+        width: 753
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bee5a9a7651236a6a8555e5ba8f34a6
+      internalID: -364956870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_73
+      rect:
+        serializedVersion: 2
+        x: 7648
+        y: 4780
+        width: 209
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57b051cedb2aabad4a748de24346b2b5
+      internalID: 1268854188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_74
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 4583
+        width: 138
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 782812f149461801786ea8cf667308cf
+      internalID: -1157303854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_75
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 4584
+        width: 239
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc7a6afef6bd814f5b1a90f55b69fc2a
+      internalID: -234431324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_76
+      rect:
+        serializedVersion: 2
+        x: 1766
+        y: 4550
+        width: 692
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d5ed88750a8c7a46ba8e6850f5cac68
+      internalID: 1911585875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_77
+      rect:
+        serializedVersion: 2
+        x: 2643
+        y: 4570
+        width: 773
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d35e719c5fccff3fafcde3172d68d3c
+      internalID: -933705076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_78
+      rect:
+        serializedVersion: 2
+        x: 3763
+        y: 4584
+        width: 200
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b766b50a30bd4097bb1fbe404951a540
+      internalID: 2061303263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_79
+      rect:
+        serializedVersion: 2
+        x: 4853
+        y: 4691
+        width: 209
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad3c94f73f3dac028be91fb77e2d3dfa
+      internalID: 367522102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_80
+      rect:
+        serializedVersion: 2
+        x: 5267
+        y: 4570
+        width: 746
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d385be9abe8698ee89c56f1fa4601e2
+      internalID: -272471961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_81
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 4426
+        width: 77
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a99e98c1fe756304e99c821788ee0bcd
+      internalID: 906352467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_82
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 4322
+        width: 91
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db9062f899ebd5d7598ea0a427b85911
+      internalID: 681435619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_83
+      rect:
+        serializedVersion: 2
+        x: 2874
+        y: 4359
+        width: 99
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c13014eab39c87e31a4cf232da51c5e9
+      internalID: 1083574895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_84
+      rect:
+        serializedVersion: 2
+        x: 4388
+        y: 4354
+        width: 102
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99cb3a837ab9a60c7854d3d90bad2b3e
+      internalID: -98509847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_85
+      rect:
+        serializedVersion: 2
+        x: 7160
+        y: 4445
+        width: 94
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b25f0d6c5f9f3f2519d97952944a5805
+      internalID: 545173742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_86
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 3830
+        width: 908
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fda7db11c451c4cd1846aa541d720783
+      internalID: -324930501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_87
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 3549
+        width: 181
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 289c1e2c7e24bbe7d9da12867e146d1d
+      internalID: 70846611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_88
+      rect:
+        serializedVersion: 2
+        x: 2020
+        y: 3155
+        width: 208
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68f27bd1daaffb9b285e79cde4e5d2fb
+      internalID: 1833633167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_89
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 2857
+        width: 735
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23d924b15666e6d5fb520be39c3dabbe
+      internalID: -1762581083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_90
+      rect:
+        serializedVersion: 2
+        x: 1734
+        y: 2901
+        width: 857
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1886e14e9276d6ac68839457d3980584
+      internalID: 1323612183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_91
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 2900
+        width: 245
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dabd1f533ac8eef0a25b52c7323e8e0
+      internalID: -1863125598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_92
+      rect:
+        serializedVersion: 2
+        x: 3097
+        y: 2850
+        width: 731
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a32f7fcb5ce06f409a6942c101004436
+      internalID: 731235946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_93
+      rect:
+        serializedVersion: 2
+        x: 4023
+        y: 2903
+        width: 236
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06841206782e514d2b3b8bce5fa6fbfa
+      internalID: 128057600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_94
+      rect:
+        serializedVersion: 2
+        x: 4332
+        y: 2852
+        width: 865
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2557b5c1c69dceb98583c7960dbf73c
+      internalID: 460260400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_95
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 2627
+        width: 96
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64ebe1cba9c47be688161d5e977687bd
+      internalID: -516953499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_96
+      rect:
+        serializedVersion: 2
+        x: 1963
+        y: 2649
+        width: 94
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ede1dd293834ad641b1bf682ae854303
+      internalID: -1900842598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_97
+      rect:
+        serializedVersion: 2
+        x: 3455
+        y: 2661
+        width: 98
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdb956a484f073ed68bc48b841125e91
+      internalID: 188505726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_98
+      rect:
+        serializedVersion: 2
+        x: 4351
+        y: 2568
+        width: 100
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f82e83f7f6fe31910bfc664b925bbb48
+      internalID: 1076620981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_99
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 2555
+        width: 209
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba31f2c36dbe1cab1bcac583e2447116
+      internalID: 750901930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_100
+      rect:
+        serializedVersion: 2
+        x: 5645
+        y: 2366
+        width: 656
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce1b1e52dd17bc0919c7d2d4ea770c69
+      internalID: 203181602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_101
+      rect:
+        serializedVersion: 2
+        x: 6645
+        y: 2355
+        width: 656
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4ad68ebfd118057b9623e35e465b06c
+      internalID: -300015487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_102
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 2256
+        width: 200
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64897de4aaef46b73a8d9f134f14cdda
+      internalID: -940714881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_103
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 2233
+        width: 802
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a9eb3f524dd6f30f91253cfccc09a3b
+      internalID: -1108342336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_104
+      rect:
+        serializedVersion: 2
+        x: 1774
+        y: 2168
+        width: 772
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fd8f533d1a56f6858cac93d69518a82
+      internalID: -1857923409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_105
+      rect:
+        serializedVersion: 2
+        x: 5507
+        y: 2402
+        width: 117
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f356757ea7de543d39d8d85e15031ed8
+      internalID: 1682249151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_106
+      rect:
+        serializedVersion: 2
+        x: 6480
+        y: 2392
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f42c3c1d03bc11d24983b74a237fc902
+      internalID: 5940117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_107
+      rect:
+        serializedVersion: 2
+        x: 1553
+        y: 2206
+        width: 200
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d8928fef56896c4e9eada13e7aef46f
+      internalID: 556208435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_108
+      rect:
+        serializedVersion: 2
+        x: 2828
+        y: 2175
+        width: 742
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5880fd04ccabad01be2a2150722fb8d
+      internalID: 468444966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_109
+      rect:
+        serializedVersion: 2
+        x: 3900
+        y: 2167
+        width: 814
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6bd4815410991100ad62410a536fc02
+      internalID: -1740426606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_110
+      rect:
+        serializedVersion: 2
+        x: 4824
+        y: 2343
+        width: 209
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49387e75c4023ba97917e888f260003d
+      internalID: -499070692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_111
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 2042
+        width: 102
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f4c098b6e2222bbc9cf9d046dbbb339
+      internalID: 1776781156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_112
+      rect:
+        serializedVersion: 2
+        x: 2101
+        y: 1973
+        width: 95
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4a12bdaf082d270aa90f9884a6f436c
+      internalID: 72978448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_113
+      rect:
+        serializedVersion: 2
+        x: 5905
+        y: 2157
+        width: 90
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5cf96bff6eda6591b14ec5ea3a0e248
+      internalID: -1139854695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_114
+      rect:
+        serializedVersion: 2
+        x: 3016
+        y: 1963
+        width: 94
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f581103d3cbb43fcaaad146f0306909
+      internalID: -1533272000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_115
+      rect:
+        serializedVersion: 2
+        x: 4502
+        y: 1965
+        width: 100
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eda141c2531e012819577db0fd1897b2
+      internalID: -549218607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_116
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 1638
+        width: 848
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48ca737ae18eb22a7b872e21d847275f
+      internalID: -1671379172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_117
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 1787
+        width: 198
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b25bb3feacbdda218a83d8318c0fd357
+      internalID: 590809405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_118
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 1574
+        width: 807
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a18d974b11729b39b244a14571458bd
+      internalID: -1676230346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_119
+      rect:
+        serializedVersion: 2
+        x: 2604
+        y: 1641
+        width: 917
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5630eb070cebc08d2ba9adbb59ae5aa4
+      internalID: 1562255430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_120
+      rect:
+        serializedVersion: 2
+        x: 4532
+        y: 1672
+        width: 96
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8d608ac1a037c771ad31a812ed853d7
+      internalID: -1813858051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_121
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 1417
+        width: 97
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edb7014b5c71c1af295754be58faeca3
+      internalID: 618795316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_122
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 1382
+        width: 92
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98de73d05d17f87139f76a7d5a05b589
+      internalID: 1705194546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_123
+      rect:
+        serializedVersion: 2
+        x: 3036
+        y: 1323
+        width: 115
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28db2ba28d06fd647b3d762a6216bf0e
+      internalID: -1959082065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_124
+      rect:
+        serializedVersion: 2
+        x: 1747
+        y: 1077
+        width: 485
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e8a1f5d8cfe72ee91781e7aadd1d54
+      internalID: 952757631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_125
+      rect:
+        serializedVersion: 2
+        x: 2342
+        y: 1194
+        width: 204
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 831803ec7e69fbbdf8c92966af1256da
+      internalID: 1797649142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_126
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 904
+        width: 198
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2c4617e486f930c8a879b23435e756b
+      internalID: -832700605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_127
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 871
+        width: 616
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e0b573e9d7f7fce798a47518c1930c1
+      internalID: 1122562699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_128
+      rect:
+        serializedVersion: 2
+        x: 1721
+        y: 830
+        width: 627
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 538ffb2548485a107b0a121ba8aeca1b
+      internalID: 1903252932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_129
+      rect:
+        serializedVersion: 2
+        x: 2438
+        y: 758
+        width: 123
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad2df7c1574f3d130aecb4d897d956b5
+      internalID: -1326562394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunz(1)_130
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 723
+        width: 78
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcd7e69b9c640b71196bf54c6b576a3b
+      internalID: 1846747979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Gunz(1)_0: 64551293
+      Gunz(1)_1: -640455217
+      Gunz(1)_10: -106299411
+      Gunz(1)_100: 203181602
+      Gunz(1)_101: -300015487
+      Gunz(1)_102: -940714881
+      Gunz(1)_103: -1108342336
+      Gunz(1)_104: -1857923409
+      Gunz(1)_105: 1682249151
+      Gunz(1)_106: 5940117
+      Gunz(1)_107: 556208435
+      Gunz(1)_108: 468444966
+      Gunz(1)_109: -1740426606
+      Gunz(1)_11: -1619460721
+      Gunz(1)_110: -499070692
+      Gunz(1)_111: 1776781156
+      Gunz(1)_112: 72978448
+      Gunz(1)_113: -1139854695
+      Gunz(1)_114: -1533272000
+      Gunz(1)_115: -549218607
+      Gunz(1)_116: -1671379172
+      Gunz(1)_117: 590809405
+      Gunz(1)_118: -1676230346
+      Gunz(1)_119: 1562255430
+      Gunz(1)_12: 243277616
+      Gunz(1)_120: -1813858051
+      Gunz(1)_121: 618795316
+      Gunz(1)_122: 1705194546
+      Gunz(1)_123: -1959082065
+      Gunz(1)_124: 952757631
+      Gunz(1)_125: 1797649142
+      Gunz(1)_126: -832700605
+      Gunz(1)_127: 1122562699
+      Gunz(1)_128: 1903252932
+      Gunz(1)_129: -1326562394
+      Gunz(1)_13: -881057053
+      Gunz(1)_130: 1846747979
+      Gunz(1)_14: -909655318
+      Gunz(1)_15: -1897913239
+      Gunz(1)_16: -55193039
+      Gunz(1)_17: -1383429631
+      Gunz(1)_18: 534751351
+      Gunz(1)_19: -525749845
+      Gunz(1)_2: 1782337075
+      Gunz(1)_20: 176954523
+      Gunz(1)_21: -1980225130
+      Gunz(1)_22: 75338358
+      Gunz(1)_23: 294033198
+      Gunz(1)_24: 1204772881
+      Gunz(1)_25: 1629763475
+      Gunz(1)_26: -508024604
+      Gunz(1)_27: -1984511174
+      Gunz(1)_28: 305380418
+      Gunz(1)_29: -1605881827
+      Gunz(1)_3: 1278094235
+      Gunz(1)_30: 53725375
+      Gunz(1)_31: -994523285
+      Gunz(1)_32: -16080475
+      Gunz(1)_33: -1698586156
+      Gunz(1)_34: 902552744
+      Gunz(1)_35: 817899892
+      Gunz(1)_36: 1417820023
+      Gunz(1)_37: 901274079
+      Gunz(1)_38: 1564228122
+      Gunz(1)_39: 1496204520
+      Gunz(1)_4: -409136189
+      Gunz(1)_40: -109271996
+      Gunz(1)_41: -1646847191
+      Gunz(1)_42: -1285574382
+      Gunz(1)_43: -2039150377
+      Gunz(1)_44: 677447808
+      Gunz(1)_45: -1763360619
+      Gunz(1)_46: 1293877564
+      Gunz(1)_47: -1701293905
+      Gunz(1)_48: 1928935168
+      Gunz(1)_49: 2067936256
+      Gunz(1)_5: 1494123930
+      Gunz(1)_50: 847496066
+      Gunz(1)_51: -731974337
+      Gunz(1)_52: 1489530854
+      Gunz(1)_53: 513724023
+      Gunz(1)_54: 502404744
+      Gunz(1)_55: 248028157
+      Gunz(1)_56: 1148521508
+      Gunz(1)_57: 1281692632
+      Gunz(1)_58: -1849249879
+      Gunz(1)_59: -1763621975
+      Gunz(1)_6: 815203860
+      Gunz(1)_60: -1276985
+      Gunz(1)_61: -1516620391
+      Gunz(1)_62: 307139272
+      Gunz(1)_63: 1149803863
+      Gunz(1)_64: 249261274
+      Gunz(1)_65: 1246794053
+      Gunz(1)_66: -1286808302
+      Gunz(1)_67: 116885068
+      Gunz(1)_68: -1074256214
+      Gunz(1)_69: 1381316771
+      Gunz(1)_7: -1893316213
+      Gunz(1)_70: -1925344135
+      Gunz(1)_71: 572038615
+      Gunz(1)_72: -364956870
+      Gunz(1)_73: 1268854188
+      Gunz(1)_74: -1157303854
+      Gunz(1)_75: -234431324
+      Gunz(1)_76: 1911585875
+      Gunz(1)_77: -933705076
+      Gunz(1)_78: 2061303263
+      Gunz(1)_79: 367522102
+      Gunz(1)_8: 1943610234
+      Gunz(1)_80: -272471961
+      Gunz(1)_81: 906352467
+      Gunz(1)_82: 681435619
+      Gunz(1)_83: 1083574895
+      Gunz(1)_84: -98509847
+      Gunz(1)_85: 545173742
+      Gunz(1)_86: -324930501
+      Gunz(1)_87: 70846611
+      Gunz(1)_88: 1833633167
+      Gunz(1)_89: -1762581083
+      Gunz(1)_9: -1951503651
+      Gunz(1)_90: 1323612183
+      Gunz(1)_91: -1863125598
+      Gunz(1)_92: 731235946
+      Gunz(1)_93: 128057600
+      Gunz(1)_94: 460260400
+      Gunz(1)_95: -516953499
+      Gunz(1)_96: -1900842598
+      Gunz(1)_97: 188505726
+      Gunz(1)_98: 1076620981
+      Gunz(1)_99: 750901930
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

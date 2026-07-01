@@ -1,0 +1,1764 @@
+fileFormatVersion: 2
+guid: 61d1488ad617fc300a9f1399a42297a3
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gums_0
+      rect:
+        serializedVersion: 2
+        x: 3630
+        y: 7690
+        width: 402
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baaba1cd74946bf0c87c0d5bd4cd8191
+      internalID: 916125625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_1
+      rect:
+        serializedVersion: 2
+        x: 4196
+        y: 7705
+        width: 125
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 722fed01a0d7f9da293204e93ae75614
+      internalID: -346782016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_2
+      rect:
+        serializedVersion: 2
+        x: 4520
+        y: 7688
+        width: 374
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 263fdc6ac9dbce0f0ac4f2f6087b5d50
+      internalID: 550344374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_3
+      rect:
+        serializedVersion: 2
+        x: 6266
+        y: 7690
+        width: 250
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb20a4cc3f64fd954ab408c438c9144e
+      internalID: 1946675803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_4
+      rect:
+        serializedVersion: 2
+        x: 6585
+        y: 7062
+        width: 276
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a650288775c39cbd1a59e559dc6a31d7
+      internalID: 465248157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_5
+      rect:
+        serializedVersion: 2
+        x: 7446
+        y: 6935
+        width: 269
+        height: 1005
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05552d51938fb6788a08ff6e4f77a360
+      internalID: 828799341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_6
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 7193
+        width: 1022
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bad5c1878057b959956353401f33069
+      internalID: 787758172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_7
+      rect:
+        serializedVersion: 2
+        x: 2404
+        y: 7367
+        width: 466
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c075cb934db0c6adda4cdc20b9089bd8
+      internalID: 1630280794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_8
+      rect:
+        serializedVersion: 2
+        x: 3540
+        y: 7195
+        width: 1220
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 712a66654a13eece8be6c60863b9091c
+      internalID: -212908791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_9
+      rect:
+        serializedVersion: 2
+        x: 7255
+        y: 7335
+        width: 102
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90fe582ace98b7f359b338cd8d24f899
+      internalID: -1808322872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_10
+      rect:
+        serializedVersion: 2
+        x: 3511
+        y: 6677
+        width: 1623
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b0ff41dd4d827feb004b232fd1ec1d
+      internalID: -1003117310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_11
+      rect:
+        serializedVersion: 2
+        x: 5367
+        y: 6879
+        width: 373
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb1978d3ee428bc87b6799e1bd9d91fb
+      internalID: -1520312467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_12
+      rect:
+        serializedVersion: 2
+        x: 7577
+        y: 6481
+        width: 111
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeda21eb69170c3f79b8f362a4959975
+      internalID: -947195679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_13
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 6543
+        width: 1021
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a83ffcc7441737c8ea63cc65436620bc
+      internalID: 1548771732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_14
+      rect:
+        serializedVersion: 2
+        x: 2276
+        y: 6738
+        width: 715
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7f8258c26e3cbfddba12f8e192f9103
+      internalID: 1535519179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_15
+      rect:
+        serializedVersion: 2
+        x: 7400
+        y: 6656
+        width: 54
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88abc6c6946dd12558f044a262df635d
+      internalID: 890521390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_16
+      rect:
+        serializedVersion: 2
+        x: 3616
+        y: 6137
+        width: 1524
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f5a78cd5bf8490658c96aa6ab38b180
+      internalID: 640572612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_17
+      rect:
+        serializedVersion: 2
+        x: 5403
+        y: 6319
+        width: 287
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f1259e6cccf7d289b37637d5065b7a
+      internalID: -1634977275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_18
+      rect:
+        serializedVersion: 2
+        x: 6204
+        y: 6411
+        width: 100
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a32356edccccfad0a9f8c574468b7eb4
+      internalID: -1122449432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_19
+      rect:
+        serializedVersion: 2
+        x: 6410
+        y: 6000
+        width: 256
+        height: 653
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c7a4ecbc35de5fc295bbdc65b4098a1
+      internalID: -1496511629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_20
+      rect:
+        serializedVersion: 2
+        x: 6805
+        y: 6247
+        width: 110
+        height: 403
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a7ac383f8a40ab48fe0cb052eee395
+      internalID: -1433464987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_21
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 5981
+        width: 1021
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e990f98e1bfc26109c8a9a10e60b74b
+      internalID: 2094622001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_22
+      rect:
+        serializedVersion: 2
+        x: 2255
+        y: 6153
+        width: 1002
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0ea949b1364cc8c4bbaaf60d41eada6
+      internalID: 1950317137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_23
+      rect:
+        serializedVersion: 2
+        x: 6860
+        y: 6012
+        width: 56
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd3171e90e33044379f9237e53adf5a5
+      internalID: -1912381601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_24
+      rect:
+        serializedVersion: 2
+        x: 3628
+        y: 5557
+        width: 1997
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 853a0fc75104a194684a3aa351f598e9
+      internalID: -1741366570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_25
+      rect:
+        serializedVersion: 2
+        x: 5991
+        y: 5734
+        width: 287
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff5ca9761fb3b1cf0a33fbbd57eaa1f0
+      internalID: 2094627463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_26
+      rect:
+        serializedVersion: 2
+        x: 7069
+        y: 5717
+        width: 251
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4572e1eb5d74ffb99b74df9b53f3e436
+      internalID: -294513887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_27
+      rect:
+        serializedVersion: 2
+        x: 7472
+        y: 5172
+        width: 266
+        height: 785
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f80952c213bb58d47bbf01e1718d5bc0
+      internalID: -1319287218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_28
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 5359
+        width: 1623
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e0941c066ef82c679b7a75ff007da75
+      internalID: 349191996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_29
+      rect:
+        serializedVersion: 2
+        x: 2631
+        y: 5556
+        width: 374
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb9469ff6e34664debe34e2f52505fec
+      internalID: -2005439735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_30
+      rect:
+        serializedVersion: 2
+        x: 6532
+        y: 4608
+        width: 336
+        height: 1015
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eee636387147cf56891a836b7d64280d
+      internalID: -207027386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_31
+      rect:
+        serializedVersion: 2
+        x: 3660
+        y: 5044
+        width: 1591
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7365e084defc4dece87879db5dad1ef7
+      internalID: -1030219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_32
+      rect:
+        serializedVersion: 2
+        x: 5953
+        y: 5216
+        width: 323
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f48465461087ad2b9fdb0c2d3f9d4d5
+      internalID: -877776564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_33
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 4814
+        width: 1561
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 063df6c3bc349dd2ca2b85f5dca7dde6
+      internalID: -1582774678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_34
+      rect:
+        serializedVersion: 2
+        x: 2569
+        y: 4988
+        width: 287
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a05b6c28f98b4bcfa98a1153da9494d
+      internalID: 2001135537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_35
+      rect:
+        serializedVersion: 2
+        x: 3512
+        y: 4444
+        width: 1558
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c961c02ac6f4f95318be940b9ddbb70c
+      internalID: -207407276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_36
+      rect:
+        serializedVersion: 2
+        x: 5534
+        y: 4633
+        width: 299
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbbe1020fb02a2dc8bbc4c23c0d2c4f2
+      internalID: -1869654929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_37
+      rect:
+        serializedVersion: 2
+        x: 7446
+        y: 3666
+        width: 337
+        height: 1138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f7d12267c8eaeb09b012aa5577b44e
+      internalID: -1798363303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_38
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 4147
+        width: 701
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 163656d27879267e0bb7bb54d8d55faf
+      internalID: -1289062489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_39
+      rect:
+        serializedVersion: 2
+        x: 2163
+        y: 4041
+        width: 177
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d75d8cf06930af0f95a8519c4b9111c
+      internalID: -2077981206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_40
+      rect:
+        serializedVersion: 2
+        x: 7154
+        y: 4338
+        width: 68
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82f24b7578771d95fb753fd063665704
+      internalID: 333470330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_41
+      rect:
+        serializedVersion: 2
+        x: 3414
+        y: 3870
+        width: 1920
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7cce46be78f1f460b11c23f5fd93881
+      internalID: 90968112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_42
+      rect:
+        serializedVersion: 2
+        x: 5750
+        y: 4100
+        width: 299
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea78e68d5d6a7b332869380a29bdbe4a
+      internalID: 1436610291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_43
+      rect:
+        serializedVersion: 2
+        x: 6479
+        y: 3806
+        width: 92
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65b64180f85eb168882469a33093b50c
+      internalID: -904636654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_44
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 3447
+        width: 487
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 584bebb60e310d230b59adab9403053a
+      internalID: -1150372944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_45
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 3534
+        width: 527
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a32a4dd3379f92f83be8431e4a834c3c
+      internalID: -212975102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_46
+      rect:
+        serializedVersion: 2
+        x: 3459
+        y: 3345
+        width: 1039
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 497999b55ff1bbb97ab5fbedc495c5c3
+      internalID: 1787845278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_47
+      rect:
+        serializedVersion: 2
+        x: 6487
+        y: 2629
+        width: 254
+        height: 1071
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46c4eebab5aa9e8e282bbacc2e403e21
+      internalID: -459535761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_48
+      rect:
+        serializedVersion: 2
+        x: 4734
+        y: 3406
+        width: 281
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b7e7bbc9e739ae6c93a30ffa8c6dc5f
+      internalID: 40861569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_49
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 2950
+        width: 841
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dfa3318266d206adbe9ff4445308cad
+      internalID: 836633157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_50
+      rect:
+        serializedVersion: 2
+        x: 1867
+        y: 3051
+        width: 901
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea6996c79508967f817c2ecd7914645
+      internalID: -527293495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_51
+      rect:
+        serializedVersion: 2
+        x: 3466
+        y: 2800
+        width: 861
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b77b7a95565b5afe7970ea24e0155763
+      internalID: -2048032177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_52
+      rect:
+        serializedVersion: 2
+        x: 5315
+        y: 2800
+        width: 152
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d42d025d6db1c09d908362ae78420e3
+      internalID: 109814166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_53
+      rect:
+        serializedVersion: 2
+        x: 7455
+        y: 2076
+        width: 385
+        height: 1122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee0e21504ff15a8959708762c9af51a0
+      internalID: 502158143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_54
+      rect:
+        serializedVersion: 2
+        x: 4776
+        y: 2950
+        width: 284
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ae729899f888782c866adec194aebb6
+      internalID: -1928195740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_55
+      rect:
+        serializedVersion: 2
+        x: 7068
+        y: 2810
+        width: 220
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 830b2d06b93c10c819830f1925c94ff0
+      internalID: 874814124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_56
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 2360
+        width: 933
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eeb25afe27adc8769e2be865193653c
+      internalID: 2117127809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_57
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 2424
+        width: 944
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50a1c9caf6c2d79b88c35d88612293af
+      internalID: 1511377360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_58
+      rect:
+        serializedVersion: 2
+        x: 2434
+        y: 2464
+        width: 196
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6634936ba9f1776e0ae4767c8cded74f
+      internalID: -601085316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_59
+      rect:
+        serializedVersion: 2
+        x: 3372
+        y: 2176
+        width: 1499
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 252a3288307f6f6d3b1b91b253a01103
+      internalID: 949085403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_60
+      rect:
+        serializedVersion: 2
+        x: 5029
+        y: 2354
+        width: 305
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75f05b5ad0aba94c48b1ce22e4df41a9
+      internalID: -1528718228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_61
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1721
+        width: 959
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce696d799cc1d8687a70ff4cbfc6c39f
+      internalID: -1474300315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_62
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 1811
+        width: 208
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c4ee7ad410cbf4339b35080c55d4421
+      internalID: -1684548079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_63
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 1622
+        width: 1023
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60b513f3497c025d083acd4f2766600c
+      internalID: -885185000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_64
+      rect:
+        serializedVersion: 2
+        x: 2861
+        y: 1811
+        width: 383
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1cfa5577498596a6bef447badb22844
+      internalID: -119174256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_65
+      rect:
+        serializedVersion: 2
+        x: 5466
+        y: 1510
+        width: 507
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15d9a96e47fef4ce58d0e6c79a527e92
+      internalID: -1521701831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_66
+      rect:
+        serializedVersion: 2
+        x: 6206
+        y: 1544
+        width: 218
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d545ab1e9d32088ebf08048bf8b2d49
+      internalID: 1498239422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_67
+      rect:
+        serializedVersion: 2
+        x: 3618
+        y: 1137
+        width: 842
+        height: 296
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7ce865a38bdf1c31865ea8ffcc3ab9f
+      internalID: -2100167496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_68
+      rect:
+        serializedVersion: 2
+        x: 4678
+        y: 1170
+        width: 146
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18c235b1baf2259de9674c35d6460bb7
+      internalID: 1633543773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_69
+      rect:
+        serializedVersion: 2
+        x: 5236
+        y: 1080
+        width: 944
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb87509f24f3261b6bfd261cb3859093
+      internalID: 858220929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_70
+      rect:
+        serializedVersion: 2
+        x: 6383
+        y: 1208
+        width: 453
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c271b1be22db32b4f924d6c996916dfe
+      internalID: 396583340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_71
+      rect:
+        serializedVersion: 2
+        x: 3620
+        y: 436
+        width: 1212
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c1d74cdfcdabda81b9725c73ca30132
+      internalID: 945503681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_72
+      rect:
+        serializedVersion: 2
+        x: 5181
+        y: 437
+        width: 930
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f66b31c5ce19d69e946fa97a4f8bcbd
+      internalID: 952244657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_73
+      rect:
+        serializedVersion: 2
+        x: 6259
+        y: 513
+        width: 357
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e3dd1c5af3caf9a93352d9b6e431a1
+      internalID: 581329285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gums_74
+      rect:
+        serializedVersion: 2
+        x: 5580
+        y: 262
+        width: 355
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 215351232e57abccc8031b877a94158f
+      internalID: -701274317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      gums_0: 916125625
+      gums_1: -346782016
+      gums_10: -1003117310
+      gums_11: -1520312467
+      gums_12: -947195679
+      gums_13: 1548771732
+      gums_14: 1535519179
+      gums_15: 890521390
+      gums_16: 640572612
+      gums_17: -1634977275
+      gums_18: -1122449432
+      gums_19: -1496511629
+      gums_2: 550344374
+      gums_20: -1433464987
+      gums_21: 2094622001
+      gums_22: 1950317137
+      gums_23: -1912381601
+      gums_24: -1741366570
+      gums_25: 2094627463
+      gums_26: -294513887
+      gums_27: -1319287218
+      gums_28: 349191996
+      gums_29: -2005439735
+      gums_3: 1946675803
+      gums_30: -207027386
+      gums_31: -1030219
+      gums_32: -877776564
+      gums_33: -1582774678
+      gums_34: 2001135537
+      gums_35: -207407276
+      gums_36: -1869654929
+      gums_37: -1798363303
+      gums_38: -1289062489
+      gums_39: -2077981206
+      gums_4: 465248157
+      gums_40: 333470330
+      gums_41: 90968112
+      gums_42: 1436610291
+      gums_43: -904636654
+      gums_44: -1150372944
+      gums_45: -212975102
+      gums_46: 1787845278
+      gums_47: -459535761
+      gums_48: 40861569
+      gums_49: 836633157
+      gums_5: 828799341
+      gums_50: -527293495
+      gums_51: -2048032177
+      gums_52: 109814166
+      gums_53: 502158143
+      gums_54: -1928195740
+      gums_55: 874814124
+      gums_56: 2117127809
+      gums_57: 1511377360
+      gums_58: -601085316
+      gums_59: 949085403
+      gums_6: 787758172
+      gums_60: -1528718228
+      gums_61: -1474300315
+      gums_62: -1684548079
+      gums_63: -885185000
+      gums_64: -119174256
+      gums_65: -1521701831
+      gums_66: 1498239422
+      gums_67: -2100167496
+      gums_68: 1633543773
+      gums_69: 858220929
+      gums_7: 1630280794
+      gums_70: 396583340
+      gums_71: 945503681
+      gums_72: 952244657
+      gums_73: 581329285
+      gums_74: -701274317
+      gums_8: -212908791
+      gums_9: -1808322872
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
