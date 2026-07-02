@@ -1,16 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class HealthUIScript : MonoBehaviour
+public class HealthUIScript : MonoBehaviour, IPointerClickHandler
 {
     private HealthScript _healthScript;
     public HealthScript.BodyParts bodyPart;
     private Image image;
     
-    public static event System.Action<HealthScript.BodyParts, GameObject> SelectedPart;
+    [SerializeField] private RectTransform healingType;
     private void Start()
     {
         _healthScript = GameObject.FindWithTag("Player").GetComponent<HealthScript>();
@@ -162,10 +160,11 @@ public class HealthUIScript : MonoBehaviour
                 break;
         }
     }
-
-    void OnSelectPart()
+    
+    public void OnPointerClick(PointerEventData eventData)
     {
-        SelectedPart?.Invoke(bodyPart, gameObject);
+        HealingUIScript healingUIScript = healingType.GetComponentInChildren<HealingUIScript>();
+        healingUIScript.selectedBodyParts = bodyPart;
     }
     
 }

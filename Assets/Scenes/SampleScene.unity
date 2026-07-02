@@ -1013,6 +1013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bodyPart: 3
+  healingType: {fileID: 1998599903}
 --- !u!114 &75358133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1661,6 +1662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bodyPart: 2
+  healingType: {fileID: 1998599903}
 --- !u!114 &206846601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3080,10 +3082,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a37f664d789e147429999c71bedd76d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healAmount: 0
-  selectedbodyPart: 
+  healAmount: 24
+  healsBodyPart: 0000000002000000
   capacity: 0
-  capacityText: {fileID: 0}
+  capacityText: {fileID: 1212261695}
+  selectedBodyParts: 5
 --- !u!114 &432114024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6791,6 +6794,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bodyPart: 4
+  healingType: {fileID: 1998599903}
 --- !u!114 &906884214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11082,8 +11086,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -207, y: 160}
-  m_SizeDelta: {x: 458.0063, y: 159.3888}
+  m_AnchoredPosition: {x: -354.61533, y: 219.45618}
+  m_SizeDelta: {x: 162.7757, y: 40.4765}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1475823950
 MonoBehaviour:
@@ -13513,7 +13517,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.000015258789}
+  m_AnchoredPosition: {x: 0, y: -0.00001525879}
   m_SizeDelta: {x: 30.4697, y: 46.4078}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1656688975
@@ -13528,10 +13532,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a37f664d789e147429999c71bedd76d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healAmount: 0
-  selectedbodyPart: 
+  healAmount: 24
+  healsBodyPart: 010000000300000004000000
   capacity: 0
   capacityText: {fileID: 655499489}
+  selectedBodyParts: 5
 --- !u!114 &1656688976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13575,19 +13580,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1656688977}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1656688975}
-        m_TargetAssemblyTypeName: HealingUIScript, Assembly-CSharp
-        m_MethodName: StartHealing
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1656688977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15984,6 +15977,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bodyPart: 1
+  healingType: {fileID: 1998599903}
 --- !u!114 &1875375754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18474,6 +18468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bodyPart: 0
+  healingType: {fileID: 0}
 --- !u!114 &2074378940
 MonoBehaviour:
   m_ObjectHideFlags: 0

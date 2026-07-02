@@ -20,7 +20,8 @@ public class HealthScript : MonoBehaviour
         Brain,
         Torso,
         Heart,
-        Lungs
+        Lungs,
+        None
     }
 
     [SerializeField] private Vector2 knockbackForce;
@@ -175,6 +176,32 @@ public class HealthScript : MonoBehaviour
         hearthealth = Mathf.Clamp(hearthealth, 0, Hearthealth);
         lungshealth = Mathf.Clamp(lungshealth, 0, Lungshealth);
   
+    }
+
+    public bool GetHealth(BodyParts bodypart)
+    {
+        bool isOffMax = false;
+        switch (bodypart)
+        {
+            case BodyParts.Brain:
+                isOffMax = brainhealth < Brainhealth;
+                break;
+            case  BodyParts.Head:
+                isOffMax = headhealth < Headhealth;
+                break;
+            case BodyParts.Heart:
+                isOffMax = hearthealth < Hearthealth;
+                break;
+            case   BodyParts.Lungs:
+                isOffMax = lungshealth < Lungshealth;
+                break;
+            case BodyParts.Torso:
+                isOffMax = bodyhealth < Bodyhealth;
+                break;
+                
+        }
+
+        return isOffMax;
     }
 
 

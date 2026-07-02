@@ -28,7 +28,7 @@ public class EnemyActivator : MonoBehaviour
     {
         float distanceToPlayer = Vector2.Distance(_player.transform.position, transform.position);
 
-        if (distanceToPlayer <= detectionRange)
+        if (distanceToPlayer <= detectionRange&& _navMeshAgent != null)
         {
             Activate();
         }
@@ -38,7 +38,7 @@ public class EnemyActivator : MonoBehaviour
 
     void Activate()
     {
-        if (_navMeshAgent.enabled)
+        if (_navMeshAgent.enabled )
         {
             _navMeshAgent.isStopped = false;
             _enemyAI.enabled = true;

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.Serialization;
 using Object = UnityEngine.Object;
 using Random = UnityEngine.Random;
@@ -165,7 +166,7 @@ public class AimAndShoot : MonoBehaviour
 
             if (aimPoint)
             {
-                if (Input.GetMouseButton(0) && _canShoot && !_isEquipping && !_isReloading)
+                if (Input.GetMouseButton(0) && _canShoot && !_isEquipping && !_isReloading && !EventSystem.current.IsPointerOverGameObject())
                 {
                     StartCoroutine(BurstFire());
                 }
@@ -187,7 +188,7 @@ public class AimAndShoot : MonoBehaviour
 
 
             if (Input.GetMouseButtonDown(0) && aimPoint == null && _currentyHolding.shellEject == null &&
-                _canSwing) // melee
+                _canSwing &&!EventSystem.current.IsPointerOverGameObject()) // melee
             {
                 StartCoroutine(SwingMeleeScript());
             }
