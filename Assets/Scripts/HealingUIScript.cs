@@ -3,43 +3,53 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
-public class HealingUIScript : MonoBehaviour
+public class HealingUIScript : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] private float healAmount;
-    [SerializeField] private HealthScript.BodyParts[] selectedbodyPart;
+    [SerializeField] private HealthScript.BodyParts healsBodyPart;
     public float capacity;
     [SerializeField] private TMP_Text capacityText;
 
+    public  HealingUIScript SelectedItem;
+    public static bool IsHealing;
 
-    public void StartHealing()
+    private HealthScript _health;
+
+    void Start()
     {
-        StartCoroutine(Healamount());
+        _health = GameObject.FindGameObjectWithTag("Player").GetComponent<HealthScript>();
+        if (capacityText != null)
+            capacityText.text = capacity.ToString();
     }
-    
-    IEnumerator Healamount()
+
+    public void OnPointerClick(PointerEventData eventData)
     {
-        HealthScript healthScript = GameObject.FindGameObjectWithTag("Player").GetComponent<HealthScript>();
-        
-        Camera _mainCamera = Camera.main;
-        
-        Vector3 mousePos = _mainCamera.ScreenToWorldPoint(
-            new Vector3(Input.mousePosition.x, Input.mousePosition.y,
-                -_mainCamera.transform.position.z));
+        if (capacity <= 0) return;
 
-        yield return new WaitForSeconds(0.1f);
-
-        if (Input.GetMouseButtonDown(0) && !capacity.Equals(0))
+        if (SelectedItem == this)
         {
-            RaycastHit2D mouseClick = Physics2D.Raycast(mousePos, Vector2.zero); 
-            if (mouseClick.collider != null)
-            {
-                HealthUIScript healthUIScript = mouseClick.collider.GetComponent<HealthUIScript>();
-                
-                if (selectedbodyPart.Contains(healthUIScript.bodyPart) && healthUIScript != null)
-                    healthScript.RestoreHealth(healthUIScript.bodyPart, healAmount);
-            }
+            SelectedItem = null;
+            IsHealing = false;
+            return;
         }
 
+        SelectedItem = this;
+        IsHealing = true;
+    }
+
+    public void OnBodyPartClicked()
+    {
+        if (!IsHealing || SelectedItem == null) return;
+
+        _health.RestoreHealth(healsBodyPart, SelectedItem.healAmount);
+        SelectedItem.capacity--;
+        if (SelectedItem.capacityText != null)
+            SelectedItem.capacityText.text = SelectedItem.capacity.ToString();
+
+        SelectedItem = null;
+        IsHealing = false;
     }
 }

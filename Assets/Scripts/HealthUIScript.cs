@@ -9,12 +9,15 @@ public class HealthUIScript : MonoBehaviour
     private HealthScript _healthScript;
     public HealthScript.BodyParts bodyPart;
     private Image image;
-
+    
+    public static event System.Action<HealthScript.BodyParts, GameObject> SelectedPart;
     private void Start()
     {
         _healthScript = GameObject.FindWithTag("Player").GetComponent<HealthScript>();
         image = gameObject.GetComponent<Image>();
     }
+    
+    
 
     private void Update()
     {
@@ -158,6 +161,11 @@ public class HealthUIScript : MonoBehaviour
 
                 break;
         }
+    }
+
+    void OnSelectPart()
+    {
+        SelectedPart?.Invoke(bodyPart, gameObject);
     }
     
 }

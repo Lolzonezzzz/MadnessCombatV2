@@ -168,7 +168,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 14.89, y: 22.46}
+  m_Size: {x: 4.379412, y: 5.147059}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -211,7 +211,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 4.379412, y: 5.147059}
-    newSize: {x: 14.89, y: 22.46}
+    newSize: {x: 4.379412, y: 5.147059}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -819,6 +819,7 @@ MonoBehaviour:
   Bodyhealth: 45
   Hearthealth: 45
   Lungshealth: 45
+  dashingInvincibility: 0
   knockbackForce: {x: 200, y: 5}
   detachDistance: 999
   lastAttacker: {fileID: 0}
@@ -1128,7 +1129,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 12.66, y: 22.46}
+  m_Size: {x: 3.7235296, y: 6.6058826}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1171,7 +1172,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 3.7235296, y: 6.6058826}
-    newSize: {x: 12.66, y: 22.46}
+    newSize: {x: 3.7235296, y: 6.6058826}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -1311,7 +1312,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 8.01, y: 22.46}
+  m_Size: {x: 2.3558824, y: 1.4617647}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1701,7 +1702,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 8.01, y: 22.46}
+  m_Size: {x: 2.3558824, y: 1.4617647}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
