@@ -36,6 +36,11 @@ public class HealingUIScript : MonoBehaviour, IPointerClickHandler
 
     }
 
+    public void ChangeUIText()
+    {
+        capacityText.text = capacity.ToString(CultureInfo.CurrentCulture);
+    }
+
     public void OnPointerClick(PointerEventData eventData)
     {
         if (capacity <= 0) return;
