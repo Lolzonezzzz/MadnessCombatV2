@@ -67,19 +67,15 @@ public class PlayerMovement : MonoBehaviour
         {
             
             case(-1, 0):
-                direction = MovementDirection.Left;
                 _animator.SetBool("Moving", true);
                 break;
             case(1, 0):
-                direction = MovementDirection.Right;
                 _animator.SetBool("Moving", true);
                 break;
             case(0,-1):
-                direction = MovementDirection.Down;
                 _animator.SetBool("Moving", true);
                 break;
             case(0, 1):
-                direction = MovementDirection.Up;
                 _animator.SetBool("Moving", true);
                 break;
             case (-1, 1):

@@ -187,7 +187,7 @@ public class AimAndShoot : MonoBehaviour
             }
 
 
-            if (Input.GetMouseButtonDown(0) && aimPoint == null && _currentyHolding.shellEject == null &&
+            if (Input.GetMouseButtonDown(0) && aimPoint == null && (_currentyHolding == null || _currentyHolding.shellEject == null) &&
                 _canSwing &&!EventSystem.current.IsPointerOverGameObject()) // melee
             {
                 StartCoroutine(SwingMeleeScript());
@@ -300,6 +300,20 @@ public class AimAndShoot : MonoBehaviour
         _canShoot = false;
         for (int i = 0; i < burstCount; i++)
         {
+            if (_weaponTypes != ItemData.WeaponTypes.Pistols)
+            {
+                int randomShootingAim = Random.Range(0, 2);
+
+                switch (randomShootingAim)
+                {
+                    case 0:
+                        animator.Play("Firing1");
+                        break;
+                    case 1:
+                        animator.Play("Firing");
+                        break;
+                }
+            }
             animator.Play("Firing");
             if (firingSfx != null)
                 AudioSource.PlayClipAtPoint(firingSfx, transform.position, 6f);
@@ -760,15 +774,17 @@ public class AimAndShoot : MonoBehaviour
             _weapomPrefab.transform.localPosition = Vector3.zero;
             _weapomPrefab.transform.localRotation = Quaternion.identity;
             _weapomPrefab.layer = 0;
+            Debug.Log("Gun parent: " + _weapomPrefab.transform.parent.name);
 
             // Update references
             animator = _weapomPrefab.GetComponent<Animator>();
 
             if (_currentyHolding.shellEject != null)
             {
-                aimPoint = _weapomPrefab.transform.Find("AimPoint").transform;
                 _shellEject = _weapomPrefab.transform.Find("ShellEject");
             }
+
+            aimPoint = _weapomPrefab.transform.Find("AimPoint")?.transform;
 
 
             AudioSource.PlayClipAtPoint(_currentyHolding.equipSound, transform.position, 2f);
@@ -814,10 +830,8 @@ public class AimAndShoot : MonoBehaviour
             if (shouldFlip != _flipped)
                 _flipped = shouldFlip;
 
-            // Mirror the player's X flip so the net visual X is always 1 (unmirrored)
-            // parent(-1) × child(-1) = 1  ✓  |  parent(1) × child(1) = 1  ✓
             float playerScaleX = Mathf.Sign(_playerDirection.transform.localScale.x);
-            if (playerScaleX == 0f) playerScaleX = 1f; // safety guard
+            if (playerScaleX == 0f) playerScaleX = 1f;
 
             transform.localScale = new Vector3(
                 playerScaleX,
@@ -825,7 +839,7 @@ public class AimAndShoot : MonoBehaviour
                 1f
             );
 
-            if (_playerDirection.direction.y > 0 && _gunParts.Count > 0)
+            if (_playerMovement.direction == PlayerMovement.MovementDirection.Up && _gunParts.Count > 0)
             {
                 for (int i = 0; i < _gunParts.Count; i++)
                 {

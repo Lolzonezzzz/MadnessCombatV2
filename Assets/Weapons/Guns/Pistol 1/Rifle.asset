@@ -10,29 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 255ac4d918fda224da7108f89993953c, type: 3}
-  m_Name: Pistol
+  m_Name: Rifle
   m_EditorClassIdentifier: 
-  itemname: Pistol
-  weaponTypes: 0
-  damage: 14
+  itemname: Rifle
+  weaponTypes: 1
+  damage: 16
   range: 500
-  fireRate: 0.7
+  fireRate: 0.15
   bulletSpeed: 20
   bulletPirecing: 1
   statusEffectOnHit: 0
   statusEffectCooldown: 0
   burstCount: 1
   bulletsPerShot: 1
-  bulletSpread: 5
+  bulletSpread: 8
   explosionRadius: 0
-  ammoCapacity: 6
+  ammoCapacity: 30
   currentAmmoReserve: 100
   gunReloadSpeed: 1
   icon: {fileID: 0}
-  gunModel: {fileID: 8111357030720605686, guid: ca80dffd56c58f645b2f44a937317c29, type: 3}
-  shellEject: {fileID: 7874654888633943328, guid: ca3659b1c4a761250814bd69d33c85cd, type: 3}
+  gunModel: {fileID: 8111357030720605686, guid: 759ce36b6817e6fdda4bcf5b3ebeffd5, type: 3}
+  shellEject: {fileID: 7874654888633943328, guid: f9800e07c5f2545bf9eaedc4913f24d3, type: 3}
   equipSound: {fileID: 8300000, guid: 8ace81ba52f959240aec4a0bb04f2267, type: 3}
-  firingSound: {fileID: 8300000, guid: 74960332659667e4093a690f7ba6e6b2, type: 3}
+  firingSound: {fileID: 8300000, guid: 706a15b93e06a9c47997b661a6e252b0, type: 3}
   reloadSound:
   - {fileID: 8300000, guid: ce7a78a5563a8a844bbe3a8d9fd435e5, type: 3}
   - {fileID: 8300000, guid: e051f26dbea6a614e9a2fc9e21b5ea4f, type: 3}

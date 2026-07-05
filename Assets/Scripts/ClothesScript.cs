@@ -79,12 +79,20 @@ public class ClothesScript : MonoBehaviour
                 facing = _playerDirection.direction.x > 0
                     ? FacingDirection.Right
                     : FacingDirection.Left;
+
+                _playerMovement.direction = _playerDirection.direction.x > 0
+                    ? PlayerMovement.MovementDirection.Right
+                    : PlayerMovement.MovementDirection.Left;
             }
             else
             {
                 facing = _playerDirection.direction.y > 0
                     ? FacingDirection.Back
                     : FacingDirection.Front;
+                
+                _playerMovement.direction = _playerDirection.direction.y > 0
+                    ? PlayerMovement.MovementDirection.Up
+                    : PlayerMovement.MovementDirection.Down;
             }  
             
             if (_playerMovement.IsDashing)

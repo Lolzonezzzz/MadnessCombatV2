@@ -11,7 +11,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c552b08f-9d67-473b-add4-69dec5e6721e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HealingUIScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HealingUIScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MadnessCombatV2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MadnessCombatV2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AimAndShoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AimAndShoot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ClothesScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ClothesScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Weapons/Guns/Pistol/Pistol.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Weapons/Guns/Pistol/Pistol.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,6 +172,8 @@
       <workItem from="1782939673450" duration="8067000" />
       <workItem from="1783012945144" duration="6588000" />
       <workItem from="1783087462959" duration="889000" />
+      <workItem from="1783202886964" duration="2987000" />
+      <workItem from="1783206643911" duration="2718000" />
     </task>
     <servers />
   </component>
