@@ -165,6 +165,7 @@ public class EnemyAI : MonoBehaviour
         RotateEnemy();
     }
     
+    private Quaternion _headRotation;
     void RotateEnemy()
     {
         bool horizontal = Mathf.Abs(direction.x) > Mathf.Abs(direction.y);
@@ -201,9 +202,19 @@ public class EnemyAI : MonoBehaviour
             _animator.SetFloat("XInput",0);
             _animator.SetFloat("Yinput", -1);
         }
-        Head.transform.localRotation = horizontal
-            ? Quaternion.Euler(0, 0, Mathf.Clamp(direction.y * 30f, -30, 30f))
+        float headscale = 0.8476f;
+        Vector2 vector2 = Head.transform.localScale;
+        vector2.x = (horizontal && facingRight ? headscale : -headscale);
+        vector2.y = (horizontal && !facingRight ? -headscale : headscale);
+        Head.transform.localScale = vector2;
+        _headRotation = horizontal
+            ? Quaternion.Euler(0, 0, facingRight ? angle : -angle)
             : Quaternion.identity;
+    }
+    
+    void LateUpdate()
+    {
+        Head.transform.localRotation = _headRotation;
     }
 
     [ShowIf("aiType", AIType.Rusher)] [SerializeField]

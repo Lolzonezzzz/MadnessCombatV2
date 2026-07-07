@@ -1,15 +1,32 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class playSound : MonoBehaviour
 {
-    [SerializeField] private AudioClip sounds;
+    public AudioClip[] sounds;
+    public bool canPlaySound = true;
 
-
-
-    public void PLaySound()
+    private AudioSource _soundSource;
+    public int index;
+    
+    public IEnumerator PLaySound(int index1, float delay)
     {
-        AudioSource.PlayClipAtPoint(sounds, transform.position);
+        index = index1;
+        if (sounds.Length == 0) yield break;
+        _soundSource.PlayOneShot(sounds[index1]);
+        canPlaySound = false;
+        yield return new WaitForSeconds(delay);
+        Invoke(nameof(ResetSound), sounds[index1].length);
+    }
+    
+     
+    void ResetSound()
+    {
+        canPlaySound = true;
+    }
+
+    void Start()
+    {
+        _soundSource = GetComponent<AudioSource>();
     }
 }

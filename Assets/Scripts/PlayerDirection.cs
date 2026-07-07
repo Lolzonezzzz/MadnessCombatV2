@@ -27,6 +27,13 @@ public class PlayerDirection : MonoBehaviour
             _legRenderers[i] = Legs[i].GetComponent<SpriteRenderer>();
     }
 
+    private Quaternion _headRotation;
+
+    void LateUpdate()
+    {
+        Head.transform.localRotation = _headRotation;
+    }
+
     private void Update()
     {
         if (_movementScript.IsDashing) return;
@@ -61,10 +68,16 @@ public class PlayerDirection : MonoBehaviour
             SetFlip(false);
             _headRenderer.sortingOrder = facingUp ? 0 : 2;
             _animator.SetFloat("LookX", 0);
-            _animator.SetFloat("LookY", 1);
+            _animator.SetFloat("LookY", facingUp ? 1 : -1);
         }
-        Head.transform.localRotation = horizontal
-            ? Quaternion.Euler(0, 0, Mathf.Clamp(direction.y * 30f, -30, 30f))
+
+        float headscale = 0.8476f;
+        Vector2 vector2 = Head.transform.localScale;
+        vector2.x = (horizontal && facingRight ? headscale : -headscale);
+        vector2.y = (horizontal && !facingRight ? -headscale : headscale);
+        Head.transform.localScale = vector2;
+        _headRotation = horizontal
+            ? Quaternion.Euler(0, 0, facingRight ? angle : -angle)
             : Quaternion.identity;
     }
 

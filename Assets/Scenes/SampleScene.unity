@@ -1026,7 +1026,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb08ec2edbc8a3a4eab6efc822981128, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: {fileID: 0}
+  sounds: []
+  canPlaySound: 0
+  index: 0
 --- !u!114 &75358134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19767,25 +19769,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 245312740611737924, guid: 959d169592e0727459451b44c95f049b, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1547497587, guid: 90acba0cc4b60074aac833c2cb466ce4, type: 3}
-    - target: {fileID: 245312740611737924, guid: 959d169592e0727459451b44c95f049b, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 282297435163877859, guid: 959d169592e0727459451b44c95f049b, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 1967977143688638266, guid: 959d169592e0727459451b44c95f049b, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2191159848713923468, guid: 959d169592e0727459451b44c95f049b, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2213373348213288954, guid: 959d169592e0727459451b44c95f049b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19827,88 +19813,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3057539837725791424, guid: 959d169592e0727459451b44c95f049b, type: 3}
-      propertyPath: m_BodyType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3057539837725791424, guid: 959d169592e0727459451b44c95f049b, type: 3}
-      propertyPath: m_Simulated
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3057539837725791424, guid: 959d169592e0727459451b44c95f049b, type: 3}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3057539837725791424, guid: 959d169592e0727459451b44c95f049b, type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3057539837725791424, guid: 959d169592e0727459451b44c95f049b, type: 3}
-      propertyPath: m_GravityScale
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3057539837725791424, guid: 959d169592e0727459451b44c95f049b, type: 3}
-      propertyPath: m_SleepingMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3057539837725791424, guid: 959d169592e0727459451b44c95f049b, type: 3}
-      propertyPath: m_CollisionDetection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3351575178084739520, guid: 959d169592e0727459451b44c95f049b, type: 3}
-      propertyPath: faceClothes
-      value: 
-      objectReference: {fileID: 11400000, guid: 10234ce9626cd2e4f8cc6cece2cb9fab, type: 2}
-    - target: {fileID: 3351575178084739520, guid: 959d169592e0727459451b44c95f049b, type: 3}
-      propertyPath: headClothes
-      value: 
-      objectReference: {fileID: 11400000, guid: 0a6a2ebd3c0f0a9458627c22a9a5cbc2, type: 2}
-    - target: {fileID: 3351575178084739520, guid: 959d169592e0727459451b44c95f049b, type: 3}
-      propertyPath: torsoClothes
-      value: 
-      objectReference: {fileID: 11400000, guid: a326f57136a8d5ed0b91e0839b2f5542, type: 2}
-    - target: {fileID: 3693418527123873276, guid: 959d169592e0727459451b44c95f049b, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4180141515768971448, guid: 959d169592e0727459451b44c95f049b, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -282374192, guid: b7b3e8c0a6a6a864296f1c8c5634d9d5, type: 3}
-    - target: {fileID: 4180141515768971448, guid: 959d169592e0727459451b44c95f049b, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5299382090349113893, guid: 959d169592e0727459451b44c95f049b, type: 3}
-      propertyPath: ammo.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5299382090349113893, guid: 959d169592e0727459451b44c95f049b, type: 3}
-      propertyPath: items.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5299382090349113893, guid: 959d169592e0727459451b44c95f049b, type: 3}
-      propertyPath: items.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: e404a2219ab759d188304a164081a612, type: 2}
-    - target: {fileID: 5299382090349113893, guid: 959d169592e0727459451b44c95f049b, type: 3}
-      propertyPath: ammoreserve.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5299382090349113893, guid: 959d169592e0727459451b44c95f049b, type: 3}
-      propertyPath: ammoreserve.Array.data[0]
-      value: 600
-      objectReference: {fileID: 0}
-    - target: {fileID: 5516213434430415034, guid: 959d169592e0727459451b44c95f049b, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -1118055266, guid: c5d3de35915f18e439e627c1c8b740b3, type: 3}
-    - target: {fileID: 6901613430529396567, guid: 959d169592e0727459451b44c95f049b, type: 3}
-      propertyPath: m_UpdateMode
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4724267621455436516, guid: 959d169592e0727459451b44c95f049b, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

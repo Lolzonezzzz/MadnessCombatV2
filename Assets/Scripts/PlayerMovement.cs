@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
+using Random = UnityEngine.Random;
+
 public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D _rb;
@@ -26,6 +28,8 @@ public class PlayerMovement : MonoBehaviour
     public MovementDirection dashDirection;
     private Animator _animator;
     private PlayerDirection _playerDirection;
+    
+    private playSound _playSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
 
         _animator = GetComponent<Animator>();
         _playerDirection = GetComponent<PlayerDirection>();
+        _playSound =  GetComponent<playSound>();
         
     }
 
@@ -96,8 +101,20 @@ public class PlayerMovement : MonoBehaviour
         }
 
         float currentSpeed = speed * (_isSprinting ? sprintMultiplier : 1f);
+        Vector2 input = new Vector2(_inputX, _inputY).normalized;
         
-        _rb.velocity = new  Vector2( _inputX * currentSpeed, _inputY * currentSpeed);
+        _rb.velocity = input * currentSpeed;
+        
+        if (_inputX != 0 || _inputY != 0)
+        {
+            if (_playSound.canPlaySound)
+            {
+                _playSound.canPlaySound = false;
+                StartCoroutine(_playSound.PLaySound(1 - _playSound.index, _isSprinting ? 0.1f : 0.3f));
+                
+            }
+        }
+
 
         if (Input.GetKeyDown(KeyCode.LeftShift) && _canSprint)
         {
