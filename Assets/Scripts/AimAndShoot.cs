@@ -24,12 +24,12 @@ public class AimAndShoot : MonoBehaviour
     [Header("Gun Settings")] [SerializeField]
     private float damage;
 
-    [HideInInspector]public float weaponRange = 30f;
-    [SerializeField, HideInInspector] private int burstCount = 1;
-    [SerializeField, HideInInspector] private float burstDelay = 0.07f;
-    [SerializeField, HideInInspector] private float spreadAngle = 5f; // Degrees
-    [SerializeField, HideInInspector] private int piercing = 1; // How many enemies it can hit
-    [SerializeField, HideInInspector] private float fireRate = 0.5f;
+    public float weaponRange = 30f;
+    [SerializeField] private int burstCount = 1;
+    [SerializeField] private float burstDelay = 0.07f;
+    [SerializeField] private float spreadAngle = 5f; // Degrees
+    [SerializeField] private int piercing = 1; // How many enemies it can hit
+    [SerializeField] private float fireRate = 0.5f;
 
 
     public int maxCapacity = 6;
@@ -46,7 +46,7 @@ public class AimAndShoot : MonoBehaviour
     [SerializeField] private int bulletsPerShot = 1;
 
 
-    [Header("Weapons")] [SerializeField] private Transform aimPoint;
+    [Header("Weapons")] public Transform aimPoint;
     [SerializeField] private GameObject bulletTrail;
     private GameObject _shellPrefab;
 
@@ -204,6 +204,70 @@ public class AimAndShoot : MonoBehaviour
             }
         }
     }
+    
+     public IEnumerator EnemySwingMeleeScript(Vector2 targetPosition)
+    {
+        Vector2 dirToTarget = (targetPosition - (Vector2)transform.position).normalized;
+        float angle = Mathf.Atan2(dirToTarget.y, dirToTarget.x) * Mathf.Rad2Deg;
+        
+        animator.Play("Swing");
+        AudioSource.PlayClipAtPoint(firingSfx, transform.position, 45f);
+        _canSwing = false;
+        LayerMask targettedLayerMask = default;
+        int hitLayer = -1;
+        
+        
+        yield return new WaitForSeconds(0.1f);
+        
+        RaycastHit2D ray = Physics2D.BoxCast(transform.position, new Vector2(12f, 2f), angle,
+            dirToTarget, 0.7f,targettedLayerMask.value != 0 ? targettedLayerMask : canDamage);
+        _canSwing = true;
+        
+        if (ray.collider != null)
+        {
+            // Deal damage to player body part
+            HealthScript healthScript = ray.collider.GetComponentInParent<HealthScript>();
+            if (healthScript != null)
+            {
+                healthScript.lastAttacker = gameObject;
+                print("touching enemy");
+                switch (LayerMask.LayerToName(ray.collider.gameObject.layer))
+                {
+                    case "PlayerHead":
+                        int randomPart = Random.Range(0, 1);
+                        if (randomPart == 0) // skull
+                        {
+                            healthScript.OnDamageTaken(HealthScript.BodyParts.Head, damage, ray.collider.gameObject);
+                        }
+                        else if (randomPart == 1) // brain
+                        {
+                            healthScript.OnDamageTaken(HealthScript.BodyParts.Head, damage, ray.collider.gameObject);
+                            healthScript.OnDamageTaken(HealthScript.BodyParts.Brain, damage, ray.collider.gameObject);
+                        }
+
+                        break;
+                    case "PlayerTorso":
+                        randomPart = Random.Range(0, 2);
+                        if (randomPart == 0) // ribcage
+                        {
+                            healthScript.OnDamageTaken(HealthScript.BodyParts.Torso, damage, ray.collider.gameObject);
+                        }
+                        else if (randomPart == 1) // heart
+                        {
+                            healthScript.OnDamageTaken(HealthScript.BodyParts.Heart, damage, ray.collider.gameObject);
+                            healthScript.OnDamageTaken(HealthScript.BodyParts.Torso, damage, ray.collider.gameObject);
+                        }
+                        else if (randomPart == 2) // lungs
+                        {
+                            healthScript.OnDamageTaken(HealthScript.BodyParts.Lungs, damage, ray.collider.gameObject);
+                            healthScript.OnDamageTaken(HealthScript.BodyParts.Torso, damage, ray.collider.gameObject);
+                        }
+
+                        break;
+                }
+            }
+        }
+    }
 
 
     IEnumerator SwingMeleeScript()
@@ -307,14 +371,18 @@ public class AimAndShoot : MonoBehaviour
                 switch (randomShootingAim)
                 {
                     case 0:
-                        animator.Play("Firing1");
+                        animator.Play("Firing");
                         break;
                     case 1:
-                        animator.Play("Firing");
+                        animator.Play("Firing1");
                         break;
                 }
             }
-            animator.Play("Firing");
+            else
+            {
+                animator.Play("Firing");
+            }
+            
             if (firingSfx != null)
                 AudioSource.PlayClipAtPoint(firingSfx, transform.position, 6f);
             for (int s = 0; s < bulletsPerShot; s++)
@@ -758,6 +826,7 @@ public class AimAndShoot : MonoBehaviour
             spreadAngle = _currentyHolding.bulletSpread;
             burstCount = _currentyHolding.burstCount;
             piercing = _currentyHolding.bulletPirecing;
+            weaponRange = _currentyHolding.range;
             fireRate = _currentyHolding.fireRate;
             bulletsPerShot = _currentyHolding.bulletsPerShot;
             _weaponTypes = _currentyHolding.weaponTypes;
@@ -839,7 +908,7 @@ public class AimAndShoot : MonoBehaviour
                 1f
             );
 
-            if (_playerMovement.direction == PlayerMovement.MovementDirection.Up && _gunParts.Count > 0)
+            if (_playerMovement.dashDirection == PlayerMovement.MovementDirection.Up && _gunParts.Count > 0)
             {
                 for (int i = 0; i < _gunParts.Count; i++)
                 {

@@ -14,7 +14,7 @@ public class collectItem : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0))
         {
             Vector3 mousePos = _mainCamera.ScreenToWorldPoint(
                 new Vector3(Input.mousePosition.x, Input.mousePosition.y,

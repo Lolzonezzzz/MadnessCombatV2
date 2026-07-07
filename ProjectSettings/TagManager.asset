@@ -6,6 +6,8 @@ TagManager:
   tags:
   - BreakableWall
   - Enemy
+  - TurnOffWalls
+  - EndPoint
   layers:
   - Default
   - TransparentFX
@@ -21,8 +23,8 @@ TagManager:
   - PlayerTorso
   - EnemyHead
   - EnemyTorso
-  - 
-  - 
+  - HorizontalWall
+  - VeriticalWall
   - 
   - 
   - 

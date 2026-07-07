@@ -15,8 +15,8 @@ MonoBehaviour:
   itemname: Rifle
   weaponTypes: 1
   damage: 16
-  range: 500
-  fireRate: 0.15
+  range: 100
+  fireRate: 0.12
   bulletSpeed: 20
   bulletPirecing: 1
   statusEffectOnHit: 0

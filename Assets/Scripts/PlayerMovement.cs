@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     
     public MovementState state;
     public MovementDirection direction;
+    public MovementDirection dashDirection;
     private Animator _animator;
     private PlayerDirection _playerDirection;
     // Start is called before the first frame update
@@ -41,13 +42,8 @@ public class PlayerMovement : MonoBehaviour
         if (_isDashing)
             return;
         
-        _rb.angularVelocity = 0f;
         _inputX = Input.GetAxisRaw("Horizontal");
         _inputY = Input.GetAxisRaw("Vertical");
-        
-        Vector2 input = new Vector2(_inputX, _inputY);
-        if (input.sqrMagnitude > 1)
-            input.Normalize();
 
 
 
@@ -68,15 +64,19 @@ public class PlayerMovement : MonoBehaviour
             
             case(-1, 0):
                 _animator.SetBool("Moving", true);
+                direction = MovementDirection.Right;
                 break;
             case(1, 0):
                 _animator.SetBool("Moving", true);
+                direction = MovementDirection.Left;
                 break;
             case(0,-1):
                 _animator.SetBool("Moving", true);
+                direction = MovementDirection.Down;
                 break;
             case(0, 1):
                 _animator.SetBool("Moving", true);
+                direction = MovementDirection.Up;
                 break;
             case (-1, 1):
                 _animator.SetBool("Moving", true);
@@ -91,15 +91,13 @@ public class PlayerMovement : MonoBehaviour
                 _animator.SetBool("Moving", true);
                 break;
             default:
-                direction = MovementDirection.Right;
-                state = MovementState.Idle;
                 _animator.SetBool("Moving", false);
                 break;
         }
 
         float currentSpeed = speed * (_isSprinting ? sprintMultiplier : 1f);
         
-        _rb.velocity = input * currentSpeed;
+        _rb.velocity = new  Vector2( _inputX * currentSpeed, _inputY * currentSpeed);
 
         if (Input.GetKeyDown(KeyCode.LeftShift) && _canSprint)
         {
@@ -109,8 +107,9 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Q) && _canDash)
         {
+
+
             StartCoroutine(Dash());
-            
         }
         
 
@@ -120,6 +119,8 @@ public class PlayerMovement : MonoBehaviour
         _animator.SetFloat("Speed", Mathf.Lerp(current, target, 0.15f));
  
     }
+    
+
 
     IEnumerator Dash()
     {
@@ -135,6 +136,8 @@ public class PlayerMovement : MonoBehaviour
         AimAndShoot aim = gameObject.GetComponentInChildren<AimAndShoot>();
         aim.unequipHands();
         health.dashingInvincibility = true;
+        _rb.velocity = Vector2.zero;
+        _rb.angularVelocity = 0f;
 
         yield return new WaitForSeconds(0.9f);
         _canDash = true;
@@ -156,12 +159,12 @@ public class PlayerMovement : MonoBehaviour
         Down
     }
 
-    private void FixedUpdate()
+    private void LateUpdate()
     {
         if (_isDashing)
         {
             
-            switch (direction)
+            switch (dashDirection)
             {
                 case MovementDirection.Left:
                     _rb.velocity = new Vector2(-dashSpeed, 0f);

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6555366017650404313}
   - component: {fileID: 4717246331622722964}
   - component: {fileID: 4233184018538842114}
+  - component: {fileID: 4273978900904154628}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -28,9 +29,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8642311908322418060}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -38.569992, y: 19.201797, z: 0}
-  m_LocalScale: {x: 0.48050028, y: 0.49518162, z: 0.48050028}
+  m_LocalScale: {x: 0.61972517, y: 0.67414355, z: 0.70393574}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -169,3 +170,19 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   doorOpenSound: {fileID: 8300000, guid: 5a4cc9d1bee3002459b755343350b978, type: 3}
+--- !u!114 &4273978900904154628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8642311908322418060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 0
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff

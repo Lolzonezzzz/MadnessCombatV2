@@ -10,7 +10,7 @@ using Random = UnityEngine.Random;
 public class EnemyAI : MonoBehaviour
 {
     [SerializeField]private float speed;
-    [SerializeField]private AIType aiType;
+    public AIType aiType;
 
     
     private Transform _target;
@@ -18,6 +18,8 @@ public class EnemyAI : MonoBehaviour
     private float _runspeed = 4;
     public float angle;
     [HideInInspector]public Vector2 direction; 
+    [SerializeField]private ItemData[] itemData;
+    private AimAndShoot _gun;
 
     [ShowIf("aiType", AIType.Rusher)] [SerializeField]
     private bool startAttacking;
@@ -32,16 +34,13 @@ public class EnemyAI : MonoBehaviour
     public ShootingType shootingType;
     
     [ShowIf("aiType", AIType.Shooter)]
-    private AimAndShoot _gun;
+    private float _magazine;
 
     [ShowIf("aiType", AIType.Shooter)]
     [SerializeField]private float fireTimer;
     
     [ShowIf("aiType", AIType.Shooter)]
     [SerializeField]private float distanceToDetectPlayer = 15;
-    
-    [ShowIf("aiType", AIType.Shooter)]
-    [SerializeField]private ItemData[] itemData;
 
     [ShowIf("aiType", AIType.Shooter)] [SerializeField]
     private GameObject[] playerBodyPart;
@@ -111,6 +110,15 @@ public class EnemyAI : MonoBehaviour
         }
         
         _gun.WeaponSwitching(itemData[Random.Range(0, itemData.Length)]);
+        if (_gun.aimPoint != null)
+        {
+            aiType = AIType.Shooter;
+            _magazine = _gun.maxCapacity;
+        }
+        else
+        {
+            aiType = AIType.Rusher;
+        }
         pickrandombodypart = playerBodyPart[Random.Range(0, 2)].transform;
     }
 
@@ -198,10 +206,29 @@ public class EnemyAI : MonoBehaviour
             : Quaternion.identity;
     }
 
+    [ShowIf("aiType", AIType.Rusher)] [SerializeField]
+    private float meleeRange = 2f;
+
+    [ShowIf("aiType", AIType.Rusher)] [SerializeField]
+    private float meleeCooldown = 1f;
+
+    private float _meleeTimer;
+
     void RushPlayer()
     {
         _agent.SetDestination(_target.position);
         _agent.speed = speed;
+
+        if (_agent.remainingDistance <= meleeRange && _meleeTimer <= 0)
+        {
+            _agent.SetDestination(transform.position);
+            StartCoroutine(_gun.EnemySwingMeleeScript(_target.position));
+            _meleeTimer = meleeCooldown;
+        }
+        else
+        {
+            _meleeTimer -= Time.deltaTime;
+        }
     }
 
     IEnumerator ShootThePlayer()
@@ -239,18 +266,26 @@ public class EnemyAI : MonoBehaviour
 
             _agent.SetDestination(transform.position);
             pickrandombodypart = playerBodyPart[Random.Range(0, 2)].transform;
-            
-            for (int i = burstcounter; i > 0; i--)
+            if (_magazine > 0)
             {
-                Debug.Log("Aiming at: " + pickrandombodypart.name);
+                for (int i = burstcounter; i > 0; i--)
+                {
+                    Debug.Log("Aiming at: " + pickrandombodypart.name);
                 
-                _gun.animator.Play("Firing");
-                AudioSource.PlayClipAtPoint(_gun.firingSfx, transform.position, 6f);
-                _gun.EnemyShoot(pickrandombodypart.position);
+                    _gun.animator.Play("Firing");
+                    AudioSource.PlayClipAtPoint(_gun.firingSfx, transform.position, 6f);
+                    _gun.EnemyShoot(pickrandombodypart.position);
+                    _magazine--;
                 
-                yield return new WaitForSeconds(burstcoundown);
+                    yield return new WaitForSeconds(burstcoundown);
+                } 
             }
-            fireTimer = 0.3f;
+            else
+            {
+                StartCoroutine(Reloading());
+            }
+
+            fireTimer = 0.2f;
       
         }
 
@@ -258,9 +293,20 @@ public class EnemyAI : MonoBehaviour
         _isShooting = false;
     }
 
+    IEnumerator Reloading()
+    {
+        _gun.animator.Play("Reloading");
+        while (_gun.animator != null && _gun.animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1f)
+        {
+            yield return null;
+        }
+
+        _magazine = _gun.maxCapacity;
+    }
+
     void CheckdistancetoPlayer()
     {
-        if (Vector2.Distance(transform.position, _target.position) <= _gun.weaponRange)
+        if (Vector2.Distance(transform.position, _target.position) <= distanceToDetectPlayer)
         {
             _agent.speed = 0;
         }

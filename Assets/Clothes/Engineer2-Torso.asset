@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c14663a4d736448a4a4e9304631b00, type: 3}
+  m_Name: Engineer2-Torso
+  m_EditorClassIdentifier: 
+  clothesName: Engineer Shirt2
+  left: {fileID: 798774652, guid: c5d3de35915f18e439e627c1c8b740b3, type: 3}
+  right: {fileID: -1118055266, guid: c5d3de35915f18e439e627c1c8b740b3, type: 3}
+  front: {fileID: -1835112301, guid: c5d3de35915f18e439e627c1c8b740b3, type: 3}
+  back: {fileID: -86367161, guid: c5d3de35915f18e439e627c1c8b740b3, type: 3}

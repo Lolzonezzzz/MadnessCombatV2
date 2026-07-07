@@ -7,6 +7,7 @@ public class DoorOpen : MonoBehaviour
 {
     [SerializeField]LayerMask playerLayerMask;
     [SerializeField] private AudioClip doorOpenSound;
+    [SerializeField] private float openDistance = 12f;
     
     Animator _animator;
     bool _doorOpened = false;
@@ -41,6 +42,6 @@ public class DoorOpen : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.DrawWireSphere(transform.position, 12f);
+        Gizmos.DrawWireSphere(transform.position, openDistance);
     }
 }

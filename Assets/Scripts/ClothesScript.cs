@@ -1,3 +1,4 @@
+using NaughtyAttributes;
 using UnityEngine;
 
 public class ClothesScript : MonoBehaviour
@@ -73,6 +74,9 @@ public class ClothesScript : MonoBehaviour
 
         if (_playerDirection != null)
         {
+            if (_playerMovement.IsDashing)
+                return;
+
             if (Mathf.Abs(_playerDirection.direction.x) >
                 Mathf.Abs(_playerDirection.direction.y))
             {
@@ -80,7 +84,7 @@ public class ClothesScript : MonoBehaviour
                     ? FacingDirection.Right
                     : FacingDirection.Left;
 
-                _playerMovement.direction = _playerDirection.direction.x > 0
+                _playerMovement.dashDirection = _playerDirection.direction.x > 0
                     ? PlayerMovement.MovementDirection.Right
                     : PlayerMovement.MovementDirection.Left;
             }
@@ -90,13 +94,10 @@ public class ClothesScript : MonoBehaviour
                     ? FacingDirection.Back
                     : FacingDirection.Front;
                 
-                _playerMovement.direction = _playerDirection.direction.y > 0
+                _playerMovement.dashDirection = _playerDirection.direction.y > 0
                     ? PlayerMovement.MovementDirection.Up
                     : PlayerMovement.MovementDirection.Down;
             }  
-            
-            if (_playerMovement.IsDashing)
-                return;
         }
         if (_enemyAI != null)
         {
@@ -203,6 +204,74 @@ public class ClothesScript : MonoBehaviour
                     _rightShoeRenderer.sprite = shoes.back;
                     break;
             }
+        }
+    }
+    
+    [Button]
+    void WearClothes()
+    {
+        _headRenderer = head.GetComponent<SpriteRenderer>();
+        _faceRenderer = face.GetComponent<SpriteRenderer>();
+        _hatRenderer = hat.GetComponent<SpriteRenderer>();
+        _bodyRenderer = body.GetComponent<SpriteRenderer>();
+        _chestRenderer = chest.GetComponent<SpriteRenderer>();
+        _leftShoeRenderer = lShoe.GetComponent<SpriteRenderer>();
+        _rightShoeRenderer = rShoe.GetComponent<SpriteRenderer>();
+        
+        if (hatClothes != null)
+        {
+            _hatRenderer.sprite = hatClothes.right;
+        }
+        else
+        {
+            _hatRenderer.sprite = null;
+        }
+
+        if (faceClothes != null)
+        {
+            _faceRenderer.sprite = faceClothes.right;
+        }
+        else
+        {
+            _faceRenderer.sprite = null;
+        }
+
+        if (headClothes != null)
+        {
+            _headRenderer.sprite = headClothes.right;
+        }
+        else
+        {
+            _headRenderer.sprite = null;
+        }
+
+        if (torsoClothes != null)
+        {
+            _bodyRenderer.sprite = torsoClothes.right;
+        }
+        else
+        {
+            _bodyRenderer.sprite = null;
+        }
+
+        if (chestArmour != null)
+        {
+            _chestRenderer.sprite = chestArmour.right;
+        }
+        else
+        {
+            _chestRenderer.sprite = null;
+        }
+
+        if (shoes != null)
+        {
+            _leftShoeRenderer.sprite = shoes.right;
+            _rightShoeRenderer.sprite = shoes.right;
+        }
+        else
+        {
+            _leftShoeRenderer.sprite = null;
+            _rightShoeRenderer.sprite = null;
         }
     }
 }
