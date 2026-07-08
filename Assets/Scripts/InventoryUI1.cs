@@ -43,4 +43,12 @@ public class InventoryUI : MonoBehaviour
             _aimAndShoot.WeaponSwitching(items[itemCount]);
         }
     }
+
+    public void AddItem(ItemData item)
+    {
+        items.Add(item);
+        ammo.Add(items.Capacity);
+        ammoreserve.Add(999999999);
+        EquipNew();
+    }
 }

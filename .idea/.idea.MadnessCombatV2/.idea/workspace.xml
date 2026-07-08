@@ -12,16 +12,19 @@
   <component name="ChangeListManager">
     <list default="true" id="c552b08f-9d67-473b-add4-69dec5e6721e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MadnessCombatV2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MadnessCombatV2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/IdleLeftorRight.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/IdleLeftorRight.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/IdleUporDown.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/IdleUporDown.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Player.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DungeonWallScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DungeonWallScript.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FloorScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FloorScript.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Room Assets/Door.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room Assets/Door.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyAI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerDirection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerDirection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/playSound.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/playSound.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/NavMesh-NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene/NavMesh-NavMesh.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InventoryUI1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InventoryUI1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SetTarget.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SetTarget.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/collectItem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/collectItem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +35,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/FloorScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/WeaponIndex.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="McpProjectServerCommands">
     <commands />
@@ -186,7 +189,8 @@
       <workItem from="1783343933985" duration="1217000" />
       <workItem from="1783345926986" duration="10000" />
       <workItem from="1783346326835" duration="7700000" />
-      <workItem from="1783427503936" duration="12328000" />
+      <workItem from="1783427503936" duration="12928000" />
+      <workItem from="1783509962595" duration="8131000" />
     </task>
     <servers />
   </component>

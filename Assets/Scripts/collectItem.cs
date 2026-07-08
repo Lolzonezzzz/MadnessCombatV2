@@ -21,7 +21,7 @@ public class collectItem : MonoBehaviour
                     -_mainCamera.transform.position.z)
             );
 
-            RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
+            RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero, 0.1f, LayerMask.GetMask("HealthParts"));
             if (hit.collider == null) return;
             if (hit.collider.gameObject != gameObject) return;
             healingUIScript.capacity++;
