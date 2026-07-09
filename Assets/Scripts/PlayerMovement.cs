@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
@@ -44,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_isDashing)
+        if (_isDashing || EventSystem.current.IsPointerOverGameObject())
             return;
         
         _inputX = Input.GetAxisRaw("Horizontal");

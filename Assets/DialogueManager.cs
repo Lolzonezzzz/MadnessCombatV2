@@ -1,0 +1,79 @@
+using System.Collections;
+using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
+using UnityEngine.UIElements;
+
+public class DialogueManager : MonoBehaviour
+{
+    public static DialogueManager Instance;
+    
+    public Image characterIcon;
+    public TextMeshProUGUI characterName;
+    public TextMeshProUGUI dialogueArea;
+    
+    private Queue<DialogueLine> _lines;
+
+    public bool isDialogueActive = false;
+    public float typingSpeed = 0.2f;
+    public Animator animator;
+    
+    
+    // Start is called before the first frame update
+    void Start()
+    {
+        if (Instance == null)
+            Instance = this;
+    }
+
+
+    public void StartDialogue(DialogueEvent dialogue)
+    {
+        isDialogueActive = true;
+        
+       // animator.Play("show");
+       
+       _lines.Clear();
+       foreach (DialogueLine line in dialogue.lines)
+       {
+           _lines.Enqueue(line);
+       }
+
+       DisplayNextDialogueLine();
+    }
+
+    public void DisplayNextDialogueLine()
+    {
+        if (_lines.Count == 0)
+        {
+            EndDialogue();
+            return;
+        }
+        
+        DialogueLine currentLine = _lines.Dequeue();
+
+        characterIcon.sprite = currentLine.character.icon;
+        characterName.text = currentLine.character.name;
+        
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence(currentLine));
+    }
+
+
+    IEnumerator TypeSentence(DialogueLine dialogueLine)
+    {
+        dialogueArea.text = "";
+        foreach (char letter in dialogueLine.text.ToCharArray())
+        {
+            dialogueArea.text += letter;
+            yield return new WaitForSeconds(typingSpeed);
+            
+        }
+    }
+
+    void EndDialogue()
+    {
+        isDialogueActive = false;
+        // animator.Play("hide");
+    }
+}
