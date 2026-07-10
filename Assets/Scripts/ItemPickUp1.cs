@@ -5,7 +5,7 @@ public class ItemPickUp : MonoBehaviour
     public ItemData itemData;
     [SerializeField] private GameObject[] hands;
 
-    public void PickUp(InventoryUI inventoryUI)
+    public void PickUp(Inventory inventoryUI)
     {
         if (inventoryUI == null) return;
         inventoryUI.items.Add(itemData);

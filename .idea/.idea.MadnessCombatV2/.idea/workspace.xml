@@ -12,9 +12,38 @@
   <component name="ChangeListManager">
     <list default="true" id="c552b08f-9d67-473b-add4-69dec5e6721e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MadnessCombatV2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MadnessCombatV2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DialogueManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DialogueManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DialogueTrigger.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DialogueTrigger.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Item.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Item.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItemDataBase.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItemDataBase.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItemUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItemUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Player.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Room Assets/FloorNavagator.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room Assets/FloorNavagator.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Room Assets/Horizontal Wall With Door.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room Assets/Horizontal Wall With Door.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Room Assets/Horizontal Wall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room Assets/Horizontal Wall.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Room Assets/Vertical Wall With Door.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room Assets/Vertical Wall With Door.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Room Assets/Vertical Wall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room Assets/Vertical Wall.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Lobby.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Lobby.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ChangeUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ChangeUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RoomTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RoomTest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AimAndShoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AimAndShoot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FloorScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FloorScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InventoryUI1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InventoryUI1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemPickUp1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemPickUp1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MouseWeightedCameraScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MouseWeightedCameraScript.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SetTarget.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SetTarget.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WeaponIndex.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WeaponIndex.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +54,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/DialogueTrigger.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/WeaponIndex.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CheckforwallNaviagator.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="McpProjectServerCommands">
     <commands />
@@ -183,6 +211,8 @@
       <workItem from="1783427503936" duration="12928000" />
       <workItem from="1783509962595" duration="8853000" />
       <workItem from="1783632442156" duration="3791000" />
+      <workItem from="1783692398581" duration="11672000" />
+      <workItem from="1783718772843" duration="5560000" />
     </task>
     <servers />
   </component>

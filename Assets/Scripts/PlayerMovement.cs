@@ -45,8 +45,12 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_isDashing || EventSystem.current.IsPointerOverGameObject())
+        if (_isDashing || EventSystem.current.IsPointerOverGameObject() || DialogueManager.Instance.isDialogueActive)
+        {
+            _rb.velocity = Vector2.zero;
+            _animator.SetBool("Moving", false);
             return;
+        }
         
         _inputX = Input.GetAxisRaw("Horizontal");
         _inputY = Input.GetAxisRaw("Vertical");

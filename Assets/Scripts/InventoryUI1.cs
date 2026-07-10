@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InventoryUI : MonoBehaviour
+public class Inventory : MonoBehaviour
 {
     public List<ItemData> items = new List<ItemData>();
     public List<int> ammo = new List<int>();

@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - TurnOffWalls
   - EndPoint
+  - Wall
   layers:
   - Default
   - TransparentFX

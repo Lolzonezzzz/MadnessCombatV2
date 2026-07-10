@@ -219,10 +219,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f68b6fb0e2461b04899e05b65ba1410e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  items:
-  - {fileID: 11400000, guid: e404a2219ab759d188304a164081a612, type: 2}
-  ammo: 00000000
-  ammoreserve: 58020000
+  items: []
+  ammo: 
+  ammoreserve: 
   itemCount: 0
 --- !u!114 &6178026911936201695
 MonoBehaviour:

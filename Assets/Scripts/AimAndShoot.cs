@@ -64,7 +64,7 @@ public class AimAndShoot : MonoBehaviour
     [SerializeField] private float throwDamage = 50f;
 
     [HideInInspector]public GameObject[] hands;
-    private InventoryUI _inventoryUI;
+    private Inventory _inventoryUI;
     private bool _canThrown = true;
     private bool _canSwing = true;
     private bool _isEquipping = false;
@@ -108,7 +108,7 @@ public class AimAndShoot : MonoBehaviour
     {
         _playerDirection = GetComponentInParent<PlayerDirection>();
         _playerMovement = GetComponentInParent<PlayerMovement>();
-        _inventoryUI = GetComponentInParent<InventoryUI>();
+        _inventoryUI = GetComponentInParent<Inventory>();
         _mainCamera = Camera.main;
 
         _enemyAI = GetComponentInParent<EnemyAI>();

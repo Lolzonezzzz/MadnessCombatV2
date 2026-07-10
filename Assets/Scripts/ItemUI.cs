@@ -29,7 +29,7 @@ public class ItemUI : MonoBehaviour
         GameObject player = GameObject.FindWithTag("Player");
         if (player != null)
         {
-            InventoryUI inventoryUI = player.GetComponentInChildren<InventoryUI>();
+            Inventory inventoryUI = player.GetComponentInChildren<Inventory>();
             
             inventoryUI.AddItem(item);
         }

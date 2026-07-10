@@ -68,7 +68,7 @@ public class MouseWeightedCameraScript : MonoBehaviour
 
     void LateUpdate()
     {
-        if (!target) return;
+        if (!target|| DialogueManager.Instance.isDialogueActive) return;
 
         // Read player position — only X and Y, so Y-rotation flips don't interfere
         Vector3 playerPos = new Vector3(target.position.x, target.position.y, 0f);
