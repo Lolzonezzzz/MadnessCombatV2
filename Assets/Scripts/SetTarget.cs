@@ -17,18 +17,7 @@ public class SetTarget : MonoBehaviour
     private Collider2D _collider;
     private Coroutine _testCoroutine;
 
-    private bool _findpath = false;
 
-    public IEnumerator Testfloor()
-    {
-        target =  GameObject.FindGameObjectWithTag("EndPoint");
-        _findpath = false;
-        findablePath = true;
-        transform.position = oldPosition;
-        
-        yield return new WaitForSeconds(0.1f);
-        _findpath = false;
-    }
 
     void Start()
     {
@@ -38,24 +27,23 @@ public class SetTarget : MonoBehaviour
         _agent.updateRotation = false;
         _agent.updateUpAxis = false;
         Vector3 pos = transform.position;
+        floorScript = GameObject.FindGameObjectWithTag("FloorChecker").GetComponent<FloorScript>();
         pos.z = 0;
         transform.position = pos;
+        _agent.SetDestination(target.transform.position);
     }
 
     void Update()
     {
-        _agent.isStopped = _findpath;
-        target =  GameObject.FindGameObjectWithTag("EndPoint");
-        Vector2 newDest = target.transform.position;
-        if ((Vector2)_agent.destination != newDest)
-        {
-            _agent.SetDestination(newDest);
-        }
         if (Vector2.Distance(transform.position, target.transform.position) <= 0.1f)
         {
             findablePath = true;
             print("Exit has been found");
-            Destroy(gameObject);
+            floorScript.CreatePlayer();
+            
+            
+            Destroy(gameObject); // Destroy game object once everything has been done.
+
         }
         
     }

@@ -14,6 +14,7 @@ public class MouseWeightedCameraScript : MonoBehaviour
 
     void Start()
     {
+        target = GameObject.FindGameObjectWithTag("Player").transform;
         _cameraZ = transform.position.z;         // Lock Z from the start
         DontDestroyOnLoad(gameObject);
         SceneManager.sceneLoaded += OnSceneLoaded;
@@ -68,7 +69,7 @@ public class MouseWeightedCameraScript : MonoBehaviour
 
     void LateUpdate()
     {
-        if (!target|| DialogueManager.Instance.isDialogueActive) return;
+        if (!target) return;
 
         // Read player position — only X and Y, so Y-rotation flips don't interfere
         Vector3 playerPos = new Vector3(target.position.x, target.position.y, 0f);

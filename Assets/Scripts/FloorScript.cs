@@ -25,6 +25,12 @@ public class FloorScript : MonoBehaviour
 
     private List<GameObject> _allWalls = new List<GameObject>();
 
+
+    [Space(10), Header("Player and enemies")] [SerializeField]
+    private GameObject player;
+    
+    [Space(4)]
+    [SerializeField]private GameObject[] enemies;
     // Start is called before the first frame update
     void Start()
     {
@@ -60,6 +66,16 @@ public class FloorScript : MonoBehaviour
 
 
     private bool _isRebuilding;
+
+
+
+    public void CreatePlayer()
+    {
+        GameObject createthePlayer = Instantiate(player, spawnPoint.transform.position,  Quaternion.identity);
+        MouseWeightedCameraScript mouseWeightedCameraScript = Camera.main.GetComponent<MouseWeightedCameraScript>();
+        mouseWeightedCameraScript.enabled = true;
+        print("player has been spawned");
+    }
 
     public IEnumerator GetWalls()
     {
@@ -99,10 +115,10 @@ public class FloorScript : MonoBehaviour
         yield return null;
         navMeshSurface.BuildNavMesh();
         yield return null;
+        Destroy(_floorcheck);
         _floorcheck = Instantiate(floorChecker, spawnPoint.transform.position, spawnPoint.transform.rotation);
         _agent = _floorcheck.GetComponent<NavMeshAgent>();
         _agent.Warp(spawnPoint.transform.position);
-        _agent.isStopped = false;
         CheckforwallNaviagator checkforwallNaviagator =
             _floorcheck.GetComponentInChildren<CheckforwallNaviagator>();
         target = _floorcheck.GetComponent<SetTarget>();

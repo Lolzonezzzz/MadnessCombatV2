@@ -45,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_isDashing || EventSystem.current.IsPointerOverGameObject() || DialogueManager.Instance.isDialogueActive)
+        if (_isDashing)
         {
             _rb.velocity = Vector2.zero;
             _animator.SetBool("Moving", false);

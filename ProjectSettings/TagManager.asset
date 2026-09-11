@@ -9,6 +9,7 @@ TagManager:
   - TurnOffWalls
   - EndPoint
   - Wall
+  - FloorChecker
   layers:
   - Default
   - TransparentFX
