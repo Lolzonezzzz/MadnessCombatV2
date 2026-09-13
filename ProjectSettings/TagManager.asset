@@ -65,6 +65,9 @@ TagManager:
   - name: Ammo
     uniqueID: 2994081197
     locked: 0
+  - name: Door
+    uniqueID: 2677911721
+    locked: 0
   - name: UI
     uniqueID: 3777897725
     locked: 0

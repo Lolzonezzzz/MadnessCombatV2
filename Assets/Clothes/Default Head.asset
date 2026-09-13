@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 96364d89ca06a954aabea847d1a7635d, type: 3}
-  m_Name: HeadClothes
+  m_Name: Default Head
   m_EditorClassIdentifier: 
   ClothesName: Grunt Head
   left: {fileID: 1300204442, guid: b7b3e8c0a6a6a864296f1c8c5634d9d5, type: 3}

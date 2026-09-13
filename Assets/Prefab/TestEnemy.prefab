@@ -788,7 +788,7 @@ MonoBehaviour:
   face: {fileID: 4710403487688365859}
   hat: {fileID: 6062484623627499329}
   headClothes: {fileID: 11400000, guid: 0a6a2ebd3c0f0a9458627c22a9a5cbc2, type: 2}
-  faceClothes: {fileID: 0}
+  faceClothes: {fileID: 11400000, guid: 10234ce9626cd2e4f8cc6cece2cb9fab, type: 2}
   hatClothes: {fileID: 0}
   body: {fileID: 4571916338996446333}
   chest: {fileID: 4974239108310240389}
@@ -861,14 +861,14 @@ MonoBehaviour:
   aiType: 1
   angle: 0
   direction: {x: 0, y: 0}
+  itemData:
+  - {fileID: 11400000, guid: bf4a3beb69816314b8789c7e17186ed4, type: 2}
   startAttacking: 1
   attackCooldown: 5
   headshotpreference: 1
   shootingType: 2
   fireTimer: 0
   distanceToDetectPlayer: 15
-  itemData:
-  - {fileID: 11400000, guid: bf4a3beb69816314b8789c7e17186ed4, type: 2}
   playerBodyPart: []
   timetoAttack: 0
   dashdistance: 0
@@ -883,6 +883,8 @@ MonoBehaviour:
   - {fileID: 4615630625161591595}
   IsKnockedBack: 0
   knockbackDuration: 0.2
+  meleeRange: 2
+  meleeCooldown: 1
 --- !u!233 &6551082284037181540
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -1443,15 +1445,15 @@ SpriteRenderer:
   m_SortingLayerID: 1483749257
   m_SortingLayer: 2
   m_SortingOrder: 3
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 1547497587, guid: 90acba0cc4b60074aac833c2cb466ce4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 14.89, y: 17.5}
+  m_Size: {x: 4.8823533, y: 4.7794123}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &4974239108310240389

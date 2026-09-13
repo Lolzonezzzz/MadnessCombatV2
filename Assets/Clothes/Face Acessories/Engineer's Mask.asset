@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf4c35e8971515b47bd5308e8b4fba2f, type: 3}
+  m_Name: Engineer's Mask
+  m_EditorClassIdentifier: 
+  ClothesName: 
+  left: {fileID: 909578702, guid: 575ba7baf80a23d489f3d0977ffd3ec4, type: 3}
+  right: {fileID: 656755465, guid: 575ba7baf80a23d489f3d0977ffd3ec4, type: 3}
+  front: {fileID: -153856186, guid: 575ba7baf80a23d489f3d0977ffd3ec4, type: 3}
+  back: {fileID: 853995361, guid: 575ba7baf80a23d489f3d0977ffd3ec4, type: 3}

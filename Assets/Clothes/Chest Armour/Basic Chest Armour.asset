@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99bb864d9dac79b499395cc2a18de882, type: 3}
+  m_Name: Basic Chest Armour
+  m_EditorClassIdentifier: 
+  clothesName: Basic Chest Armour
+  left: {fileID: -2016537128, guid: f50b610b9453ad64c9512007a1605fc6, type: 3}
+  right: {fileID: 255726871, guid: f50b610b9453ad64c9512007a1605fc6, type: 3}
+  front: {fileID: 1949822654, guid: f50b610b9453ad64c9512007a1605fc6, type: 3}
+  back: {fileID: 104961115, guid: f50b610b9453ad64c9512007a1605fc6, type: 3}

@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bf4c35e8971515b47bd5308e8b4fba2f, type: 3}
-  m_Name: Face Clothes
+  m_Name: Hockey Mask
   m_EditorClassIdentifier: 
-  ClothesName: GreyShades
-  left: {fileID: -1734617509, guid: add440a1c08493e41be35175c7b24c2a, type: 3}
-  right: {fileID: -1734617509, guid: add440a1c08493e41be35175c7b24c2a, type: 3}
-  front: {fileID: -2691371, guid: add440a1c08493e41be35175c7b24c2a, type: 3}
-  back: {fileID: 0}
+  ClothesName: Hockey Mask
+  left: {fileID: 886405083, guid: b847eeb7fd7222c49afdad16b7f6f22e, type: 3}
+  right: {fileID: -504779165, guid: b847eeb7fd7222c49afdad16b7f6f22e, type: 3}
+  front: {fileID: 813076534, guid: b847eeb7fd7222c49afdad16b7f6f22e, type: 3}
+  back: {fileID: 1469490805, guid: b847eeb7fd7222c49afdad16b7f6f22e, type: 3}

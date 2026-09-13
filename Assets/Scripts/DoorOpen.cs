@@ -26,6 +26,8 @@ public class DoorOpen : MonoBehaviour
             {
                 _doorOpened = true;
                 Destroy(gameObject, 1f);
+                bool boxCollider2D = gameObject.GetComponent<BoxCollider2D>().enabled = false;
+                LayerMask.NameToLayer("Door");
                 AudioSource.PlayClipAtPoint(doorOpenSound, transform.position);
             }
         }
