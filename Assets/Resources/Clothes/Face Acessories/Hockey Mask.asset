@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ClothesName: Hockey Mask
   left: {fileID: 886405083, guid: b847eeb7fd7222c49afdad16b7f6f22e, type: 3}
-  right: {fileID: -504779165, guid: b847eeb7fd7222c49afdad16b7f6f22e, type: 3}
-  front: {fileID: 813076534, guid: b847eeb7fd7222c49afdad16b7f6f22e, type: 3}
+  right: {fileID: 813076534, guid: b847eeb7fd7222c49afdad16b7f6f22e, type: 3}
+  front: {fileID: -504779165, guid: b847eeb7fd7222c49afdad16b7f6f22e, type: 3}
   back: {fileID: 1469490805, guid: b847eeb7fd7222c49afdad16b7f6f22e, type: 3}

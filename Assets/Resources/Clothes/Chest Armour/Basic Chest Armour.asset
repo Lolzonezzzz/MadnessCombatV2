@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Basic Chest Armour
   m_EditorClassIdentifier: 
   clothesName: Basic Chest Armour
-  left: {fileID: -2016537128, guid: f50b610b9453ad64c9512007a1605fc6, type: 3}
-  right: {fileID: 255726871, guid: f50b610b9453ad64c9512007a1605fc6, type: 3}
+  left: {fileID: 255726871, guid: f50b610b9453ad64c9512007a1605fc6, type: 3}
+  right: {fileID: -2016537128, guid: f50b610b9453ad64c9512007a1605fc6, type: 3}
   front: {fileID: 1949822654, guid: f50b610b9453ad64c9512007a1605fc6, type: 3}
   back: {fileID: 104961115, guid: f50b610b9453ad64c9512007a1605fc6, type: 3}

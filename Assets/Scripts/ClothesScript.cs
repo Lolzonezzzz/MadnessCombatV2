@@ -207,6 +207,88 @@ public class ClothesScript : MonoBehaviour
         }
     }
     
+    [Button("Randomize Clothes")]
+    void RandomizeClothes()
+    {
+        _headRenderer = head.GetComponent<SpriteRenderer>();
+        _faceRenderer = face.GetComponent<SpriteRenderer>();
+        _hatRenderer = hat.GetComponent<SpriteRenderer>();
+        _bodyRenderer = body.GetComponent<SpriteRenderer>();
+        _chestRenderer = chest.GetComponent<SpriteRenderer>();
+        _leftShoeRenderer = lShoe.GetComponent<SpriteRenderer>();
+        _rightShoeRenderer = rShoe.GetComponent<SpriteRenderer>();
+
+        FaceClothes[] faceClothesArray = Resources.LoadAll<FaceClothes>("Clothes/Face Acessories");
+        HatClothes[]  hatClothesArray = Resources.LoadAll<HatClothes>("Clothes/Head Acessories");
+        TorsoClothes[] torsoClothesArray = Resources.LoadAll<TorsoClothes>("Clothes/Shirt");
+        ChestArmour[] chestArmoursArray = Resources.LoadAll<ChestArmour>("Clothes/Chest Armour");
+        Shoes[] shoesArray  = Resources.LoadAll<Shoes>("Clothes/Shoes");
+        
+        float chestArmourvar = Random.Range(0, chestArmoursArray.Length + 1);
+        
+        faceClothes = faceClothesArray[Random.Range(0, faceClothesArray.Length)];
+        hatClothes = hatClothesArray[Random.Range(0, hatClothesArray.Length)];
+        torsoClothes = torsoClothesArray[Random.Range(0, torsoClothesArray.Length)];
+        chestArmour = chestArmourvar < chestArmoursArray.Length ? chestArmoursArray[(int)chestArmourvar] : null;
+        shoes = shoesArray[Random.Range(0, shoesArray.Length)];
+        
+        if (hatClothes != null)
+        {
+            _hatRenderer.sprite = hatClothes.right;
+        }
+        else
+        {
+            _hatRenderer.sprite = null;
+        }
+
+        if (faceClothes != null)
+        {
+            _faceRenderer.sprite = faceClothes.right;
+        }
+        else
+        {
+            _faceRenderer.sprite = null;
+        }
+
+        if (headClothes != null)
+        {
+            _headRenderer.sprite = headClothes.right;
+        }
+        else
+        {
+            _headRenderer.sprite = null;
+        }
+
+        if (torsoClothes != null)
+        {
+            _bodyRenderer.sprite = torsoClothes.right;
+        }
+        else
+        {
+            _bodyRenderer.sprite = null;
+        }
+
+        if (chestArmour != null)
+        {
+            _chestRenderer.sprite = chestArmour.right;
+        }
+        else
+        {
+            _chestRenderer.sprite = null;
+        }
+
+        if (shoes != null)
+        {
+            _leftShoeRenderer.sprite = shoes.right;
+            _rightShoeRenderer.sprite = shoes.right;
+        }
+        else
+        {
+            _leftShoeRenderer.sprite = null;
+            _rightShoeRenderer.sprite = null;
+        }
+    }
+    
     [Button]
     void WearClothes()
     {
