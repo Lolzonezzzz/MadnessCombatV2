@@ -125,6 +125,7 @@ public class HealthScript : MonoBehaviour
             hearthealth = Mathf.Clamp(hearthealth, 0, Hearthealth);
             lungshealth = Mathf.Clamp(lungshealth, 0, Lungshealth);
 
+            print(gameObject + "takes damage");
             if (CompareTag("Player"))
             {
                 _invincibility = 0;

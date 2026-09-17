@@ -696,7 +696,7 @@ GameObject:
   - component: {fileID: 7352428306618832686}
   - component: {fileID: 6551082284037181540}
   m_Layer: 8
-  m_Name: TestEnemy
+  m_Name: TestEnemy 1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -788,12 +788,12 @@ MonoBehaviour:
   face: {fileID: 4710403487688365859}
   hat: {fileID: 6062484623627499329}
   headClothes: {fileID: 11400000, guid: 0a6a2ebd3c0f0a9458627c22a9a5cbc2, type: 2}
-  faceClothes: {fileID: 11400000, guid: 8167e5a9536bb0392a11dc151b50c8f3, type: 2}
-  hatClothes: {fileID: 11400000, guid: 1a0b5d7e88f2194bcbbc7feecaa4e807, type: 2}
+  faceClothes: {fileID: 11400000, guid: 10234ce9626cd2e4f8cc6cece2cb9fab, type: 2}
+  hatClothes: {fileID: 0}
   body: {fileID: 4571916338996446333}
   chest: {fileID: 4974239108310240389}
   chestArmour: {fileID: 0}
-  torsoClothes: {fileID: 11400000, guid: 559d47edf5f03ee2c8002d3640091da9, type: 2}
+  torsoClothes: {fileID: 11400000, guid: 2e3dd37a920985b2d96d31a0b10a2443, type: 2}
   lShoe: {fileID: 6566700464009780874}
   rShoe: {fileID: 4615630625161591595}
   shoes: {fileID: 11400000, guid: 6d1a5fb669c86d344a028ce5b4b4e589, type: 2}
@@ -857,7 +857,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e02e5e0335eb3506f878a5c457d796fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 23
+  speed: 45
   aiType: 1
   angle: 0
   direction: {x: 0, y: 0}
@@ -1126,7 +1126,7 @@ SpriteRenderer:
   m_SortingLayerID: 1483749257
   m_SortingLayer: 2
   m_SortingOrder: 1
-  m_Sprite: {fileID: 2078124326, guid: b55177fec51f2ed4198a69962c5320f7, type: 3}
+  m_Sprite: {fileID: 124047361, guid: 575ba7baf80a23d489f3d0977ffd3ec4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1173,7 +1173,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.7352943, y: 6.811765}
+    oldSize: {x: 3.964706, y: 6.5735297}
     newSize: {x: 3.7235296, y: 6.6058826}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1445,7 +1445,7 @@ SpriteRenderer:
   m_SortingLayerID: 1483749257
   m_SortingLayer: 2
   m_SortingOrder: 3
-  m_Sprite: {fileID: -1496157530, guid: b77ebdbf011fe834385c24e11f438b34, type: 3}
+  m_Sprite: {fileID: 1547497587, guid: 90acba0cc4b60074aac833c2cb466ce4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1534,7 +1534,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4.3558826, y: 6.6411767}
+  m_Size: {x: 3.7470589, y: 6.6058826}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -1613,7 +1613,7 @@ SpriteRenderer:
   m_SortingLayerID: 1483749257
   m_SortingLayer: 2
   m_SortingOrder: 4
-  m_Sprite: {fileID: 1088111064, guid: 279b10c0f1e0a2342bae5a09116b2e35, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1621,7 +1621,7 @@ SpriteRenderer:
   m_Size: {x: 4.7441177, y: 5.464706}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &6566700464009780874

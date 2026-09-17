@@ -9,6 +9,7 @@ using UnityEngine.Serialization;
 public class FloorScript : MonoBehaviour
 {
     [Header("Settings")] private GameObject[] _dungeonWalls;
+    private GameObject[] _rooms;
     [SerializeField] private GameObject floorChecker, spawnPoint;
     [SerializeField] private SetTarget target;
 
@@ -30,11 +31,20 @@ public class FloorScript : MonoBehaviour
     private GameObject player;
     
     [Space(4)]
-    [SerializeField]private GameObject[] enemies;
-    // Start is called before the first frame update
+    public  GameObject[] enemies;
+
     void Start()
     {
         _dungeonWalls = GameObject.FindGameObjectsWithTag("TurnOffWalls");
+        _rooms = GameObject.FindGameObjectsWithTag("Room");
+
+        foreach (GameObject r in _rooms)
+        {
+            enemy_SpawnPointMaker roomsz = r.GetComponent<enemy_SpawnPointMaker>();
+            roomsz.CreateSpawnPoint();
+        }
+
+
         foreach (GameObject d in _dungeonWalls)
         {
             int randomNumber = Random.Range(0, 3);
@@ -92,6 +102,13 @@ public class FloorScript : MonoBehaviour
         }
 
         _allWalls.Clear();
+        
+        foreach (GameObject r in _rooms)
+        {
+            enemy_SpawnPointMaker roomsz = r.GetComponent<enemy_SpawnPointMaker>();
+            roomsz.CreateSpawnPoint();
+        }
+        
         foreach (GameObject d in _dungeonWalls)
         {
             int randomNumber = Random.Range(0, 2);

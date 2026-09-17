@@ -497,6 +497,7 @@ public class AimAndShoot : MonoBehaviour
             if (healthScript != null)
             {
                 healthScript.lastAttacker = gameObject;
+                print(LayerMask.LayerToName(hit.collider.gameObject.layer));
                 switch (LayerMask.LayerToName(hit.collider.gameObject.layer))
                 {
                     case "EnemyHead":

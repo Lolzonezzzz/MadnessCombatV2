@@ -1,0 +1,69 @@
+using System.Collections.Generic;
+
+public static class RoomEnemyConfig
+{
+    public static readonly Dictionary<string, int> Enemies = new Dictionary<string, int>
+    {
+        { "Room", 0 },
+        { "Room (8)", 0 },
+        { "Room (9)", 5 },
+        { "Room (10)", 4 },
+        { "Room (11)", 5 },
+        { "Room (12)", 0 },
+        { "Room (13)", 4 },
+        { "Room (14)", 4 },
+        { "Room (15)", 4 },
+        { "Room (16)", 3 },
+        { "Room (17)", 4 },
+        { "Room (18)", 4 },
+        { "Room (19)", 5 },
+        { "Room (20)", 0 },
+        { "Room (21)", 5 },
+        { "Room (22)", 3 },
+        { "Room (23)", 5 },
+        { "Room (24)", 4 },
+        { "Room (25)", 5 },
+        { "Room (26)", 5 },
+        { "Room (27)", 4 },
+        { "Room (28)", 3 },
+        { "Room (29)", 5 },
+        { "Room (30)", 5 },
+        { "Room (31)", 4 },
+        { "Room (32)", 3 },
+        { "Room (33)", 0 },
+        { "Room (34)", 4 },
+        { "Room (35)", 3 },
+        { "Room (36)", 3 },
+        { "Room (37)", 4 },
+        { "Room (38)", 5 },
+        { "Room (39)", 3 },
+        { "Room (40)", 4 },
+        { "Room (41)", 5 },
+        { "Room (42)", 5 },
+        { "Room (43)", 3 },
+        { "Room (44)", 3 },
+        { "Room (45)", 0 },
+        { "Room (46)", 3 },
+        { "Room (47)", 3 },
+        { "Room (48)", 3 },
+        { "Room (49)", 4 },
+        { "Room (50)", 5 },
+        { "Room (51)", 3 },
+        { "Room (52)", 0 },
+        { "Room (53)", 4 },
+        { "Room (54)", 4 },
+        { "Room (55)", 3 },
+        { "Room (56)", 4 },
+        { "Room (57)", 5 },
+        { "Room (58)", 3 },
+        { "Room (59)", 3 },
+        { "Room (60)", 5 },
+        { "Room (61)", 5 },
+        { "Room (62)", 0 },
+    };
+
+    public static int GetCount(string roomName, int fallback = 3)
+    {
+        return Enemies.TryGetValue(roomName, out int c) ? c : fallback;
+    }
+}

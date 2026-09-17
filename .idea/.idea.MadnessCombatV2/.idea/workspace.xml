@@ -12,56 +12,16 @@
   <component name="ChangeListManager">
     <list default="true" id="c552b08f-9d67-473b-add4-69dec5e6721e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MadnessCombatV2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MadnessCombatV2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Chest Armour.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Chest Armour/Apons.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Chest Armour/Apons.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Chest Armour/Basic Chest Armour.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Chest Armour/Basic Chest Armour.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Default Head.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Default Head.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Face Acessories.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Face Acessories/Black Goggles.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Face Acessories/Black Goggles.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Face Acessories/Black-Shades.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Face Acessories/Black-Shades.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Face Acessories/Engineer's Mask.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Face Acessories/Engineer's Mask.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Face Acessories/Face Clothes - Copy.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Face Acessories/Face Clothes - Copy.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Face Acessories/Face Mask.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Face Acessories/Face Mask.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Face Acessories/Hockey Mask.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Face Acessories/Hockey Mask.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Head Acessories.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Head Acessories/Bulider's Hat.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Head Acessories/Bulider's Hat.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Head Acessories/Grey Cap.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Head Acessories/Grey Cap.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Head Acessories/Militant Hat.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Head Acessories/Militant Hat.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Shirt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Shirt/Agent-Shirt1.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Shirt/Agent-Shirt1.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Shirt/Agent-Torso.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Shirt/Agent-Torso.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Shirt/Engineer-Torso.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Shirt/Engineer-Torso.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Shirt/Engineer1-Torso.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Shirt/Engineer1-Torso.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Shirt/Engineer2-Torso.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Shirt/Engineer2-Torso.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Shirt/Gray Shirt.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Shirt/Gray Shirt.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Shirt/Soldat Jumpsuit.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Shirt/Soldat Jumpsuit.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Shirt/TorsoClothes.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Shirt/TorsoClothes.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Shoes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Shoes/Shoes.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Clothes/Shoes/Shoes.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ClothesScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ClothesScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CheckforwallNaviagator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CheckforwallNaviagator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/TestEnemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/TestEnemy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Clothes/Face Acessories/Face Mask.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Clothes/Face Acessories/Face Mask.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RoomTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RoomTest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AimAndShoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AimAndShoot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FloorScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FloorScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HealthScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HealthScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,61 +41,61 @@
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0000002687932115" />
-      <entry key="S5" value="1.0023575855617675" />
-      <entry key="S10" value="1.052131669397344" />
-      <entry key="S30" value="2.0869025626317548" />
-      <entry key="S60" value="5.228275663293532" />
-      <entry key="M2" value="10.723398667287816" />
-      <entry key="M5" value="19.329155577090816" />
-      <entry key="M10" value="26.77636393997192" />
-      <entry key="M15" value="32.5328416715892" />
-      <entry key="M30" value="49.72422896393193" />
-      <entry key="H1" value="96.89540916999438" />
-      <entry key="H2" value="197.4461445829633" />
-      <entry key="H4" value="326.15959578620715" />
-      <entry key="D1" value="536.085646978666" />
-      <entry key="W1" value="587.7961438189203" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="6.084966829072346E-123" />
+      <entry key="S5" value="2.7003245774396358E-49" />
+      <entry key="S10" value="1.0315792469178868E-24" />
+      <entry key="S30" value="2.803618129804069E-8" />
+      <entry key="S60" value="3.9447623263163536E-4" />
+      <entry key="M2" value="0.06545578829603393" />
+      <entry key="M5" value="2.987373956546882" />
+      <entry key="M10" value="14.130433298092195" />
+      <entry key="M15" value="25.94956068460527" />
+      <entry key="M30" value="57.3728024912935" />
+      <entry key="H1" value="107.41217940318393" />
+      <entry key="H2" value="208.6738084324424" />
+      <entry key="H4" value="397.75346030184704" />
+      <entry key="D1" value="894.0682171878769" />
+      <entry key="W1" value="1055.5603076662453" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="6.186889354014659E-150" />
-      <entry key="MS500" value="1.4402600184550966E-30" />
-      <entry key="S2" value="4.160110294399857E-8" />
-      <entry key="S5" value="0.0018771271190052147" />
-      <entry key="S10" value="0.0809029977032762" />
-      <entry key="S30" value="1.3791699766178653" />
-      <entry key="S60" value="3.434899364745105" />
-      <entry key="M2" value="6.649953009706328" />
-      <entry key="M5" value="12.052143072463299" />
-      <entry key="M10" value="17.794645316004075" />
-      <entry key="M15" value="23.015791479761404" />
-      <entry key="M30" value="37.454715569175896" />
-      <entry key="H1" value="63.714827602236134" />
-      <entry key="H2" value="103.0630449823731" />
-      <entry key="H4" value="144.71894848766962" />
-      <entry key="D1" value="205.32785321450754" />
-      <entry key="W1" value="219.50019410941712" />
+      <entry key="MS100" value="1.0000000001403746" />
+      <entry key="MS500" value="1.0107474393347113" />
+      <entry key="S2" value="1.4038197445379383" />
+      <entry key="S5" value="2.0033083115380967" />
+      <entry key="S10" value="2.4037035023840536" />
+      <entry key="S30" value="2.773715983903371" />
+      <entry key="S60" value="2.883143169288096" />
+      <entry key="M2" value="2.9769513114985724" />
+      <entry key="M5" value="4.543070168126297" />
+      <entry key="M10" value="9.386078801082562" />
+      <entry key="M15" value="14.143945327670366" />
+      <entry key="M30" value="27.622813062038933" />
+      <entry key="H1" value="51.717637317879024" />
+      <entry key="H2" value="99.50814533464639" />
+      <entry key="H4" value="179.49503729674854" />
+      <entry key="D1" value="364.9664587780524" />
+      <entry key="W1" value="421.4861349740688" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="2.871030325719959E-6" />
-      <entry key="MS500" value="0.07791257464219359" />
-      <entry key="S2" value="0.5283259732746843" />
-      <entry key="S5" value="0.7774224364082865" />
-      <entry key="S10" value="0.9876951755531082" />
-      <entry key="S30" value="3.2971122964562514" />
-      <entry key="S60" value="8.485351947949036" />
-      <entry key="M2" value="17.214517311296508" />
-      <entry key="M5" value="31.268627182018736" />
-      <entry key="M10" value="44.49021069793453" />
-      <entry key="M15" value="55.47884164735383" />
-      <entry key="M30" value="87.11211663393412" />
-      <entry key="H1" value="160.54306705494582" />
-      <entry key="H2" value="300.45211893626504" />
-      <entry key="H4" value="470.83839740857564" />
-      <entry key="D1" value="741.4041045809337" />
-      <entry key="W1" value="807.2949068510839" />
+      <entry key="MS100" value="0.0013248089135288886" />
+      <entry key="MS500" value="0.2671522321574258" />
+      <entry key="S2" value="0.9659547740998098" />
+      <entry key="S5" value="1.7057770241002321" />
+      <entry key="S10" value="2.2138695706190186" />
+      <entry key="S30" value="2.6976670742252713" />
+      <entry key="S60" value="2.8436097991805553" />
+      <entry key="M2" value="3.0211633626889616" />
+      <entry key="M5" value="7.507774447930222" />
+      <entry key="M10" value="23.48270136718845" />
+      <entry key="M15" value="40.0566538166329" />
+      <entry key="M30" value="84.95812866925594" />
+      <entry key="H1" value="159.0939279260445" />
+      <entry key="H2" value="308.1441628051199" />
+      <entry key="H4" value="577.2109700961765" />
+      <entry key="D1" value="1259.0208129092207" />
+      <entry key="W1" value="1477.0441252928542" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -176,7 +136,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$USER_HOME$/Unity/Hub/Editor/2022.3.62f3/Editor/unityhub-unity-editor-2022.3.62f3" />
+      <option name="EXE_PATH" value="$USER_HOME$/Unity/Hub/Editor/2022.3.62f3/Editor/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath $PROJECT_DIR$ -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -186,7 +146,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$USER_HOME$/Unity/Hub/Editor/2022.3.62f3/Editor/unityhub-unity-editor-2022.3.62f3" />
+      <option name="EXE_PATH" value="$USER_HOME$/Unity/Hub/Editor/2022.3.62f3/Editor/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath $PROJECT_DIR$ -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Face Mask
   m_EditorClassIdentifier: 
   ClothesName: Face Mask
-  left: {fileID: -1940598549, guid: b77ebdbf011fe834385c24e11f438b34, type: 3}
-  right: {fileID: -1496157530, guid: b77ebdbf011fe834385c24e11f438b34, type: 3}
+  left: {fileID: -1496157530, guid: b77ebdbf011fe834385c24e11f438b34, type: 3}
+  right: {fileID: -1940598549, guid: b77ebdbf011fe834385c24e11f438b34, type: 3}
   front: {fileID: -1235297634, guid: b77ebdbf011fe834385c24e11f438b34, type: 3}
   back: {fileID: -947888086, guid: b77ebdbf011fe834385c24e11f438b34, type: 3}

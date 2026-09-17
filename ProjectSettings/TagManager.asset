@@ -10,6 +10,8 @@ TagManager:
   - EndPoint
   - Wall
   - FloorChecker
+  - EnemySpawnPoint
+  - Room
   layers:
   - Default
   - TransparentFX
