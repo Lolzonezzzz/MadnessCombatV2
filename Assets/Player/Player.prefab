@@ -652,7 +652,7 @@ MonoBehaviour:
     m_Bits: 12800
   wallMask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 49216
   bulletsPerShot: 1
   aimPoint: {fileID: 0}
   bulletTrail: {fileID: 4187797638734125067, guid: 44a6f443b7efc4f4699141558943e891, type: 3}

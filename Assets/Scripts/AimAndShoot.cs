@@ -41,7 +41,7 @@ public class AimAndShoot : MonoBehaviour
     [SerializeField] private AudioClip emptyMagSfx;
     private bool _emptymag;
     public LayerMask canDamage;
-    [SerializeField] private LayerMask wallMask = -1;
+    [SerializeField] public LayerMask wallMask = -1;
     private int _headShotMultiplier;
     [SerializeField] private int bulletsPerShot = 1;
 
@@ -651,9 +651,10 @@ public class AimAndShoot : MonoBehaviour
 
             if (hitCount >= piercing) break;
         }
-
+        
         if (hitWall)
         {
+            lastHitPoint = wallHit.point;
             PlayWallHit(wallHit.point);
             if (wallHit.collider.CompareTag("BreakableWall"))
             {

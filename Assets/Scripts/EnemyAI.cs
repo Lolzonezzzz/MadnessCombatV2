@@ -12,10 +12,11 @@ public class EnemyAI : MonoBehaviour
     [SerializeField]private float speed;
     public AIType aiType;
 
-    
+    [SerializeField] float separationRadius = 1.5f;
+    [SerializeField] float separationForce = 4f;
+    [SerializeField] LayerMask enemyMask;
     private Transform _target;
     private NavMeshAgent _agent;
-    private float _runspeed = 4;
     public float angle;
     [HideInInspector]public Vector2 direction; 
     [SerializeField]private ItemData[] itemData;
@@ -120,11 +121,33 @@ public class EnemyAI : MonoBehaviour
             aiType = AIType.Rusher;
         }
         pickrandombodypart = playerBodyPart[Random.Range(0, 2)].transform;
+        
+        _slot = Random.insideUnitCircle.normalized * Random.Range(3f, 5f);
+        _agent.radius = 1f;
+        _agent.obstacleAvoidanceType = UnityEngine.AI.ObstacleAvoidanceType.HighQualityObstacleAvoidance;
+        _agent.avoidancePriority = Random.Range(30, 70);
+    }
+    
+    
+    void ApplySeparation()
+    {
+        // ReSharper disable once Unity.PreferNonAllocApi
+        var hits = Physics2D.OverlapCircleAll(transform.position, separationRadius, enemyMask);
+        Vector2 push = Vector2.zero;
+        int n = 0;
+        foreach (var h in hits)
+        {
+            if (h.gameObject == gameObject) continue;
+            Vector2 diff = (Vector2)transform.position - (Vector2)h.transform.position;
+            if (diff.sqrMagnitude > 0.001f) { push += diff.normalized / Mathf.Max(diff.magnitude, 0.1f); n++; }
+        }
+        if (n > 0) _agent.Move(push / n * separationForce * Time.deltaTime);
     }
 
 
     private bool _isShooting;
     private Transform pickrandombodypart;
+    private Vector2 _slot;
 
     void Update()
     {
@@ -163,6 +186,8 @@ public class EnemyAI : MonoBehaviour
             angle -= headshotpreference;
         }
         RotateEnemy();
+        
+        ApplySeparation();
     }
     
     private Quaternion _headRotation;
@@ -215,6 +240,15 @@ public class EnemyAI : MonoBehaviour
     void LateUpdate()
     {
         Head.transform.localRotation = _headRotation;
+        var hits = Physics2D.OverlapCircleAll(transform.position, 2f, enemyMask);
+        Vector2 push = Vector2.zero; int n = 0;
+        foreach (var h in hits)
+        {
+            if (h.gameObject == gameObject) continue;
+            Vector2 d = (Vector2)transform.position - (Vector2)h.transform.position;
+            if (d.sqrMagnitude > 0.001f) { push += d.normalized / Mathf.Max(d.magnitude, 0.1f); n++; }
+        }
+        if (n > 0) transform.position += (Vector3)(push / n * 8f * Time.deltaTime);
     }
 
     [ShowIf("aiType", AIType.Rusher)] [SerializeField]
@@ -227,7 +261,7 @@ public class EnemyAI : MonoBehaviour
 
     void RushPlayer()
     {
-        _agent.SetDestination(_target.position);
+        _agent.SetDestination(_target.position + (Vector3)_slot);
         _agent.speed = speed;
 
         if (_agent.remainingDistance <= meleeRange && _meleeTimer <= 0)
@@ -246,7 +280,7 @@ public class EnemyAI : MonoBehaviour
     {
         _isShooting = true;
 
-
+        
         fireTimer -= Time.deltaTime;
         if (fireTimer <= 0 && Vector2.Distance(transform.position, _target.position) <= _gun.weaponRange)
         {
@@ -279,6 +313,18 @@ public class EnemyAI : MonoBehaviour
             pickrandombodypart = playerBodyPart[Random.Range(0, 2)].transform;
             if (_magazine > 0)
             {
+                // in ShootThePlayer(), before burst loop:
+                Vector2 origin = _gun.aimPoint.position;
+                Vector2 dir = ((Vector2)pickrandombodypart.position - origin).normalized;
+                float dist = Vector2.Distance(origin, pickrandombodypart.position);
+                if (Physics2D.Raycast(origin, dir, dist, _gun.wallMask))
+                {
+                    _agent.SetDestination(_target.position); // also loses _slot -> clump
+                    _agent.speed = speed;
+                    _isShooting = false; // <-- missing, add this
+                    yield break;
+                }
+                
                 for (int i = burstcounter; i > 0; i--)
                 {
                     Debug.Log("Aiming at: " + pickrandombodypart.name);
@@ -323,8 +369,8 @@ public class EnemyAI : MonoBehaviour
         }
         else
         {
-            _agent.SetDestination(_target.position);
-            _agent.speed = _runspeed;
+            _agent.SetDestination(_target.position + (Vector3)_slot);
+            _agent.speed = speed;
         }
     }
     
