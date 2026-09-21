@@ -34,7 +34,7 @@ public class LootTable : ScriptableObject
     void CalculateTotalWeight()
     {
         _totalWeight = 0;
-        for (int i = 0; i <= table.Count; i++)
+        for (int i = 0; i < table.Count; i++)
         {
             _totalWeight += table[i].weight;
         }

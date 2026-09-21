@@ -48,7 +48,7 @@ public class Inventory : MonoBehaviour
     {
         items.Add(item);
         ammo.Add(items.Capacity);
-        ammoreserve.Add(999999999);
+        ammoreserve.Add(item.ammoCapacity + item.ammoCapacity / 2);
         EquipNew();
     }
 }
