@@ -11,12 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c552b08f-9d67-473b-add4-69dec5e6721e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MadnessCombatV2/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MadnessCombatV2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MadnessCombatV2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/TestEnemy 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/TestEnemy 1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/TestEnemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/TestEnemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AimAndShoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AimAndShoot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyAI.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

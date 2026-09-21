@@ -159,7 +159,7 @@ MonoBehaviour:
   facingRight: 0
   facingUp: 0
   facingDown: 0
-  Head: {fileID: 7853340006376670251}
+  Head: {fileID: 0}
   Torso: {fileID: 1397434382906312831}
   Legs:
   - {fileID: 3965317699402901206}
@@ -221,7 +221,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   items:
   - {fileID: 11400000, guid: e404a2219ab759d188304a164081a612, type: 2}
-  ammo: 00000000
+  ammo: 0c000000
   ammoreserve: 9f860100
   itemCount: 0
 --- !u!114 &6178026911936201695
@@ -1813,7 +1813,7 @@ Transform:
   m_GameObject: {fileID: 7853340006376670251}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.16, y: 7.781182, z: 0}
+  m_LocalPosition: {x: 0.15999985, y: 7.781182, z: 0}
   m_LocalScale: {x: 0.8476, y: 0.8476, z: 0.8476}
   m_ConstrainProportionsScale: 0
   m_Children:
