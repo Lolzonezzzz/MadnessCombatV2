@@ -9,7 +9,8 @@ public class FlipTable : MonoBehaviour
     flippedRight,
     flippedUp,
     flippedDown;
-  
+
+  [SerializeField] private float flipforce;
   
   [NonSerialized]
   public bool nearToPlayer;
@@ -29,7 +30,8 @@ public class FlipTable : MonoBehaviour
   void Flip(FlipState state)
   {
     Rigidbody2D rb = GetComponent<Rigidbody2D>();
-    
+    Destroy(GetComponent<BoxCollider2D>());
+    gameObject.AddComponent<BoxCollider2D>();
     rb.bodyType = RigidbodyType2D.Dynamic;
     Vector2 dir;
     switch (state)
@@ -37,7 +39,7 @@ public class FlipTable : MonoBehaviour
       case FlipState.FlippedDown:
         GetComponent<SpriteRenderer>().sprite = flippedDown;
         dir = Quaternion.identity * Vector2.down;
-        rb.AddForce(dir * 15f, ForceMode2D.Impulse);
+        rb.AddForce(dir * flipforce, ForceMode2D.Impulse);
         rb.angularVelocity = 720f;
         rb.drag = 4f;         // = linearDamping in Unity 6+
         rb.angularDrag = 3f;
@@ -46,7 +48,7 @@ public class FlipTable : MonoBehaviour
       case FlipState.FlippedUp:
         GetComponent<SpriteRenderer>().sprite = flippedUp;
         dir = Quaternion.identity * Vector2.up;
-        rb.AddForce(dir * 15f, ForceMode2D.Impulse);
+        rb.AddForce(dir * flipforce, ForceMode2D.Impulse);
         rb.angularVelocity = 720f;
         rb.drag = 4f;       
         rb.angularDrag = 3f;
@@ -55,7 +57,7 @@ public class FlipTable : MonoBehaviour
       case FlipState.FlippedLeft:
         GetComponent<SpriteRenderer>().sprite = flippedLeft;
         dir = Quaternion.identity * Vector2.right;
-        rb.AddForce(dir * 15f, ForceMode2D.Impulse);
+        rb.AddForce(dir * flipforce, ForceMode2D.Impulse);
         rb.angularVelocity = 720f;
         rb.drag = 4f;
         rb.angularDrag = 3f;
@@ -64,7 +66,7 @@ public class FlipTable : MonoBehaviour
       case FlipState.FlippedRight:
         GetComponent<SpriteRenderer>().sprite = flippedRight;
         dir = Quaternion.identity * Vector2.right;
-        rb.AddForce(dir * 15f, ForceMode2D.Impulse);
+        rb.AddForce(dir * flipforce, ForceMode2D.Impulse);
         rb.angularVelocity = 720f;
         rb.drag = 4f;
         rb.angularDrag = 3f;
