@@ -248,6 +248,7 @@ public class HealthScript : MonoBehaviour
             horizontal = Mathf.Abs(_enemyAI.direction.x) > Mathf.Abs(_enemyAI.direction.y);
             headrb = _enemyAI.Head.GetComponent<Rigidbody2D>();
             Destroy(GetComponent<NavMeshAgent>());
+            Destroy(GetComponent<Rigidbody2D>());
         }
         else
         {

@@ -1496,6 +1496,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &70294987
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1988,6 +1989,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &87533710
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3609,6 +3611,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &143838058
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4148,6 +4151,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &181321322
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4350,6 +4354,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &199507074
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4689,6 +4694,63 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.8, y: 81.7}
   m_EdgeRadius: 0
+--- !u!1001 &214420099
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2060064246872113454, guid: e4c0392d58db4795e9c5c4dba25f97ab, type: 3}
+      propertyPath: m_Name
+      value: Locker1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243657434367514794, guid: e4c0392d58db4795e9c5c4dba25f97ab, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -25.204391
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243657434367514794, guid: e4c0392d58db4795e9c5c4dba25f97ab, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 57.772324
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243657434367514794, guid: e4c0392d58db4795e9c5c4dba25f97ab, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243657434367514794, guid: e4c0392d58db4795e9c5c4dba25f97ab, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243657434367514794, guid: e4c0392d58db4795e9c5c4dba25f97ab, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243657434367514794, guid: e4c0392d58db4795e9c5c4dba25f97ab, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243657434367514794, guid: e4c0392d58db4795e9c5c4dba25f97ab, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243657434367514794, guid: e4c0392d58db4795e9c5c4dba25f97ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243657434367514794, guid: e4c0392d58db4795e9c5c4dba25f97ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243657434367514794, guid: e4c0392d58db4795e9c5c4dba25f97ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e4c0392d58db4795e9c5c4dba25f97ab, type: 3}
 --- !u!1 &226848487
 GameObject:
   m_ObjectHideFlags: 0
@@ -5137,6 +5199,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &276471139
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5432,6 +5495,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &309104603
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6165,6 +6229,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &365038144
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6856,6 +6921,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &393923033
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7054,6 +7120,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &409509856
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7155,6 +7222,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &414618692
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7644,6 +7712,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &433093411
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7689,6 +7758,63 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 15, y: 8.5}
   m_EdgeRadius: 0
+--- !u!1001 &433182110
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2060064246872113454, guid: e4c0392d58db4795e9c5c4dba25f97ab, type: 3}
+      propertyPath: m_Name
+      value: Locker1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243657434367514794, guid: e4c0392d58db4795e9c5c4dba25f97ab, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243657434367514794, guid: e4c0392d58db4795e9c5c4dba25f97ab, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 57.772324
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243657434367514794, guid: e4c0392d58db4795e9c5c4dba25f97ab, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243657434367514794, guid: e4c0392d58db4795e9c5c4dba25f97ab, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243657434367514794, guid: e4c0392d58db4795e9c5c4dba25f97ab, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243657434367514794, guid: e4c0392d58db4795e9c5c4dba25f97ab, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243657434367514794, guid: e4c0392d58db4795e9c5c4dba25f97ab, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243657434367514794, guid: e4c0392d58db4795e9c5c4dba25f97ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243657434367514794, guid: e4c0392d58db4795e9c5c4dba25f97ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243657434367514794, guid: e4c0392d58db4795e9c5c4dba25f97ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e4c0392d58db4795e9c5c4dba25f97ab, type: 3}
 --- !u!1 &433814980
 GameObject:
   m_ObjectHideFlags: 0
@@ -8137,6 +8263,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &460340732
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8529,6 +8656,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &467084320
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9067,6 +9195,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &488323797
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9366,6 +9495,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &501294262
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9562,6 +9692,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &511614774
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9954,6 +10085,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &552512693
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10253,6 +10385,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &559334898
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10451,6 +10584,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &573732864
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10649,6 +10783,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &603642641
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12774,6 +12909,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &744298288
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13378,6 +13514,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &776471865
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14465,6 +14602,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &837490306
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15964,6 +16102,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &892035896
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17421,6 +17560,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &970946497
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18798,6 +18938,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &1069295096
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19632,6 +19773,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &1120476266
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19830,6 +19972,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &1125751639
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20754,6 +20897,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &1188921028
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21086,6 +21230,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &1205810184
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21284,6 +21429,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &1238418467
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21482,6 +21628,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &1245692223
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22514,6 +22661,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &1337343530
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22817,6 +22965,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &1349443141
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23310,6 +23459,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &1376374057
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23993,6 +24143,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &1397096257
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25336,6 +25487,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &1444758545
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25731,6 +25883,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &1464513004
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26234,6 +26387,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &1533032524
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27866,6 +28020,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &1600260784
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28801,6 +28956,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &1657032767
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29390,6 +29546,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &1701956119
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29882,6 +30039,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &1714810152
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30084,6 +30242,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &1721796229
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31802,6 +31961,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &1813216954
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32000,6 +32160,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &1825811563
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32198,6 +32359,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &1827301803
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32916,6 +33078,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &1845332464
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33856,6 +34019,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &1908987427
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33957,6 +34121,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &1915508181
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34842,6 +35007,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &1962273864
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35233,6 +35399,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &1989084502
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35629,6 +35796,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &2012925202
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35827,6 +35995,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &2020492389
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37099,6 +37268,7 @@ MonoBehaviour:
   HeightOffset: -1.6
   amountofspawns: 0
   spawnpoint: {fileID: 1225313362153824328, guid: ba5f646278a1f3e549251faa3c292ade, type: 3}
+  LockerChest: {fileID: 0}
 --- !u!61 &2093956262
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38372,3 +38542,5 @@ SceneRoots:
   - {fileID: 1617034312}
   - {fileID: 1506872962}
   - {fileID: 763467457}
+  - {fileID: 214420099}
+  - {fileID: 433182110}

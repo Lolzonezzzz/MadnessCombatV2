@@ -14,9 +14,9 @@ public class enemy_SpawnPointMaker : MonoBehaviour
     [Space(30)]
     [SerializeField] private float LengthOffset, HeightOffset;
     [SerializeField] private int amountofspawns;
-    
     [Space(30)]
     [SerializeField] private GameObject spawnpoint;
+    [SerializeField] private GameObject LockerChest;
     private List<GameObject>  spawnpoints = new List<GameObject>();
     private BoxCollider2D _boxCollider2D;
     private RoomType _roomType;
@@ -90,6 +90,11 @@ public class enemy_SpawnPointMaker : MonoBehaviour
         }
         
         spawnpoints.Clear();
+    }
+
+    void RemoveLocker()
+    {
+        
     }
 
     private void OnTriggerEnter2D(Collider2D other)

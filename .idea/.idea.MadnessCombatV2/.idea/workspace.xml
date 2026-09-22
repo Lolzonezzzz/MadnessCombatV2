@@ -12,10 +12,11 @@
   <component name="ChangeListManager">
     <list default="true" id="c552b08f-9d67-473b-add4-69dec5e6721e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MadnessCombatV2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MadnessCombatV2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InventoryUI1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InventoryUI1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LootTable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LootTable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OpenLockerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OpenLockerScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/TestEnemy 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/TestEnemy 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/TestEnemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/TestEnemy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RoomTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RoomTest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HealthScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HealthScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/enemy_SpawnPointMaker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/enemy_SpawnPointMaker.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,61 +36,61 @@
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="6.084966829072346E-123" />
-      <entry key="S5" value="2.7003245774396358E-49" />
-      <entry key="S10" value="1.0315792469178868E-24" />
-      <entry key="S30" value="2.803618129804069E-8" />
-      <entry key="S60" value="3.9447623263163536E-4" />
-      <entry key="M2" value="0.06545578829603393" />
-      <entry key="M5" value="2.987373956546882" />
-      <entry key="M10" value="14.130433298092195" />
-      <entry key="M15" value="25.94956068460527" />
-      <entry key="M30" value="57.3728024912935" />
-      <entry key="H1" value="107.41217940318393" />
-      <entry key="H2" value="208.6738084324424" />
-      <entry key="H4" value="397.75346030184704" />
-      <entry key="D1" value="894.0682171878769" />
-      <entry key="W1" value="1055.5603076662453" />
+      <entry key="MS100" value="1.0000000009121561" />
+      <entry key="MS500" value="1.0157096570282484" />
+      <entry key="S2" value="1.485962723120346" />
+      <entry key="S5" value="2.504404751784599" />
+      <entry key="S10" value="3.9351534371955994" />
+      <entry key="S30" value="8.527436744459614" />
+      <entry key="S60" value="13.218712009190275" />
+      <entry key="M2" value="18.268551832527866" />
+      <entry key="M5" value="28.88927108634466" />
+      <entry key="M10" value="43.75039109741554" />
+      <entry key="M15" value="54.471081327004924" />
+      <entry key="M30" value="73.83333063773655" />
+      <entry key="H1" value="100.1093145853621" />
+      <entry key="H2" value="168.92132247330005" />
+      <entry key="H4" value="339.16071617296643" />
+      <entry key="D1" value="980.6560197824924" />
+      <entry key="W1" value="1237.35459026959" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0000000001403746" />
-      <entry key="MS500" value="1.0107474393347113" />
-      <entry key="S2" value="1.4038197445379383" />
-      <entry key="S5" value="2.0033083115380967" />
-      <entry key="S10" value="2.4037035023840536" />
-      <entry key="S30" value="2.773715983903371" />
-      <entry key="S60" value="2.883143169288096" />
-      <entry key="M2" value="2.9769513114985724" />
-      <entry key="M5" value="4.543070168126297" />
-      <entry key="M10" value="9.386078801082562" />
-      <entry key="M15" value="14.143945327670366" />
-      <entry key="M30" value="27.622813062038933" />
-      <entry key="H1" value="51.717637317879024" />
-      <entry key="H2" value="99.50814533464639" />
-      <entry key="H4" value="179.49503729674854" />
-      <entry key="D1" value="364.9664587780524" />
-      <entry key="W1" value="421.4861349740688" />
+      <entry key="MS100" value="2.6159192616960827E-232" />
+      <entry key="MS500" value="4.825306637286964E-47" />
+      <entry key="S2" value="2.7055747608361348E-12" />
+      <entry key="S5" value="3.186948514730706E-5" />
+      <entry key="S10" value="0.009658249161808869" />
+      <entry key="S30" value="0.5660697672053977" />
+      <entry key="S60" value="1.6605879894555584" />
+      <entry key="M2" value="3.015946039835888" />
+      <entry key="M5" value="6.79455693511337" />
+      <entry key="M10" value="13.185934340690794" />
+      <entry key="M15" value="17.71415696032993" />
+      <entry key="M30" value="24.95046706172294" />
+      <entry key="H1" value="32.91687840506437" />
+      <entry key="H2" value="56.63663377070086" />
+      <entry key="H4" value="122.20116619020834" />
+      <entry key="D1" value="362.5490373241371" />
+      <entry key="W1" value="454.9569174703752" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.0013248089135288886" />
-      <entry key="MS500" value="0.2671522321574258" />
-      <entry key="S2" value="0.9659547740998098" />
-      <entry key="S5" value="1.7057770241002321" />
-      <entry key="S10" value="2.2138695706190186" />
-      <entry key="S30" value="2.6976670742252713" />
-      <entry key="S60" value="2.8436097991805553" />
-      <entry key="M2" value="3.0211633626889616" />
-      <entry key="M5" value="7.507774447930222" />
-      <entry key="M10" value="23.48270136718845" />
-      <entry key="M15" value="40.0566538166329" />
-      <entry key="M30" value="84.95812866925594" />
-      <entry key="H1" value="159.0939279260445" />
-      <entry key="H2" value="308.1441628051199" />
-      <entry key="H4" value="577.2109700961765" />
-      <entry key="D1" value="1259.0208129092207" />
-      <entry key="W1" value="1477.0441252928542" />
+      <entry key="MS100" value="7.137529281586187E-8" />
+      <entry key="MS500" value="0.03746752662630128" />
+      <entry key="S2" value="0.6196306273520555" />
+      <entry key="S5" value="1.7213490360168422" />
+      <entry key="S10" value="3.1795817843851326" />
+      <entry key="S30" value="8.381168079053507" />
+      <entry key="S60" value="14.319252647199125" />
+      <entry key="M2" value="20.911212510213133" />
+      <entry key="M5" value="35.47746311976853" />
+      <entry key="M10" value="56.79807566834258" />
+      <entry key="M15" value="72.07726724780818" />
+      <entry key="M30" value="98.71705313341229" />
+      <entry key="H1" value="132.98579143833663" />
+      <entry key="H2" value="225.52777298744573" />
+      <entry key="H4" value="461.33221181734984" />
+      <entry key="D1" value="1343.1906147789593" />
+      <entry key="W1" value="1692.3089100422744" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -130,7 +131,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$USER_HOME$/Unity/Hub/Editor/2022.3.62f3/Editor/unityhub-unity-editor-2022.3.62f3" />
+      <option name="EXE_PATH" value="$USER_HOME$/Unity/Hub/Editor/2022.3.62f3/Editor/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath $PROJECT_DIR$ -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -140,7 +141,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$USER_HOME$/Unity/Hub/Editor/2022.3.62f3/Editor/unityhub-unity-editor-2022.3.62f3" />
+      <option name="EXE_PATH" value="$USER_HOME$/Unity/Hub/Editor/2022.3.62f3/Editor/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath $PROJECT_DIR$ -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -151,10 +152,12 @@
     </configuration>
     <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false">
       <option name="allowRunningInParallel" value="false" />
-      <option name="coreClr" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
       <option name="selectedOptions">
         <list />
       </option>
