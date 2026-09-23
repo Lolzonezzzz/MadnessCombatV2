@@ -553,6 +553,7 @@ MonoBehaviour:
   flippedRight: {fileID: -68410286, guid: a68ee42c566a43a42841edf4483577e8, type: 3}
   flippedUp: {fileID: 271881951, guid: a68ee42c566a43a42841edf4483577e8, type: 3}
   flippedDown: {fileID: -2030452178, guid: a68ee42c566a43a42841edf4483577e8, type: 3}
+  flipforce: 200
 --- !u!212 &454015447
 SpriteRenderer:
   m_ObjectHideFlags: 0

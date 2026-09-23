@@ -24,14 +24,19 @@ public class FlipTable : MonoBehaviour
     if (nearToPlayer && Input.GetKeyDown(KeyCode.Space))
     {
       Flip(filpstate);
+      StartCoroutine(changecolider());
     }
   }
 
+  IEnumerator changecolider()
+  {
+    Destroy(GetComponent<BoxCollider2D>());
+    yield return new WaitForSeconds(0.1f);
+    gameObject.AddComponent<BoxCollider2D>();
+  }
   void Flip(FlipState state)
   {
     Rigidbody2D rb = GetComponent<Rigidbody2D>();
-    Destroy(GetComponent<BoxCollider2D>());
-    gameObject.AddComponent<BoxCollider2D>();
     rb.bodyType = RigidbodyType2D.Dynamic;
     Vector2 dir;
     switch (state)
@@ -41,7 +46,7 @@ public class FlipTable : MonoBehaviour
         dir = Quaternion.identity * Vector2.down;
         rb.AddForce(dir * flipforce, ForceMode2D.Impulse);
         rb.angularVelocity = 720f;
-        rb.drag = 4f;         // = linearDamping in Unity 6+
+        rb.drag = 3f;         // = linearDamping in Unity 6+
         rb.angularDrag = 3f;
         return;
       
@@ -50,16 +55,16 @@ public class FlipTable : MonoBehaviour
         dir = Quaternion.identity * Vector2.up;
         rb.AddForce(dir * flipforce, ForceMode2D.Impulse);
         rb.angularVelocity = 720f;
-        rb.drag = 4f;       
+        rb.drag = 3f;       
         rb.angularDrag = 3f;
         return;
       
       case FlipState.FlippedLeft:
         GetComponent<SpriteRenderer>().sprite = flippedLeft;
-        dir = Quaternion.identity * Vector2.right;
+        dir = Quaternion.identity * Vector2.left;
         rb.AddForce(dir * flipforce, ForceMode2D.Impulse);
         rb.angularVelocity = 720f;
-        rb.drag = 4f;
+        rb.drag = 3f;
         rb.angularDrag = 3f;
         return;
       
@@ -68,11 +73,13 @@ public class FlipTable : MonoBehaviour
         dir = Quaternion.identity * Vector2.right;
         rb.AddForce(dir * flipforce, ForceMode2D.Impulse);
         rb.angularVelocity = 720f;
-        rb.drag = 4f;
+        rb.drag = 3f;
         rb.angularDrag = 3f;
         return;
     }
+
     StartCoroutine(StopSlide(rb, 0.6f));
+    
   }
   
   IEnumerator StopSlide(Rigidbody2D rb, float delay)
