@@ -12,6 +12,7 @@ TagManager:
   - FloorChecker
   - EnemySpawnPoint
   - Room
+  - tablestuff
   layers:
   - Default
   - TransparentFX
