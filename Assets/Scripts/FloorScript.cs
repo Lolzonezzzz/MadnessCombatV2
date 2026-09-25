@@ -10,7 +10,7 @@ public class FloorScript : MonoBehaviour
 {
     [Header("Settings")] private GameObject[] _dungeonWalls;
     private GameObject[] _rooms;
-    [SerializeField] private GameObject floorChecker, spawnPoint;
+    [SerializeField] private GameObject floorChecker, startSpawnPoint;
     [SerializeField] private SetTarget target;
 
 
@@ -66,7 +66,7 @@ public class FloorScript : MonoBehaviour
         }
 
         navMeshSurface.BuildNavMesh();
-        _floorcheck = Instantiate(floorChecker, spawnPoint.transform.position, spawnPoint.transform.rotation);
+        _floorcheck = Instantiate(floorChecker, startSpawnPoint.transform.position, startSpawnPoint.transform.rotation);
         _agent = _floorcheck.GetComponent<NavMeshAgent>();
         CheckforwallNaviagator checkforwallNaviagator = _floorcheck.GetComponentInChildren<CheckforwallNaviagator>();
         target = _floorcheck.GetComponent<SetTarget>();
@@ -81,7 +81,7 @@ public class FloorScript : MonoBehaviour
 
     public void CreatePlayer()
     {
-        GameObject createthePlayer = Instantiate(player, spawnPoint.transform.position,  Quaternion.identity);
+        GameObject createthePlayer = Instantiate(player, startSpawnPoint.transform.position,  Quaternion.identity);
         MouseWeightedCameraScript mouseWeightedCameraScript = Camera.main.GetComponent<MouseWeightedCameraScript>();
         mouseWeightedCameraScript.enabled = true;
         print("player has been spawned");
@@ -133,9 +133,9 @@ public class FloorScript : MonoBehaviour
         navMeshSurface.BuildNavMesh();
         yield return null;
         Destroy(_floorcheck);
-        _floorcheck = Instantiate(floorChecker, spawnPoint.transform.position, spawnPoint.transform.rotation);
+        _floorcheck = Instantiate(floorChecker, startSpawnPoint.transform.position, startSpawnPoint.transform.rotation);
         _agent = _floorcheck.GetComponent<NavMeshAgent>();
-        _agent.Warp(spawnPoint.transform.position);
+        _agent.Warp(startSpawnPoint.transform.position);
         CheckforwallNaviagator checkforwallNaviagator =
             _floorcheck.GetComponentInChildren<CheckforwallNaviagator>();
         target = _floorcheck.GetComponent<SetTarget>();

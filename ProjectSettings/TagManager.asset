@@ -13,6 +13,7 @@ TagManager:
   - EnemySpawnPoint
   - Room
   - tablestuff
+  - Box
   layers:
   - Default
   - TransparentFX
@@ -31,7 +32,7 @@ TagManager:
   - HorizontalWall
   - VeriticalWall
   - HealthParts
-  - 
+  - Box
   - 
   - 
   - 

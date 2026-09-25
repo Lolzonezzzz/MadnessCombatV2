@@ -339,12 +339,20 @@ public class AimAndShoot : MonoBehaviour
 
                         break;
                 }
-            }else if (ray.collider.CompareTag("BreakableWall"))
+            }
+            else if (ray.collider.CompareTag("BreakableWall"))
             {
                 AudioSource.PlayClipAtPoint(wallHitSfx[Random.Range(0, wallHitSfx.Length)], transform.position, 40f);
                 _inventoryUI.ammo[idx]--;
                 BreakableWallScript breakableWallScript = ray.collider.GetComponent<BreakableWallScript>();
                 breakableWallScript.TakeDamage(_currentyHolding.damage);
+            }
+            else if (ray.collider.CompareTag("Box"))
+            {
+                AudioSource.PlayClipAtPoint(wallHitSfx[Random.Range(0, wallHitSfx.Length)], transform.position, 40f);
+                _inventoryUI.ammo[idx]--;
+                BoxLootBox boxLootBox =  ray.collider.GetComponent<BoxLootBox>();
+                boxLootBox.TakeDamage(_currentyHolding.damage);
             }
         }
     }
@@ -472,6 +480,12 @@ public class AimAndShoot : MonoBehaviour
                     var breakable = wallHit.collider.GetComponent<BreakableWallScript>();
                     if (breakable != null) breakable.TakeDamage(damage);
                 }
+                else if (wallHit.collider.CompareTag("Box"))
+                {
+                    AudioSource.PlayClipAtPoint(wallHitSfx[Random.Range(0, wallHitSfx.Length)], transform.position, 40f);
+                    BoxLootBox boxLootBox =  wallHit.collider.GetComponent<BoxLootBox>();
+                    boxLootBox.TakeDamage(_currentyHolding.damage);
+                }
             }
             trailScript.SetTargetPosition(endPos);
             return;
@@ -530,7 +544,15 @@ public class AimAndShoot : MonoBehaviour
                         }
                         break;
                 }
+                
+            }               
+            else if (wallHit.collider.CompareTag("Box"))
+            {
+                AudioSource.PlayClipAtPoint(wallHitSfx[Random.Range(0, wallHitSfx.Length)], transform.position, 40f);
+                BoxLootBox boxLootBox =  wallHit.collider.GetComponent<BoxLootBox>();
+                boxLootBox.TakeDamage(_currentyHolding.damage);
             }
+            
 
             if (hitCount >= piercing) break;
         }
@@ -542,6 +564,12 @@ public class AimAndShoot : MonoBehaviour
             {
                 var breakable = wallHit.collider.GetComponent<BreakableWallScript>();
                 if (breakable != null) breakable.TakeDamage(damage);
+            }
+            else if (wallHit.collider.CompareTag("Box"))
+            {
+                AudioSource.PlayClipAtPoint(wallHitSfx[Random.Range(0, wallHitSfx.Length)], transform.position, 40f);
+                BoxLootBox boxLootBox =  wallHit.collider.GetComponent<BoxLootBox>();
+                boxLootBox.TakeDamage(_currentyHolding.damage);
             }
         }
 

@@ -65,7 +65,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.2342479, y: -2.1002412}
+  m_Offset: {x: -3.0858397, y: -2.1002407}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -76,7 +76,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.4684958, y: 17.084778}
+  m_Size: {x: 7.1716795, y: 17.084778}
   m_EdgeRadius: 0
 --- !u!114 &954913028487418217
 MonoBehaviour:
@@ -156,7 +156,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.2342479, y: -2.1002412}
+  m_Offset: {x: 0.945899, y: -2.1002407}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -167,7 +167,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.4684958, y: 17.084778}
+  m_Size: {x: 7.8287897, y: 17.084778}
   m_EdgeRadius: 0
 --- !u!114 &5669868119334133371
 MonoBehaviour:
@@ -247,7 +247,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 10.519132, y: -7.9143257}
+  m_Offset: {x: 10.519132, y: -9.531092}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -258,7 +258,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 29.331549, y: 5.456608}
+  m_Size: {x: 29.331549, y: 8.690141}
   m_EdgeRadius: 0
 --- !u!114 &3001498615264418886
 MonoBehaviour:
@@ -518,7 +518,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 11.58507, y: -7.9143257}
+  m_Offset: {x: 11.58507, y: -7.137104}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -529,7 +529,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 29.555954, y: 5.456608}
+  m_Size: {x: 29.555954, y: 7.011051}
   m_EdgeRadius: 0
 --- !u!114 &7427996352813672494
 MonoBehaviour:
