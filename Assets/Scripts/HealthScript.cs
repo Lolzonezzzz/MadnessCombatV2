@@ -245,6 +245,7 @@ public class HealthScript : MonoBehaviour
         if (gameObject.CompareTag("Enemy"))
         {
             GetComponent<EnemyAI>().enabled = false;
+            GetComponent<Collider2D>().enabled = false;
             horizontal = Mathf.Abs(_enemyAI.direction.x) > Mathf.Abs(_enemyAI.direction.y);
             headrb = _enemyAI.Head.GetComponent<Rigidbody2D>();
             Destroy(GetComponent<NavMeshAgent>());

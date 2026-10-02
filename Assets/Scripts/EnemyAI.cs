@@ -95,6 +95,7 @@ public class EnemyAI : MonoBehaviour
         _agent.updateRotation = false;
         _agent.updateUpAxis = false;
         _gun = gameObject.GetComponentInChildren<AimAndShoot>();
+        fireTimer = 0.1f;
         
         
         _animator = GetComponent<Animator>();

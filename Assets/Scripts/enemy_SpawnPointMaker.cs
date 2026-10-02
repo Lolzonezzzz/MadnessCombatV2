@@ -16,7 +16,7 @@ public class enemy_SpawnPointMaker : MonoBehaviour
     [SerializeField] private int amountofspawns;
     [Space(30)]
     [SerializeField] private GameObject spawnpoint;
-    [SerializeField] private GameObject LockerChest;
+    private List<GameObject> _chests = new List<GameObject>();
     private List<GameObject>  spawnpoints = new List<GameObject>();
     private BoxCollider2D _boxCollider2D;
     private RoomType _roomType;
@@ -53,6 +53,10 @@ public class enemy_SpawnPointMaker : MonoBehaviour
     public void CreateSpawnPoint()
     {
         RemoveSpawnPoint();
+        for (int i = 0; i < _chests.Count; i++)
+        {
+            _chests[i].SetActive(false);
+        }
         float spawnpointlimitheight = transform.position.y - HeightOffset;
         float spawnpointlimitlength = transform.position.x - LengthOffset;
 
@@ -61,20 +65,29 @@ public class enemy_SpawnPointMaker : MonoBehaviour
 
         if (_roomType == RoomType.Room_With_Enemies)
             amountofspawns = Random.Range(1, 4);
+
+        if (_roomType == RoomType.Treasure_Room)
+        {
+            for (int i = 0; i < _chests.Count; i++)
+            {
+                _chests[i].SetActive(true);
+            }
+        }
+         
         
         for (int i = 0; i < amountofspawns; i++)
         {
-            float StartPointX = spawnpointlimitlength - room_size_Length / 2f;
-            float EndPointX = spawnpointlimitlength + room_size_Length / 2f;
+            float startPointX = spawnpointlimitlength - room_size_Length / 2f;
+            float endPointX = spawnpointlimitlength + room_size_Length / 2f;
             
-            float StartPointY = spawnpointlimitheight - room_size_Height / 2f;
-            float EndPointY = spawnpointlimitheight + room_size_Height / 2f;
+            float startPointY = spawnpointlimitheight - room_size_Height / 2f;
+            float endPointY = spawnpointlimitheight + room_size_Height / 2f;
             
-            GameObject SpawnPoint = Instantiate(spawnpoint,  new Vector2(Random.Range(StartPointX, EndPointX), Random.Range(StartPointY, EndPointY)), Quaternion.identity);
-            SpawnPoint.transform.parent = transform;
-            SpawnPoint.tag = "EnemySpawnPoint";
-            SpawnPoint.name = "EnemySpawnPoint";
-            spawnpoints.Add(SpawnPoint);
+            GameObject spawnPoint = Instantiate(spawnpoint,  new Vector2(Random.Range(startPointX, endPointX), Random.Range(startPointY, endPointY)), Quaternion.identity);
+            spawnPoint.transform.parent = transform;
+            spawnPoint.tag = "EnemySpawnPoint";
+            spawnPoint.name = "EnemySpawnPoint";
+            spawnpoints.Add(spawnPoint);
         }
         
         
@@ -92,11 +105,20 @@ public class enemy_SpawnPointMaker : MonoBehaviour
         spawnpoints.Clear();
     }
 
-    void RemoveLocker()
+     void Start()
     {
-        
-    }
+        GameObject[] chests = GameObject.FindGameObjectsWithTag("Chest");
 
+        foreach (GameObject chest in chests)
+        {
+            if (chest.transform.IsChildOf(transform))
+            {
+                _chests.Add(chest);
+                chest.SetActive(false);
+            }
+        }
+    }
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player") && hasactivatedspawnpoint == false)
