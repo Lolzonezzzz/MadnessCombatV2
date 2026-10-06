@@ -12,9 +12,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c552b08f-9d67-473b-add4-69dec5e6721e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MadnessCombatV2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MadnessCombatV2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyAI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HealthScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HealthScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/enemy_SpawnPointMaker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/enemy_SpawnPointMaker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Clothes/Face Acessories/Black Goggles.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Clothes/Face Acessories/Black Goggles.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Clothes/Face Acessories/Face Mask.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Clothes/Face Acessories/Face Mask.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Clothes/Face Acessories/Hockey Mask.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Clothes/Face Acessories/Hockey Mask.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestRoom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestRoom.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

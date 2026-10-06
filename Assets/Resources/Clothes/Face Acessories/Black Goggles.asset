@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Black Goggles
   m_EditorClassIdentifier: 
   ClothesName: Black Goggles
-  left: {fileID: -1161955275, guid: f50b610b9453ad64c9512007a1605fc6, type: 3}
+  left: {fileID: 799603649, guid: f50b610b9453ad64c9512007a1605fc6, type: 3}
   right: {fileID: 799603649, guid: f50b610b9453ad64c9512007a1605fc6, type: 3}
   front: {fileID: 221693658, guid: f50b610b9453ad64c9512007a1605fc6, type: 3}
   back: {fileID: 104961115, guid: f50b610b9453ad64c9512007a1605fc6, type: 3}

@@ -827,6 +827,10 @@ PrefabInstance:
       propertyPath: canDamage.m_Bits
       value: 143872
       objectReference: {fileID: 0}
+    - target: {fileID: 3351575178084739520, guid: 959d169592e0727459451b44c95f049b, type: 3}
+      propertyPath: faceClothes
+      value: 
+      objectReference: {fileID: 11400000, guid: 8167e5a9536bb0392a11dc151b50c8f3, type: 2}
     - target: {fileID: 9208707546097918478, guid: 959d169592e0727459451b44c95f049b, type: 3}
       propertyPath: Head
       value: 
