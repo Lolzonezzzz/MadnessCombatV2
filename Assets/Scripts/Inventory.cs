@@ -8,12 +8,12 @@ public class Inventory : MonoBehaviour
     public List<int> ammo = new List<int>();
     public List<int> ammoreserve = new List<int>();
 
-    private AimAndShoot _aimAndShoot;
+    private GunManagement _gunManagement;
     public int itemCount = 0;
 
     void Start()
     {
-        _aimAndShoot = gameObject.GetComponentInChildren<AimAndShoot>();
+        _gunManagement = gameObject.GetComponentInChildren<GunManagement>();
     }
 
     public void EquipNew()
@@ -21,7 +21,7 @@ public class Inventory : MonoBehaviour
         if (items.Count > 0)
         {
             itemCount = items.Count - 1;
-            _aimAndShoot.WeaponSwitching(items[itemCount]);
+            _gunManagement.WeaponSwitching(items[itemCount]);
         }
     }
 
@@ -34,13 +34,13 @@ public class Inventory : MonoBehaviour
         if (scroll > 0)
         {
             itemCount = (itemCount + 1) % items.Count;
-            _aimAndShoot.WeaponSwitching(items[itemCount]);
+            _gunManagement.WeaponSwitching(items[itemCount]);
         }
         else if (scroll < 0)
         {
             itemCount--;
             if (itemCount < 0) itemCount = items.Count - 1;
-            _aimAndShoot.WeaponSwitching(items[itemCount]);
+            _gunManagement.WeaponSwitching(items[itemCount]);
         }
     }
 

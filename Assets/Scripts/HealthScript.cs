@@ -226,7 +226,7 @@ public class HealthScript : MonoBehaviour
             rb.angularDrag = 10f;
         }
 
-        GetComponentInChildren<AimAndShoot>().OnDeath();
+        GetComponentInChildren<GunManagement>().OnDeath();
 
         foreach (var d in GetComponentsInChildren<Collider2D>(true))
         {
@@ -263,14 +263,14 @@ public class HealthScript : MonoBehaviour
 
 
 
-        AimAndShoot aimAndShoot = GetComponentInChildren<AimAndShoot>();
-        if (aimAndShoot != null)
+        GunManagement gunManagement = GetComponentInChildren<GunManagement>();
+        if (gunManagement != null)
         {
-            aimAndShoot.hands[0].SetActive(true);
-            aimAndShoot.hands[1].SetActive(true);
+            gunManagement.hands[0].SetActive(true);
+            gunManagement.hands[1].SetActive(true);
         }
 
-        aimAndShoot.RemoveWeaponOnDeath();
+        gunManagement.RemoveWeaponOnDeath();
 
 
         if (horizontal)

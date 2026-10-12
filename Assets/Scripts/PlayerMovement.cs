@@ -155,7 +155,7 @@ public class PlayerMovement : MonoBehaviour
         _rb.velocity = Vector2.zero;        
 
         _isDashing = false;
-        AimAndShoot aim = gameObject.GetComponentInChildren<AimAndShoot>();
+        GunManagement aim = gameObject.GetComponentInChildren<GunManagement>();
         aim.unequipHands();
         health.dashingInvincibility = true;
         _rb.velocity = Vector2.zero;

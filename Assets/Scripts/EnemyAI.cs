@@ -20,7 +20,7 @@ public class EnemyAI : MonoBehaviour
     public float angle;
     [HideInInspector]public Vector2 direction; 
     [SerializeField]private ItemData[] itemData;
-    private AimAndShoot _gun;
+    private GunManagement _gun;
 
     [ShowIf("aiType", AIType.Rusher)] [SerializeField]
     private bool startAttacking;
@@ -94,7 +94,7 @@ public class EnemyAI : MonoBehaviour
         _agent =  GetComponent<NavMeshAgent>();
         _agent.updateRotation = false;
         _agent.updateUpAxis = false;
-        _gun = gameObject.GetComponentInChildren<AimAndShoot>();
+        _gun = gameObject.GetComponentInChildren<GunManagement>();
         fireTimer = 0.1f;
         
         

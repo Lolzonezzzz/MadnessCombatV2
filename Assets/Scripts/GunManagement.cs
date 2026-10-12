@@ -8,7 +8,7 @@ using UnityEngine.Serialization;
 using Object = UnityEngine.Object;
 using Random = UnityEngine.Random;
 
-public class AimAndShoot : MonoBehaviour
+public class GunManagement : MonoBehaviour
 {
     private PlayerDirection _playerDirection;
     private PlayerMovement _playerMovement;
