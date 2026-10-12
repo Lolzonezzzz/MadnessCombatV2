@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Serialization;
@@ -54,7 +53,7 @@ public class GunManagement : MonoBehaviour
     private ItemData.WeaponTypes _weaponTypes;
     [HideInInspector] public AudioClip firingSfx;
     [SerializeField] private AudioClip[] wallHitSfx;
-    private ItemData _currentyHolding;
+    public ItemData currentyHolding;
     [HideInInspector]public Animator animator;
     private Transform _shellEject;
 
@@ -187,7 +186,7 @@ public class GunManagement : MonoBehaviour
             }
 
 
-            if (Input.GetMouseButtonDown(0) && aimPoint == null && (_currentyHolding == null || _currentyHolding.shellEject == null) &&
+            if (Input.GetMouseButtonDown(0) && aimPoint == null && (currentyHolding == null || currentyHolding.shellEject == null) &&
                 _canSwing &&!EventSystem.current.IsPointerOverGameObject()) // melee
             {
                 StartCoroutine(SwingMeleeScript());
@@ -345,14 +344,14 @@ public class GunManagement : MonoBehaviour
                 AudioSource.PlayClipAtPoint(wallHitSfx[Random.Range(0, wallHitSfx.Length)], transform.position, 40f);
                 _inventoryUI.ammo[idx]--;
                 BreakableWallScript breakableWallScript = ray.collider.GetComponent<BreakableWallScript>();
-                breakableWallScript.TakeDamage(_currentyHolding.damage);
+                breakableWallScript.TakeDamage(currentyHolding.damage);
             }
             else if (ray.collider.CompareTag("Box"))
             {
                 AudioSource.PlayClipAtPoint(wallHitSfx[Random.Range(0, wallHitSfx.Length)], transform.position, 40f);
                 _inventoryUI.ammo[idx]--;
                 BoxLootBox boxLootBox =  ray.collider.GetComponent<BoxLootBox>();
-                boxLootBox.TakeDamage(_currentyHolding.damage);
+                boxLootBox.TakeDamage(currentyHolding.damage);
             }
         }
     }
@@ -484,7 +483,7 @@ public class GunManagement : MonoBehaviour
                 {
                     AudioSource.PlayClipAtPoint(wallHitSfx[Random.Range(0, wallHitSfx.Length)], transform.position, 40f);
                     BoxLootBox boxLootBox =  wallHit.collider.GetComponent<BoxLootBox>();
-                    boxLootBox.TakeDamage(_currentyHolding.damage);
+                    boxLootBox.TakeDamage(currentyHolding.damage);
                 }
             }
             trailScript.SetTargetPosition(endPos);
@@ -550,7 +549,7 @@ public class GunManagement : MonoBehaviour
             {
                 AudioSource.PlayClipAtPoint(wallHitSfx[Random.Range(0, wallHitSfx.Length)], transform.position, 40f);
                 BoxLootBox boxLootBox =  wallHit.collider.GetComponent<BoxLootBox>();
-                boxLootBox.TakeDamage(_currentyHolding.damage);
+                boxLootBox.TakeDamage(currentyHolding.damage);
             }
             
 
@@ -569,7 +568,7 @@ public class GunManagement : MonoBehaviour
             {
                 AudioSource.PlayClipAtPoint(wallHitSfx[Random.Range(0, wallHitSfx.Length)], transform.position, 40f);
                 BoxLootBox boxLootBox =  wallHit.collider.GetComponent<BoxLootBox>();
-                boxLootBox.TakeDamage(_currentyHolding.damage);
+                boxLootBox.TakeDamage(currentyHolding.damage);
             }
         }
 
@@ -837,14 +836,14 @@ public class GunManagement : MonoBehaviour
 
     public void WeaponSwitching(ItemData SwitchedWeapon)
     {
-        _currentyHolding = SwitchedWeapon;
+        currentyHolding = SwitchedWeapon;
 
-        if (_currentyHolding != _lastHolding)
+        if (currentyHolding != _lastHolding)
         {
             _gunParts.Clear();
-            _lastHolding = _currentyHolding;
+            _lastHolding = currentyHolding;
 
-            if (_currentyHolding != null)
+            if (currentyHolding != null)
             {
                 Destroy(_weapomPrefab);
             }
@@ -852,22 +851,22 @@ public class GunManagement : MonoBehaviour
 
 
             _canShoot = true;
-            damage = _currentyHolding.damage;
-            spreadAngle = _currentyHolding.bulletSpread;
-            burstCount = _currentyHolding.burstCount;
-            piercing = _currentyHolding.bulletPirecing;
-            weaponRange = _currentyHolding.range;
-            fireRate = _currentyHolding.fireRate;
-            bulletsPerShot = _currentyHolding.bulletsPerShot;
-            _weaponTypes = _currentyHolding.weaponTypes;
-            firingSfx = _currentyHolding.firingSound;
-            maxCapacity = _currentyHolding.ammoCapacity;
-            _gunReloadSpeed = _currentyHolding.gunReloadSpeed;
-            _shellPrefab = _currentyHolding.shellEject;
+            damage = currentyHolding.damage;
+            spreadAngle = currentyHolding.bulletSpread;
+            burstCount = currentyHolding.burstCount;
+            piercing = currentyHolding.bulletPirecing;
+            weaponRange = currentyHolding.range;
+            fireRate = currentyHolding.fireRate;
+            bulletsPerShot = currentyHolding.bulletsPerShot;
+            _weaponTypes = currentyHolding.weaponTypes;
+            firingSfx = currentyHolding.firingSound;
+            maxCapacity = currentyHolding.ammoCapacity;
+            _gunReloadSpeed = currentyHolding.gunReloadSpeed;
+            _shellPrefab = currentyHolding.shellEject;
             GetWeaponMultiplier();
 
             // Parent correctly
-            _weapomPrefab = Instantiate(_currentyHolding.gunModel, referenceObject.transform);
+            _weapomPrefab = Instantiate(currentyHolding.gunModel, referenceObject.transform);
 
             // Snap in place (good for animation)
             _weapomPrefab.transform.localPosition = Vector3.zero;
@@ -878,7 +877,7 @@ public class GunManagement : MonoBehaviour
             // Update references
             animator = _weapomPrefab.GetComponent<Animator>();
 
-            if (_currentyHolding.shellEject != null)
+            if (currentyHolding.shellEject != null)
             {
                 _shellEject = _weapomPrefab.transform.Find("ShellEject");
             }
@@ -886,7 +885,7 @@ public class GunManagement : MonoBehaviour
             aimPoint = _weapomPrefab.transform.Find("AimPoint")?.transform;
 
 
-            AudioSource.PlayClipAtPoint(_currentyHolding.equipSound, transform.position, 2f);
+            AudioSource.PlayClipAtPoint(currentyHolding.equipSound, transform.position, 2f);
             foreach (SpriteRenderer sr in _weapomPrefab.GetComponentsInChildren<SpriteRenderer>())
             {
                 if (sr.sortingLayerName == "Gun" || sr.sortingLayerName == "GunFacingUp")

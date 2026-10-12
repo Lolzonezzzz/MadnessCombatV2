@@ -15,6 +15,7 @@ TagManager:
   - tablestuff
   - Box
   - Chest
+  - Weapons
   layers:
   - Default
   - TransparentFX

@@ -30,6 +30,7 @@ public class OpenLockerScript : MonoBehaviour
         // Cloning the item as a gameobject
         
         GameObject gunmodel = Instantiate(itemData.gunModel, droppoint.transform.position, Quaternion.identity);
+        gunmodel.name = itemData.name;
         Rigidbody2D rb = gunmodel.GetComponent<Rigidbody2D>();
         
         gunmodel.GetComponent<ItemPickUp>().enabled = true;

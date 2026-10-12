@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 255ac4d918fda224da7108f89993953c, type: 3}
-  m_Name: Rifle
+  m_Name: Heckler & Koch G41
   m_EditorClassIdentifier: 
-  itemname: Rifle
+  itemname: Heckler & Koch G41
   weaponTypes: 1
   damage: 16
   range: 100

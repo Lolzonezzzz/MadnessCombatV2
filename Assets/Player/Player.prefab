@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 2428066646361119013}
   - component: {fileID: 6894925656926191037}
   - component: {fileID: 6404065086046938081}
+  - component: {fileID: 8221461405730650587}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -180,7 +181,7 @@ MonoBehaviour:
   face: {fileID: 1509869228787954417}
   hat: {fileID: 6866008958007294713}
   headClothes: {fileID: 11400000, guid: 0a6a2ebd3c0f0a9458627c22a9a5cbc2, type: 2}
-  faceClothes: {fileID: 11400000, guid: 10234ce9626cd2e4f8cc6cece2cb9fab, type: 2}
+  faceClothes: {fileID: 11400000, guid: 8167e5a9536bb0392a11dc151b50c8f3, type: 2}
   hatClothes: {fileID: 11400000, guid: 097049e35b201ae40a055a3ae245d38e, type: 2}
   body: {fileID: 1397434382906312831}
   chest: {fileID: 6234421081182493062}
@@ -400,6 +401,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8221461405730650587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282297435163877859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f26adc3150bc5625d92c25ff803b03a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolTipMask:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1 &1397434382906312831
 GameObject:
   m_ObjectHideFlags: 0
@@ -648,10 +664,10 @@ MonoBehaviour:
   emptyMagSfx: {fileID: 0}
   canDamage:
     serializedVersion: 2
-    m_Bits: 12800
+    m_Bits: 143872
   wallMask:
     serializedVersion: 2
-    m_Bits: 49216
+    m_Bits: 180288
   bulletsPerShot: 1
   aimPoint: {fileID: 0}
   bulletTrail: {fileID: 4187797638734125067, guid: 44a6f443b7efc4f4699141558943e891, type: 3}
@@ -661,6 +677,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: cea1d8a00db04f20f8abdaa1a9ab6a07, type: 3}
   - {fileID: 8300000, guid: 8149e921017b690bf8c1e97cc8c19a28, type: 3}
   - {fileID: 8300000, guid: 59661746c337a516cb167165eca509c9, type: 3}
+  currentyHolding: {fileID: 0}
   animator: {fileID: 0}
   throwForce: 60
   throwDamage: 50
