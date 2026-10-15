@@ -44,7 +44,7 @@ public class CrosshairScript : MonoBehaviour
         Right.position = new Vector2(RightValue, Center.position.y);
     }
 
-    void LateUpdate()
+    void FixedUpdate()
     {
         Vector2 mousePos = _mainCamera.ScreenToWorldPoint(Input.mousePosition);
         gameObject.transform.position = mousePos;

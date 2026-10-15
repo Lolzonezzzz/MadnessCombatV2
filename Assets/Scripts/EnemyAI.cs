@@ -42,6 +42,9 @@ public class EnemyAI : MonoBehaviour
     
     [ShowIf("aiType", AIType.Shooter)]
     [SerializeField]private float distanceToDetectPlayer = 15;
+    
+    [ShowIf("aiType", AIType.Shooter)]
+    [SerializeField]private float aimingDelay = 2;
 
     [ShowIf("aiType", AIType.Shooter)] [SerializeField]
     private GameObject[] playerBodyPart;
@@ -72,6 +75,11 @@ public class EnemyAI : MonoBehaviour
     [HideInInspector] public bool IsKnockedBack;
     [SerializeField] private float knockbackDuration = 0.2f;
     private Coroutine _knockbackCoroutine;
+    
+    public float switchMargin = 0.15f;
+    public bool enemyHorizontal = true;
+    
+    
 
     public enum AIType
     {
@@ -147,13 +155,15 @@ public class EnemyAI : MonoBehaviour
 
 
     private bool _isShooting;
+    private bool _aimLocked;
     private Transform pickrandombodypart;
     private Vector2 _slot;
 
-    void Update()
+    void Update() // handles enemy type and aiming
     {
-        
+
         if (IsKnockedBack) return;
+        if (_aimLocked) return; // frozen while charging a shot so the telegraph line holds still
         switch (aiType)
         {
             case AIType.Rusher:
@@ -277,9 +287,16 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
+    private bool _startFiring;
+            
+    Vector2 origin = default;
+    Vector2 dir = default;
+    float dist = 0;
+
     IEnumerator ShootThePlayer()
     {
         _isShooting = true;
+        _aimLocked = false;
 
         
         fireTimer -= Time.deltaTime;
@@ -314,39 +331,70 @@ public class EnemyAI : MonoBehaviour
             pickrandombodypart = playerBodyPart[Random.Range(0, 2)].transform;
             if (_magazine > 0)
             {
-                // in ShootThePlayer(), before burst loop:
-                Vector2 origin = _gun.aimPoint.position;
-                Vector2 dir = ((Vector2)pickrandombodypart.position - origin).normalized;
-                float dist = Vector2.Distance(origin, pickrandombodypart.position);
+                
+                callForPlayerDirection();
                 if (Physics2D.Raycast(origin, dir, dist, _gun.wallMask))
                 {
-                    _agent.SetDestination(_target.position); // also loses _slot -> clump
+                    _agent.SetDestination(_target.position); 
                     _agent.speed = speed;
-                    _isShooting = false; // <-- missing, add this
+                    _isShooting = false;
                     yield break;
                 }
                 
                 for (int i = burstcounter; i > 0; i--)
                 {
+                    
+                    float offset = Random.Range(-_gun.spreadAngle + 2, _gun.spreadAngle);
                     Debug.Log("Aiming at: " + pickrandombodypart.name);
-                
-                    _gun.animator.Play("Firing");
-                    AudioSource.PlayClipAtPoint(_gun.firingSfx, transform.position, 6f);
-                    _gun.EnemyShoot(pickrandombodypart.position);
+                    Vector2 targettedPos = default;
+                    
+                    ItemData gun = _gun.currentyHolding;
+
+                    float trackTime     = Mathf.Clamp(gun.fireRate * 3f, 0.3f, 1.5f);   // how long the enemy tracks the player
+                    float telegraphTime = Mathf.Clamp(gun.fireRate * 1.5f * aimingDelay, 0.2f, 0.8f);  // frozen "about to shoot" window
+                    const float sampleInterval = 0.1f;
+
+                    int samples = Mathf.Max(1, Mathf.RoundToInt(trackTime / sampleInterval));
+
+                    for (int v = 0; v < samples; v++)
+                    {
+                        callForPlayerDirection();
+                        targettedPos = _gun.EnemyDirectionToShoot(pickrandombodypart.position, 1, dist);
+                        yield return new WaitForSeconds(sampleInterval);
+                    }
+
+                    _aimLocked = true;
+
+                    yield return new WaitForSeconds(telegraphTime);
+                    _gun.EnemyShoot(targettedPos, offset);
+                    
+                    _startFiring  = true;
+
+                    if (_startFiring)
+                    {
+                        _gun.animator.Play("Firing");
+                        AudioSource.PlayClipAtPoint(_gun.firingSfx, transform.position, 6f);
+                    }
+
+
                     _magazine--;
                 
                     yield return new WaitForSeconds(burstcoundown);
-                } 
+                    _startFiring = false;
+                    _aimLocked = false;
+                }
             }
             else
             {
+                _aimLocked = false;
                 StartCoroutine(Reloading());
             }
 
             fireTimer = 0.2f;
-      
+
         }
 
+        _aimLocked = false;
         yield return new WaitForSeconds(0.1f);
         _isShooting = false;
     }
@@ -378,6 +426,13 @@ public class EnemyAI : MonoBehaviour
     void FlankPlayer()
     {
         
+    }
+
+    void callForPlayerDirection()
+    {
+         origin = _gun.aimPoint.position;
+        dir = ((Vector2)pickrandombodypart.position - origin).normalized;
+        dist = Vector2.Distance(origin, pickrandombodypart.position);
     }
     
     

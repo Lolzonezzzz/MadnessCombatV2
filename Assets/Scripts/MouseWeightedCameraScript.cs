@@ -2,20 +2,41 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+[DefaultExecutionOrder(-100)]
 public class MouseWeightedCameraScript : MonoBehaviour
 {
     [SerializeField] private Transform target;
     [SerializeField] private float smoothSpeed = 5f;
-    [SerializeField] private float mouseWeight = 0.5f;
+    [SerializeField, Range(0f, 1.5f)] private float mouseWeight = 0.5f;
+    [SerializeField, Tooltip("Max world-units the camera can shift toward the mouse, regardless of mouseWeight.")]
+    private float maxOffset = 3f;
+
+    private static MouseWeightedCameraScript _instance;
 
     private Vector3 _velocity = Vector3.zero;
     private Coroutine _findPlayerCoroutine;
     private float _cameraZ;                      // Locked Z, set once
 
+    void Awake()
+    {
+        // Singleton: DontDestroyOnLoad camera must not duplicate on scene load.
+        // Without this every scene adds another Main Camera and they fight.
+        if (_instance != null && _instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        _instance = this;
+        _cameraZ = transform.position.z;
+    }
+
     void Start()
     {
-        target = GameObject.FindGameObjectWithTag("Player").transform;
-        _cameraZ = transform.position.z;         // Lock Z from the start
+        if (_instance != null && _instance != this) return;
+        // Don't crash if the first scene has no Player (menu, loading, etc.)
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+            target = player.transform;
         DontDestroyOnLoad(gameObject);
         SceneManager.sceneLoaded += OnSceneLoaded;
         StartFindingPlayer();
@@ -23,6 +44,8 @@ public class MouseWeightedCameraScript : MonoBehaviour
 
     void OnDestroy()
     {
+        if (_instance == this)
+            _instance = null;
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
@@ -69,7 +92,16 @@ public class MouseWeightedCameraScript : MonoBehaviour
 
     void LateUpdate()
     {
-        if (!target) return;
+        // Re-acquire target if it was destroyed/re-spawned mid-scene
+        // (e.g. FloorScript.CreatePlayer instantiates a new player without a scene load).
+        if (!target)
+        {
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            if (player != null)
+                SetTarget(player.transform);
+            else
+                return;
+        }
 
         // Read player position — only X and Y, so Y-rotation flips don't interfere
         Vector3 playerPos = new Vector3(target.position.x, target.position.y, 0f);
@@ -93,12 +125,17 @@ public class MouseWeightedCameraScript : MonoBehaviour
                 (mp.y - halfH) / halfH
             );
             mouseDir = Vector2.ClampMagnitude(mouseDir, 1f);
-            mouseOffset = new Vector3(mouseDir.x, mouseDir.y, 0f) * 3f;
+            // Clamp total offset so an insane inspector value (e.g. weight = 12)
+            // can never throw the camera 30+ units into the void.
+            Vector3 rawOffset = new Vector3(mouseDir.x, mouseDir.y, 0f) * maxOffset * mouseWeight;
+            mouseOffset = Vector3.ClampMagnitude(rawOffset, maxOffset);
+            
+            if (mouseDir.magnitude < 0.1f) mouseDir = Vector2.zero;
         }
 
         Vector3 desiredPosition = new Vector3(
-            playerPos.x + mouseOffset.x * mouseWeight,
-            playerPos.y + mouseOffset.y * mouseWeight,
+            playerPos.x + mouseOffset.x,
+            playerPos.y + mouseOffset.y,
             _cameraZ                                    // Z never drifts
         );
 
@@ -111,5 +148,7 @@ public class MouseWeightedCameraScript : MonoBehaviour
 
         // Hard-lock Z in case SmoothDamp drifts it by a float epsilon
         transform.position = new Vector3(transform.position.x, transform.position.y, _cameraZ);
+        
+        
     }
 }

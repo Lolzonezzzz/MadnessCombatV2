@@ -10,13 +10,27 @@ public class PlayerRespawn : MonoBehaviour
     private Animator _animator;
     private bool _isDead;
 
+    // Original limb pose, so the ragdoll doesn't stay scattered after respawn.
+    private Transform[] _childTransforms;
+    private Vector3[] _childLocalPositions;
+    private Quaternion[] _childLocalRotations;
+
     void Start()
     {
         _spawnPoint = transform.position;
         _health = GetComponent<HealthScript>();
         _movement = GetComponent<PlayerMovement>();
         _animator = GetComponent<Animator>();
-        
+
+        // Snapshot the assembled pose from the prefab.
+        _childTransforms = GetComponentsInChildren<Transform>(true);
+        _childLocalPositions = new Vector3[_childTransforms.Length];
+        _childLocalRotations = new Quaternion[_childTransforms.Length];
+        for (int i = 0; i < _childTransforms.Length; i++)
+        {
+            _childLocalPositions[i] = _childTransforms[i].localPosition;
+            _childLocalRotations[i] = _childTransforms[i].localRotation;
+        }
     }
 
     void Update()
@@ -36,8 +50,9 @@ public class PlayerRespawn : MonoBehaviour
     {
         yield return new WaitForSeconds(respawnDelay);
 
-        // Reset position
+        // Reset position + rotation of root
         transform.position = _spawnPoint;
+        transform.rotation = Quaternion.identity;
 
         // Reset health
         _health.brainhealth = _health.Brainhealth;
@@ -59,6 +74,18 @@ public class PlayerRespawn : MonoBehaviour
         foreach (var joint in GetComponentsInChildren<HingeJoint2D>())
         {
             joint.enabled = false;
+        }
+
+        // Re-assemble limbs where the ragdoll flung them.
+        // Without this, hands/shoes stay floating detached after every death.
+        if (_childTransforms != null)
+        {
+            for (int i = 0; i < _childTransforms.Length; i++)
+            {
+                if (_childTransforms[i] == null) continue;
+                _childTransforms[i].localPosition = _childLocalPositions[i];
+                _childTransforms[i].localRotation = _childLocalRotations[i];
+            }
         }
 
         foreach (var col in GetComponentsInChildren<Collider2D>())

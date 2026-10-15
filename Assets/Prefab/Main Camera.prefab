@@ -107,4 +107,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   smoothSpeed: 14
-  mouseWeight: 12
+  mouseWeight: 0.5
+  maxOffset: 3

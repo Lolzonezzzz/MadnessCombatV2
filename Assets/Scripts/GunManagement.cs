@@ -12,6 +12,7 @@ public class GunManagement : MonoBehaviour
     private PlayerDirection _playerDirection;
     private PlayerMovement _playerMovement;
     private bool _flipped = false;
+    LineRenderer lr;
 
     [SerializeField] private GameObject referenceObject;
     private List<GameObject> _gunParts = new List<GameObject>();
@@ -26,7 +27,7 @@ public class GunManagement : MonoBehaviour
     public float weaponRange = 30f;
     [SerializeField] private int burstCount = 1;
     [SerializeField] private float burstDelay = 0.07f;
-    [SerializeField] private float spreadAngle = 5f; // Degrees
+    [SerializeField] internal float spreadAngle = 5f; // Degrees
     [SerializeField] private int piercing = 1; // How many enemies it can hit
     [SerializeField] private float fireRate = 0.5f;
 
@@ -107,6 +108,10 @@ public class GunManagement : MonoBehaviour
     {
         _playerDirection = GetComponentInParent<PlayerDirection>();
         _playerMovement = GetComponentInParent<PlayerMovement>();
+        
+   
+        
+ 
         _inventoryUI = GetComponentInParent<Inventory>();
         _mainCamera = Camera.main;
 
@@ -121,6 +126,10 @@ public class GunManagement : MonoBehaviour
             }
 
         }
+        
+        lr = GetComponentInParent<LineRenderer>();
+        lr.useWorldSpace = true;
+        lr.positionCount = 2;
     }
 
     // Update is called once per frame
@@ -206,6 +215,7 @@ public class GunManagement : MonoBehaviour
     
      public IEnumerator EnemySwingMeleeScript(Vector2 targetPosition)
     {
+        
         Vector2 dirToTarget = (targetPosition - (Vector2)transform.position).normalized;
         float angle = Mathf.Atan2(dirToTarget.y, dirToTarget.x) * Mathf.Rad2Deg;
         
@@ -266,6 +276,7 @@ public class GunManagement : MonoBehaviour
                 }
             }
         }
+        
     }
 
 
@@ -575,31 +586,59 @@ public class GunManagement : MonoBehaviour
         trailScript.SetTargetPosition(lastHitPoint);
     }
 
-    public void EnemyShoot(Vector2 targetPosition)
+    // Direction the enemy is aiming, from EnemyAI (not the gun's own rotation)
+    public Vector2 GetEnemyShootDirection()
     {
-        // Rotate gun to face target
-        Vector2 dirToTarget = (targetPosition - (Vector2)aimPoint.position).normalized;
-        float angle = Mathf.Atan2(dirToTarget.y, dirToTarget.x) * Mathf.Rad2Deg;
+        if (_enemyAI != null && _enemyAI.direction.sqrMagnitude > 0.0001f)
+            return _enemyAI.direction.normalized;
 
-        float offset = Random.Range(-spreadAngle, spreadAngle);
-        Vector2 shootDirection = Quaternion.Euler(0, 0, offset) * aimPoint.right;
+        return aimPoint != null ? (Vector2)aimPoint.right : (Vector2)transform.right;
+    }
+
+    public Vector2 EnemyDirectionToShoot(Vector2 targetPosition, float offset, float dist)
+    {
+        lr.enabled = true; 
+        Vector2 shootDirection =
+            Quaternion.Euler(0, 0, offset) *
+            GetEnemyShootDirection();
+        lr.SetPosition(0, aimPoint.position);
+        lr.SetPosition(1, (Vector2)aimPoint.position + shootDirection * dist);
+
+
+        return (Vector2)aimPoint.position + shootDirection * dist;
+    }
+
+    public void EnemyShoot(Vector2 targetPosition, float offset)
+    {
+        lr.enabled = false; 
+        Vector2 toPoint = (Vector2)targetPosition - (Vector2)aimPoint.position;
+        Vector2 shootDirection = toPoint.sqrMagnitude > 0.0001f
+            ? toPoint.normalized
+            : GetEnemyShootDirection();
+
 
         // Find nearest wall hit
         int selfLayer = gameObject.layer;
         int mask = wallMask & ~(1 << selfLayer);
         RaycastHit2D wallHit = Physics2D.Raycast(aimPoint.position, shootDirection, weaponRange, mask);
+        
+
 
         // RaycastAll for enemies (piercing)
         RaycastHit2D[] hits = Physics2D.RaycastAll(aimPoint.position, shootDirection, weaponRange, canDamage);
-
+        
+      
+        
         // Instantiate bullet trail
         var bullet = Instantiate(bulletTrail, aimPoint.position, Quaternion.identity);
         bullet.transform.position = aimPoint.position;
         
         var trailScript = bullet.GetComponent<BulletTrail>();
 
+
         float wallDist = wallHit ? wallHit.distance : weaponRange;
         Vector3 endPos = aimPoint.position + (Vector3)shootDirection * weaponRange;
+
 
         void PlayWallHit(Vector3 pos)
         {
@@ -607,6 +646,7 @@ public class GunManagement : MonoBehaviour
             var clip = wallHitSfx[Random.Range(0, wallHitSfx.Length)];
             AudioSource.PlayClipAtPoint(clip, pos, 12f);
         }
+
 
         if (hits.Length == 0)
         {
@@ -624,8 +664,10 @@ public class GunManagement : MonoBehaviour
             return;
         }
 
+
         int hitCount = 0;
         Vector3 lastHitPoint = endPos;
+
 
         bool hitWall = false;
         foreach (var hit in hits)
@@ -637,7 +679,7 @@ public class GunManagement : MonoBehaviour
             }
             lastHitPoint = hit.point;
             hitCount++;
-
+            
             HealthScript healthScript = hit.collider.GetComponentInParent<HealthScript>();
             if (healthScript != null)
             {
@@ -676,6 +718,7 @@ public class GunManagement : MonoBehaviour
                 }
             }
 
+
             if (hitCount >= piercing) break;
         }
         
@@ -690,7 +733,10 @@ public class GunManagement : MonoBehaviour
             }
         }
 
+
         trailScript.SetTargetPosition(lastHitPoint);
+       
+     
     }
 
     private void SpawnShell()
@@ -961,7 +1007,7 @@ public class GunManagement : MonoBehaviour
                 }
             }
         }
-        else // enemy
+        else // enemy aiming
         {
             float angle = _enemyAI.angle;
             transform.rotation = Quaternion.Euler(0, 0, angle);
@@ -971,8 +1017,7 @@ public class GunManagement : MonoBehaviour
             if (shouldFlip != _flipped)
                 _flipped = shouldFlip;
 
-            // Mirror the player's X flip so the net visual X is always 1 (unmirrored)
-            // parent(-1) × child(-1) = 1  ✓  |  parent(1) × child(1) = 1  ✓
+
             float enemyScaleX = Mathf.Sign(_enemyAI.transform.localScale.x);
             if (enemyScaleX == 0f) enemyScaleX = 1f; // safety guard
 

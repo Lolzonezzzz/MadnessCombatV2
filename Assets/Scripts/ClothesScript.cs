@@ -1,6 +1,7 @@
 using NaughtyAttributes;
 using UnityEngine;
 
+[DefaultExecutionOrder(200)]
 public class ClothesScript : MonoBehaviour
 {
     private PlayerDirection _playerDirection;
@@ -51,6 +52,8 @@ public class ClothesScript : MonoBehaviour
         Front,
         Back
     }
+    
+    
 
     private void Start()
     {
@@ -59,67 +62,64 @@ public class ClothesScript : MonoBehaviour
         _enemyAI = GetComponent<EnemyAI>();
         
         
-        _headRenderer = head.GetComponent<SpriteRenderer>();
-        _faceRenderer = face.GetComponent<SpriteRenderer>();
-        _hatRenderer = hat.GetComponent<SpriteRenderer>();
-        _bodyRenderer = body.GetComponent<SpriteRenderer>();
-        _chestRenderer = chest.GetComponent<SpriteRenderer>();
-        _leftShoeRenderer = lShoe.GetComponent<SpriteRenderer>();
-        _rightShoeRenderer = rShoe.GetComponent<SpriteRenderer>();
+        if (head != null) _headRenderer = head.GetComponent<SpriteRenderer>();
+        if (face != null) _faceRenderer = face.GetComponent<SpriteRenderer>();
+        if (hat != null) _hatRenderer = hat.GetComponent<SpriteRenderer>();
+        if (body != null) _bodyRenderer = body.GetComponent<SpriteRenderer>();
+        if (chest != null) _chestRenderer = chest.GetComponent<SpriteRenderer>();
+        if (lShoe != null) _leftShoeRenderer = lShoe.GetComponent<SpriteRenderer>();
+        if (rShoe != null) _rightShoeRenderer = rShoe.GetComponent<SpriteRenderer>();
     }
 
-    void Update()
+    void LateUpdate()
     {
         FacingDirection facing = FacingDirection.Left;
+        
+        
 
         if (_playerDirection != null)
         {
-            if (_playerMovement.IsDashing)
+            if (_playerMovement != null && _playerMovement.IsDashing)
                 return;
 
-            if (Mathf.Abs(_playerDirection.direction.x) >
-                Mathf.Abs(_playerDirection.direction.y))
-            {
-                facing = _playerDirection.direction.x > 0
-                    ? FacingDirection.Right
-                    : FacingDirection.Left;
+            Vector2 dir = _playerDirection.direction;
 
-                _playerMovement.dashDirection = _playerDirection.direction.x > 0
+            if (_playerDirection.IsHorizontal)
+            {
+                facing = _playerDirection.facingRight ? FacingDirection.Right : FacingDirection.Left;
+                _playerMovement.dashDirection = _playerDirection.facingRight
                     ? PlayerMovement.MovementDirection.Right
                     : PlayerMovement.MovementDirection.Left;
             }
             else
             {
-                facing = _playerDirection.direction.y > 0
-                    ? FacingDirection.Back
-                    : FacingDirection.Front;
-                
-                _playerMovement.dashDirection = _playerDirection.direction.y > 0
+                facing = _playerDirection.facingUp ? FacingDirection.Back : FacingDirection.Front;
+                _playerMovement.dashDirection = _playerDirection.facingUp
                     ? PlayerMovement.MovementDirection.Up
                     : PlayerMovement.MovementDirection.Down;
-            }  
+            }
         }
         if (_enemyAI != null)
         {
-            if (Mathf.Abs(_enemyAI.direction.x) >
-                Mathf.Abs(_enemyAI.direction.y))
-            {
-                facing = _enemyAI.direction.x > 0
-                    ? FacingDirection.Right
-                    : FacingDirection.Left;
-            }
+            Vector2 dir = _enemyAI.direction;
+            float absX = Mathf.Abs(dir.x);
+            float absY = Mathf.Abs(dir.y);
+
+            if (_enemyAI.enemyHorizontal && absY > absX * (1f + _enemyAI.switchMargin))
+                _enemyAI.enemyHorizontal = false;
+            else if (!_enemyAI.enemyHorizontal && absX > absY * (1f + _enemyAI.switchMargin))
+                _enemyAI.enemyHorizontal = true;
+
+            if (_enemyAI.enemyHorizontal)
+                facing = dir.x > 0 ? FacingDirection.Right : FacingDirection.Left;
             else
-            {
-                facing = _enemyAI.direction.y > 0
-                    ? FacingDirection.Back
-                    : FacingDirection.Front;
-            }
+                facing = dir.y > 0 ? FacingDirection.Back : FacingDirection.Front;
         }
         
 
 
         // Face
-        if (faceClothes != null)
+        if (faceClothes != null && _faceRenderer != null)
         {
             switch (facing)
             {
@@ -131,7 +131,7 @@ public class ClothesScript : MonoBehaviour
         }
 
         // Head
-        if (headClothes != null)
+        if (headClothes != null && _headRenderer != null)
         {
             switch (facing)
             {
@@ -143,7 +143,7 @@ public class ClothesScript : MonoBehaviour
         }
 
         // Hat
-        if (hatClothes != null)
+        if (hatClothes != null && _hatRenderer != null)
         {
             switch (facing)
             {
@@ -155,7 +155,7 @@ public class ClothesScript : MonoBehaviour
         }
 
         // Body
-        if (torsoClothes != null)
+        if (torsoClothes != null && _bodyRenderer != null)
         {
             switch (facing)
             {
@@ -167,7 +167,7 @@ public class ClothesScript : MonoBehaviour
         }
 
         // Chest
-        if (chestArmour != null)
+        if (chestArmour != null && _chestRenderer != null)
         {
             switch (facing)
             {
@@ -179,7 +179,7 @@ public class ClothesScript : MonoBehaviour
         }
 
         // Shoes
-        if (shoes != null)
+        if (shoes != null && _leftShoeRenderer != null && _rightShoeRenderer != null)
         {
             
             switch (facing)

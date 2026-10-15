@@ -226,7 +226,7 @@ public class HealthScript : MonoBehaviour
             rb.angularDrag = 10f;
         }
 
-        GetComponentInChildren<GunManagement>().OnDeath();
+        GetComponentInChildren<GunManagement>()?.OnDeath();
 
         foreach (var d in GetComponentsInChildren<Collider2D>(true))
         {
@@ -238,26 +238,33 @@ public class HealthScript : MonoBehaviour
         print("DEAD");
         GetComponent<Animator>().enabled = false;
         GetComponent<ClothesScript>().enabled = false;
-        bool horizontal = false;
 
 
         Rigidbody2D headrb;
+        bool horizontal = false;
         if (gameObject.CompareTag("Enemy"))
         {
             GetComponent<EnemyAI>().enabled = false;
             GetComponent<Collider2D>().enabled = false;
-            horizontal = Mathf.Abs(_enemyAI.direction.x) > Mathf.Abs(_enemyAI.direction.y);
-            headrb = _enemyAI.Head.GetComponent<Rigidbody2D>();
+            horizontal = _enemyAI != null && Mathf.Abs(_enemyAI.direction.x) > Mathf.Abs(_enemyAI.direction.y);
+            headrb = _enemyAI != null && _enemyAI.Head != null
+                ? _enemyAI.Head.GetComponent<Rigidbody2D>()
+                : GetComponentInChildren<Rigidbody2D>();
             Destroy(GetComponent<NavMeshAgent>());
             Destroy(GetComponent<Rigidbody2D>());
         }
         else
         {
-            headrb = _playerBodyPart[0].GetComponent<Rigidbody2D>();
+            headrb = _playerBodyPart != null && _playerBodyPart.Length > 0 && _playerBodyPart[0] != null
+                ? _playerBodyPart[0].GetComponent<Rigidbody2D>()
+                : GetComponentInChildren<Rigidbody2D>();
             GetComponent<PlayerMovement>().enabled = false;
             PlayerDirection playerDirection = gameObject.GetComponent<PlayerDirection>();
-            playerDirection.enabled = false;
-            horizontal = Mathf.Abs(playerDirection.direction.x) > Mathf.Abs(playerDirection.direction.y);
+            if (playerDirection != null)
+            {
+                playerDirection.enabled = false;
+                horizontal = Mathf.Abs(playerDirection.direction.x) > Mathf.Abs(playerDirection.direction.y);
+            }
         }
 
 
@@ -270,32 +277,35 @@ public class HealthScript : MonoBehaviour
             gunManagement.hands[1].SetActive(true);
         }
 
-        gunManagement.RemoveWeaponOnDeath();
+        if (gunManagement != null)
+            gunManagement.RemoveWeaponOnDeath();
 
 
-        if (horizontal)
+        if (headrb != null)
         {
-            switch (_enemyAI.facingRight)
+            if (horizontal)
             {
-                case true:
-                    headrb.AddForce(new Vector2(-knockbackForce.x, 0), ForceMode2D.Impulse);
-                    break;
-                case false:
-                    headrb.AddForce(new Vector2(knockbackForce.x, 0), ForceMode2D.Impulse);
-                    break;
+                bool facingRight = true;
+                if (_enemyAI != null) facingRight = _enemyAI.facingRight;
+                else
+                {
+                    PlayerDirection pd = GetComponent<PlayerDirection>();
+                    // PlayerDirection is disabled above; cached direction still readable.
+                    // Fall back to localScale sign when direction is stale.
+                    if (pd != null) facingRight = pd.direction.x >= 0f;
+                }
+                headrb.AddForce(new Vector2(facingRight ? -knockbackForce.x : knockbackForce.x, 0), ForceMode2D.Impulse);
             }
-        }
-        else
-        {
-
-            switch (_enemyAI.facingUp)
+            else
             {
-                case true:
-                    headrb.AddForce(new Vector2(0, -knockbackForce.x), ForceMode2D.Impulse);
-                    break;
-                case false:
-                    headrb.AddForce(new Vector2(0, knockbackForce.x), ForceMode2D.Impulse);
-                    break;
+                bool facingUp = false;
+                if (_enemyAI != null) facingUp = _enemyAI.facingUp;
+                else
+                {
+                    PlayerDirection pd = GetComponent<PlayerDirection>();
+                    if (pd != null) facingUp = pd.direction.y > 0f;
+                }
+                headrb.AddForce(new Vector2(0, facingUp ? -knockbackForce.x : knockbackForce.x), ForceMode2D.Impulse);
             }
         }
     }

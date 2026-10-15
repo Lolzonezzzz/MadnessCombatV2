@@ -12,12 +12,20 @@
   <component name="ChangeListManager">
     <list default="true" id="c552b08f-9d67-473b-add4-69dec5e6721e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MadnessCombatV2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MadnessCombatV2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CrosshairScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CrosshairScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/New Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/New Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Main Camera.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Main Camera.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/TestEnemy 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/TestEnemy 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/TestEnemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/TestEnemy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestRoom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestRoom.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ClothesScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ClothesScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyAI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GunManagement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GunManagement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OpenLockerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OpenLockerScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Weapons/Guns/Pistol 1/Rifle.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Weapons/Guns/Pistol 1/Rifle.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/mouseTooltip.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/mouseTooltip.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HealthScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HealthScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MouseWeightedCameraScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MouseWeightedCameraScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerDirection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerDirection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerRespawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerRespawn.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,65 +56,65 @@
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0010612645141856" />
-      <entry key="MS500" value="1.2541939412240628" />
-      <entry key="S2" value="1.7525859609459178" />
-      <entry key="S5" value="2.4075020005311223" />
-      <entry key="S10" value="3.196926162208927" />
-      <entry key="S30" value="4.224697126965674" />
-      <entry key="S60" value="4.606448401826599" />
-      <entry key="M2" value="5.017266215452546" />
-      <entry key="M5" value="8.968330577767198" />
-      <entry key="M10" value="20.48936170380207" />
-      <entry key="M15" value="31.633662973118792" />
-      <entry key="M30" value="59.831361730343666" />
-      <entry key="H1" value="100.08776987072117" />
-      <entry key="H2" value="142.0234602400061" />
-      <entry key="H4" value="179.76997600193127" />
-      <entry key="D1" value="716.1545819520293" />
-      <entry key="W1" value="1372.4569195361123" />
+      <entry key="MS100" value="4.52824902351041E-98" />
+      <entry key="MS500" value="3.39770806011029E-20" />
+      <entry key="S2" value="1.3579646328891191E-5" />
+      <entry key="S5" value="0.012806790181488283" />
+      <entry key="S10" value="0.23715584858998823" />
+      <entry key="S30" value="3.1879854318371073" />
+      <entry key="S60" value="6.601949924849168" />
+      <entry key="M2" value="9.744291149152522" />
+      <entry key="M5" value="14.43336093523018" />
+      <entry key="M10" value="23.498594653789358" />
+      <entry key="M15" value="33.708483253375285" />
+      <entry key="M30" value="62.61995436699021" />
+      <entry key="H1" value="106.4282891754372" />
+      <entry key="H2" value="154.1506624444063" />
+      <entry key="H4" value="197.288532260254" />
+      <entry key="D1" value="737.0446525333709" />
+      <entry key="W1" value="1397.7921178834401" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="2.9722769915027623E-6" />
-      <entry key="MS500" value="0.07845449971422425" />
-      <entry key="S2" value="0.5332540936518969" />
-      <entry key="S5" value="0.885272346505338" />
-      <entry key="S10" value="1.2121454220343804" />
-      <entry key="S30" value="1.651664747292729" />
-      <entry key="S60" value="1.8692144514392415" />
-      <entry key="M2" value="2.413717965949292" />
-      <entry key="M5" value="4.903050263028985" />
-      <entry key="M10" value="10.27740889767644" />
-      <entry key="M15" value="15.479871893793144" />
-      <entry key="M30" value="29.319286360999882" />
-      <entry key="H1" value="51.598678170946286" />
-      <entry key="H2" value="76.98602523319961" />
-      <entry key="H4" value="99.65618302047557" />
-      <entry key="D1" value="316.81243871148484" />
-      <entry key="W1" value="566.6761012096665" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0000530054415417" />
+      <entry key="S5" value="1.0194862460774983" />
+      <entry key="S10" value="1.139593144808398" />
+      <entry key="S30" value="1.5187459244916948" />
+      <entry key="S60" value="1.7203178336803422" />
+      <entry key="M2" value="1.8759007324764203" />
+      <entry key="M5" value="3.0626356812808964" />
+      <entry key="M10" value="7.226058273452417" />
+      <entry key="M15" value="12.113476912445416" />
+      <entry key="M30" value="26.321726271314333" />
+      <entry key="H1" value="49.92576123970846" />
+      <entry key="H2" value="77.94242102928295" />
+      <entry key="H4" value="103.41659472920534" />
+      <entry key="D1" value="323.10032506922465" />
+      <entry key="W1" value="574.9869476890652" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.1562553361734664" />
-      <entry key="MS500" value="0.8932444409244277" />
-      <entry key="S2" value="1.981204702312131" />
-      <entry key="S5" value="3.1016407397959087" />
-      <entry key="S10" value="4.2815058689582255" />
-      <entry key="S30" value="5.819906794560577" />
-      <entry key="S60" value="6.4428352009686805" />
-      <entry key="M2" value="7.4057315900574245" />
-      <entry key="M5" value="13.83735934754447" />
-      <entry key="M10" value="30.719628212295778" />
-      <entry key="M15" value="47.063356360085905" />
-      <entry key="M30" value="89.10340122336119" />
-      <entry key="H1" value="151.64774922144372" />
-      <entry key="H2" value="218.98231983939334" />
-      <entry key="H4" value="279.40904319473947" />
-      <entry key="D1" value="1032.9560501747767" />
-      <entry key="W1" value="1939.1300545964386" />
+      <entry key="MS100" value="0.001121775737301792" />
+      <entry key="MS500" value="0.25702845666401664" />
+      <entry key="S2" value="0.7120689777276135" />
+      <entry key="S5" value="0.9007728847198986" />
+      <entry key="S10" value="1.2901291859727608" />
+      <entry key="S30" value="4.635012812933144" />
+      <entry key="S60" value="8.264437604413523" />
+      <entry key="M2" value="11.580672219560585" />
+      <entry key="M5" value="17.466698546220453" />
+      <entry key="M10" value="30.68890249395616" />
+      <entry key="M15" value="45.78134103239268" />
+      <entry key="M30" value="88.89827174117325" />
+      <entry key="H1" value="156.31559305108826" />
+      <entry key="H2" value="232.064848761423" />
+      <entry key="H4" value="300.6869447189848" />
+      <entry key="D1" value="1060.1337706983586" />
+      <entry key="W1" value="1972.776055822623" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="SWEA" />
+    <option name="selectedTabId" value="Toolset" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1,
@@ -137,14 +145,14 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$USER_HOME$/Unity/Hub/Editor/2022.3.62f3/Editor/unityhub-unity-editor-2022.3.62f3" />
+      <option name="EXE_PATH" value="$USER_HOME$/Unity/Hub/Editor/2022.3.62f3/Editor/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath $PROJECT_DIR$ -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -164,7 +172,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$USER_HOME$/Unity/Hub/Editor/2022.3.62f3/Editor/unityhub-unity-editor-2022.3.62f3" />
+      <option name="EXE_PATH" value="$USER_HOME$/Unity/Hub/Editor/2022.3.62f3/Editor/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath $PROJECT_DIR$ -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -266,19 +274,6 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/PlayerRespawn.cs</url>
-          <line>53</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/PlayerRespawn.cs" containingFunctionPresentation="Method 'Respawn'">
-            <startOffsets>
-              <option value="1539" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1563" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
