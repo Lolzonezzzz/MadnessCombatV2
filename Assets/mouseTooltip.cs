@@ -17,7 +17,8 @@ public class mouseTooltip : MonoBehaviour
     RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero, Mathf.Infinity, toolTipMask);
     if (hit.collider != null)
     {
-      Tooltip.ShowTooltip_Static(hit.collider.gameObject.name);
+      ItemPickUp itemData = hit.collider.GetComponent<ItemPickUp>();
+      Tooltip.ShowTooltip_Static(itemData.itemData.name);
     }
     else
     {

@@ -14,7 +14,7 @@ public class Tooltip : MonoBehaviour
     void Awake()
     {
         _instance = this;
-        _tooltipText = GameObject.Find("Text").GetComponent<Text>();
+        _tooltipText = gameObject.GetComponentInChildren<Text>();
         _backgroundRectTransform = GameObject.Find("Background").GetComponent<RectTransform>();
         
     }

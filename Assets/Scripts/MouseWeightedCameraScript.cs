@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 [DefaultExecutionOrder(-100)]
@@ -92,6 +93,8 @@ public class MouseWeightedCameraScript : MonoBehaviour
 
     void LateUpdate()
     {
+        if (EventSystem.current.IsPointerOverGameObject()){return;}
+        
         // Re-acquire target if it was destroyed/re-spawned mid-scene
         // (e.g. FloorScript.CreatePlayer instantiates a new player without a scene load).
         if (!target)

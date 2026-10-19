@@ -45,7 +45,9 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_isDashing)
+
+        
+        if (_isDashing && EventSystem.current.IsPointerOverGameObject())
         {
             _rb.velocity = Vector2.zero;
             _animator.SetBool("Moving", false);
@@ -108,11 +110,12 @@ public class PlayerMovement : MonoBehaviour
         float currentSpeed = speed * (_isSprinting ? sprintMultiplier : 1f);
         Vector2 input = new Vector2(_inputX, _inputY).normalized;
         
-        _rb.velocity = input * currentSpeed;
+        if (!EventSystem.current.IsPointerOverGameObject())
+            _rb.velocity = input * currentSpeed;
         
         if (_inputX != 0 || _inputY != 0)
         {
-            if (_playSound.canPlaySound)
+            if (_playSound.canPlaySound && !EventSystem.current.IsPointerOverGameObject())
             {
                 _playSound.canPlaySound = false;
                 StartCoroutine(_playSound.PLaySound(1 - _playSound.index, _isSprinting ? 0.1f : 0.3f));
@@ -127,7 +130,7 @@ public class PlayerMovement : MonoBehaviour
            _animator.SetBool("IsRunning",_isSprinting);
         }
 
-        if (Input.GetKeyDown(KeyCode.Q) && _canDash)
+        if (Input.GetKeyDown(KeyCode.Q) && _canDash && !EventSystem.current.IsPointerOverGameObject())
         {
 
 

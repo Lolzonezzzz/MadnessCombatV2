@@ -1,3 +1,4 @@
+using NaughtyAttributes;
 using UnityEngine;
 
 #if UNITY_EDITOR
@@ -9,7 +10,7 @@ public class ItemDatabase : MonoBehaviour
     public ItemData[] allItems;
 
 #if UNITY_EDITOR
-    [ContextMenu("Find All Items")]
+    [ContextMenu("Find All Items"), Button("Find All Items")]
     void FindAllItems()
     {
         string[] guids = AssetDatabase.FindAssets("t:ItemData");

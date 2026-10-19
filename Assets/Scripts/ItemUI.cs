@@ -9,6 +9,7 @@ public class ItemUI : MonoBehaviour
 {
     private Image _image;
     private TMP_Text _text;
+    [SerializeField]private TMP_Text catagoryText;
     public ItemData item;
 
 
@@ -20,7 +21,9 @@ public class ItemUI : MonoBehaviour
         
         
         
+        
         _image.sprite = item.icon;
+        catagoryText.text = item.weaponTypes.ToString();
         _text.text = item.name;
     }
 

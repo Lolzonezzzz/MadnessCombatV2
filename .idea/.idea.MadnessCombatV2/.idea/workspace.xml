@@ -11,21 +11,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c552b08f-9d67-473b-add4-69dec5e6721e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/EnemiesUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/EnemiesUI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyDatabase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyDatabase.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyIndex.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyIndex.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MadnessCombatV2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MadnessCombatV2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CrosshairScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CrosshairScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/New Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/New Material.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Main Camera.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Main Camera.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/TestEnemy 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/TestEnemy 1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/TestEnemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/TestEnemy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Item.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Item.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestRoom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestRoom.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ClothesScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ClothesScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyAI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GunManagement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GunManagement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HealthScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HealthScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemDataBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemDataBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemUI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MouseWeightedCameraScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MouseWeightedCameraScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerDirection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerDirection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerRespawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerRespawn.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tooltip.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tooltip.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/Neuropolitical Rg SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/Neuropolitical Rg SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mouseTooltip.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/mouseTooltip.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +43,9 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BoxLootBox.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ClothesScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemiesUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyDatabase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyIndex.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemySpawnPOint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FlipTable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FloorScript.cs" root0="FORCE_HIGHLIGHTING" />
@@ -56,61 +64,61 @@
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="4.52824902351041E-98" />
-      <entry key="MS500" value="3.39770806011029E-20" />
-      <entry key="S2" value="1.3579646328891191E-5" />
-      <entry key="S5" value="0.012806790181488283" />
-      <entry key="S10" value="0.23715584858998823" />
-      <entry key="S30" value="3.1879854318371073" />
-      <entry key="S60" value="6.601949924849168" />
-      <entry key="M2" value="9.744291149152522" />
-      <entry key="M5" value="14.43336093523018" />
-      <entry key="M10" value="23.498594653789358" />
-      <entry key="M15" value="33.708483253375285" />
-      <entry key="M30" value="62.61995436699021" />
-      <entry key="H1" value="106.4282891754372" />
-      <entry key="H2" value="154.1506624444063" />
-      <entry key="H4" value="197.288532260254" />
-      <entry key="D1" value="737.0446525333709" />
-      <entry key="W1" value="1397.7921178834401" />
-    </decayedCancelled>
-    <decayedSelected>
       <entry key="MS100" value="1.0" />
       <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0000530054415417" />
-      <entry key="S5" value="1.0194862460774983" />
-      <entry key="S10" value="1.139593144808398" />
-      <entry key="S30" value="1.5187459244916948" />
-      <entry key="S60" value="1.7203178336803422" />
-      <entry key="M2" value="1.8759007324764203" />
-      <entry key="M5" value="3.0626356812808964" />
-      <entry key="M10" value="7.226058273452417" />
-      <entry key="M15" value="12.113476912445416" />
-      <entry key="M30" value="26.321726271314333" />
-      <entry key="H1" value="49.92576123970846" />
-      <entry key="H2" value="77.94242102928295" />
-      <entry key="H4" value="103.41659472920534" />
-      <entry key="D1" value="323.10032506922465" />
-      <entry key="W1" value="574.9869476890652" />
+      <entry key="S2" value="1.000000000000006" />
+      <entry key="S5" value="1.000004608708988" />
+      <entry key="S10" value="1.0042842990602279" />
+      <entry key="S30" value="1.4936927194597533" />
+      <entry key="S60" value="3.5649782965179093" />
+      <entry key="M2" value="9.459474725680922" />
+      <entry key="M5" value="24.74366224722708" />
+      <entry key="M10" value="42.10122435869476" />
+      <entry key="M15" value="55.51790887439999" />
+      <entry key="M30" value="87.48780544726876" />
+      <entry key="H1" value="140.70633222433656" />
+      <entry key="H2" value="219.90073355200278" />
+      <entry key="H4" value="306.7338590142094" />
+      <entry key="D1" value="889.5019363754948" />
+      <entry key="W1" value="1592.4703484351967" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="3.834500206239961E-69" />
+      <entry key="S2" value="7.869138540431312E-18" />
+      <entry key="S5" value="1.4400278253150484E-7" />
+      <entry key="S10" value="3.795265142816016E-4" />
+      <entry key="S30" value="0.07645473963450397" />
+      <entry key="S60" value="0.39254180863476823" />
+      <entry key="M2" value="1.659655889503513" />
+      <entry key="M5" value="6.828927388535647" />
+      <entry key="M10" value="14.432554337148646" />
+      <entry key="M15" value="20.31709949430275" />
+      <entry key="M30" value="33.30423602193797" />
+      <entry key="H1" value="55.749905747737635" />
+      <entry key="H2" value="93.47010100357916" />
+      <entry key="H4" value="138.0245989636613" />
+      <entry key="D1" value="382.78106028518715" />
+      <entry key="W1" value="653.6472532024992" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.001121775737301792" />
-      <entry key="MS500" value="0.25702845666401664" />
-      <entry key="S2" value="0.7120689777276135" />
-      <entry key="S5" value="0.9007728847198986" />
-      <entry key="S10" value="1.2901291859727608" />
-      <entry key="S30" value="4.635012812933144" />
-      <entry key="S60" value="8.264437604413523" />
-      <entry key="M2" value="11.580672219560585" />
-      <entry key="M5" value="17.466698546220453" />
-      <entry key="M10" value="30.68890249395616" />
-      <entry key="M15" value="45.78134103239268" />
-      <entry key="M30" value="88.89827174117325" />
-      <entry key="H1" value="156.31559305108826" />
-      <entry key="H2" value="232.064848761423" />
-      <entry key="H4" value="300.6869447189848" />
-      <entry key="D1" value="1060.1337706983586" />
-      <entry key="W1" value="1972.776055822623" />
+      <entry key="MS100" value="0.8408964152537145" />
+      <entry key="MS500" value="0.9659363289248456" />
+      <entry key="S2" value="0.991373087462667" />
+      <entry key="S5" value="0.996544658469345" />
+      <entry key="S10" value="1.0027492132337847" />
+      <entry key="S30" value="1.5620779122519015" />
+      <entry key="S60" value="3.9380383606371776" />
+      <entry key="M2" value="11.079420346213325" />
+      <entry key="M5" value="31.51367598585018" />
+      <entry key="M10" value="56.47557735855349" />
+      <entry key="M15" value="75.78146196706412" />
+      <entry key="M30" value="120.74751059212727" />
+      <entry key="H1" value="196.4170201513588" />
+      <entry key="H2" value="313.3372941042164" />
+      <entry key="H4" value="444.7337562787109" />
+      <entry key="D1" value="1272.2700379218745" />
+      <entry key="W1" value="2246.1142493928533" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -121,6 +129,9 @@
   &quot;fromUser&quot;: false
 }</component>
   <component name="ProjectId" id="3FuzJOm9UdhZ9xE653ktOlxMpD3" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
