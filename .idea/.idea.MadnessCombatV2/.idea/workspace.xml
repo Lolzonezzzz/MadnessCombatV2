@@ -11,26 +11,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c552b08f-9d67-473b-add4-69dec5e6721e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/EnemiesUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/EnemiesUI.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyDatabase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyDatabase.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyIndex.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyIndex.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MadnessCombatV2/.idea/indexLayout.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MadnessCombatV2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MadnessCombatV2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Item.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Item.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CrosshairScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CrosshairScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Animations/Player.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/TestEnemy 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/TestEnemy 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/TestEnemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/TestEnemy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RoomTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RoomTest.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestRoom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestRoom.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemDataBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemDataBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ClothesScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ClothesScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FloorScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FloorScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HealingUIScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HealingUIScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HealthScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HealthScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HealthUIScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HealthUIScript.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MouseWeightedCameraScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MouseWeightedCameraScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tooltip.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tooltip.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/Neuropolitical Rg SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/Neuropolitical Rg SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SetTarget.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SetTarget.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/mouseTooltip.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/mouseTooltip.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,65 +62,65 @@
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.000000000000006" />
-      <entry key="S5" value="1.000004608708988" />
-      <entry key="S10" value="1.0042842990602279" />
-      <entry key="S30" value="1.4936927194597533" />
-      <entry key="S60" value="3.5649782965179093" />
-      <entry key="M2" value="9.459474725680922" />
-      <entry key="M5" value="24.74366224722708" />
-      <entry key="M10" value="42.10122435869476" />
-      <entry key="M15" value="55.51790887439999" />
-      <entry key="M30" value="87.48780544726876" />
-      <entry key="H1" value="140.70633222433656" />
-      <entry key="H2" value="219.90073355200278" />
-      <entry key="H4" value="306.7338590142094" />
-      <entry key="D1" value="889.5019363754948" />
-      <entry key="W1" value="1592.4703484351967" />
+      <entry key="MS100" value="1.0000011987844297" />
+      <entry key="MS500" value="1.0705038763416637" />
+      <entry key="S2" value="1.9953656802448672" />
+      <entry key="S5" value="3.855262818888086" />
+      <entry key="S10" value="6.101102734763692" />
+      <entry key="S30" value="10.994976591839974" />
+      <entry key="S60" value="14.811829608664782" />
+      <entry key="M2" value="18.53955430292134" />
+      <entry key="M5" value="22.488694130322017" />
+      <entry key="M10" value="25.707162872904565" />
+      <entry key="M15" value="28.303508371830517" />
+      <entry key="M30" value="38.14598992755268" />
+      <entry key="H1" value="74.48973030638255" />
+      <entry key="H2" value="160.88799836987886" />
+      <entry key="H4" value="283.9257199799809" />
+      <entry key="D1" value="932.7880302363218" />
+      <entry key="W1" value="1686.1635768309907" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="3.834500206239961E-69" />
-      <entry key="S2" value="7.869138540431312E-18" />
-      <entry key="S5" value="1.4400278253150484E-7" />
-      <entry key="S10" value="3.795265142816016E-4" />
-      <entry key="S30" value="0.07645473963450397" />
-      <entry key="S60" value="0.39254180863476823" />
-      <entry key="M2" value="1.659655889503513" />
-      <entry key="M5" value="6.828927388535647" />
-      <entry key="M10" value="14.432554337148646" />
-      <entry key="M15" value="20.31709949430275" />
-      <entry key="M30" value="33.30423602193797" />
-      <entry key="H1" value="55.749905747737635" />
-      <entry key="H2" value="93.47010100357916" />
-      <entry key="H4" value="138.0245989636613" />
-      <entry key="D1" value="382.78106028518715" />
-      <entry key="W1" value="653.6472532024992" />
+      <entry key="MS100" value="1.4792195272244015E-44" />
+      <entry key="MS500" value="1.7144841522510258E-9" />
+      <entry key="S2" value="0.0072763952702446745" />
+      <entry key="S5" value="0.19799843189388355" />
+      <entry key="S10" value="0.7504064394847169" />
+      <entry key="S30" value="3.016482796219692" />
+      <entry key="S60" value="5.430314362371889" />
+      <entry key="M2" value="7.941717350046145" />
+      <entry key="M5" value="11.245636373290358" />
+      <entry key="M10" value="14.631312779433452" />
+      <entry key="M15" value="17.38036596435085" />
+      <entry key="M30" value="26.458350477730747" />
+      <entry key="H1" value="51.991856990198514" />
+      <entry key="H2" value="103.51145431972508" />
+      <entry key="H4" value="172.79263957515448" />
+      <entry key="D1" value="462.23881176409185" />
+      <entry key="W1" value="758.0298966601282" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.8408964152537145" />
-      <entry key="MS500" value="0.9659363289248456" />
-      <entry key="S2" value="0.991373087462667" />
-      <entry key="S5" value="0.996544658469345" />
-      <entry key="S10" value="1.0027492132337847" />
-      <entry key="S30" value="1.5620779122519015" />
-      <entry key="S60" value="3.9380383606371776" />
-      <entry key="M2" value="11.079420346213325" />
-      <entry key="M5" value="31.51367598585018" />
-      <entry key="M10" value="56.47557735855349" />
-      <entry key="M15" value="75.78146196706412" />
-      <entry key="M30" value="120.74751059212727" />
-      <entry key="H1" value="196.4170201513588" />
-      <entry key="H2" value="313.3372941042164" />
-      <entry key="H4" value="444.7337562787109" />
-      <entry key="D1" value="1272.2700379218745" />
-      <entry key="W1" value="2246.1142493928533" />
+      <entry key="MS100" value="0.0010394240093612723" />
+      <entry key="MS500" value="0.25828672682221004" />
+      <entry key="S2" value="1.268867575621029" />
+      <entry key="S5" value="3.4179422140997295" />
+      <entry key="S10" value="6.353662981539212" />
+      <entry key="S30" value="13.67781315505692" />
+      <entry key="S60" value="19.97006209815758" />
+      <entry key="M2" value="26.2835926577156" />
+      <entry key="M5" value="33.62317891022651" />
+      <entry key="M10" value="40.267559073536304" />
+      <entry key="M15" value="45.62870289759093" />
+      <entry key="M30" value="64.56503910546132" />
+      <entry key="H1" value="126.44581730909557" />
+      <entry key="H2" value="264.3645097327885" />
+      <entry key="H4" value="456.6891424731779" />
+      <entry key="D1" value="1395.012031199235" />
+      <entry key="W1" value="2444.189744445226" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="Toolset" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1,
@@ -182,6 +180,26 @@
       <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$USER_HOME$/Unity/Hub/Editor/2022.3.62f3/Editor/Unity" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath $PROJECT_DIR$ -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$USER_HOME$/Unity/Hub/Editor/2022.3.62f3/Editor/Unity" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath $PROJECT_DIR$ -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$USER_HOME$/Unity/Hub/Editor/2022.3.62f3/Editor/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath $PROJECT_DIR$ -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
@@ -222,6 +240,20 @@
       <option name="selectedOptions">
         <list />
       </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="coreClr" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to" type="UnityDevicePlayer" factoryName="UnityAttachToDevicePlayer">
       <method v="2" />
     </configuration>
     <configuration name="Attach to" type="UnityDevicePlayer" factoryName="UnityAttachToDevicePlayer">

@@ -269,8 +269,8 @@ HingeJoint2D:
     m_MaximumMotorForce: 10000
   m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: -45
-    m_UpperAngle: 45
+    m_LowerAngle: -180.11298
+    m_UpperAngle: 4.5698867
 --- !u!1 &1939360438883425514
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,6 +879,7 @@ MonoBehaviour:
   shootingType: 2
   fireTimer: 0
   distanceToDetectPlayer: 15
+  aimingDelay: 2
   playerBodyPart: []
   timetoAttack: 0
   dashdistance: 0
@@ -893,6 +894,8 @@ MonoBehaviour:
   - {fileID: 4615630625161591595}
   IsKnockedBack: 0
   knockbackDuration: 0.2
+  switchMargin: 0.15
+  enemyHorizontal: 1
   meleeRange: 2
   meleeCooldown: 1
 --- !u!233 &6551082284037181540

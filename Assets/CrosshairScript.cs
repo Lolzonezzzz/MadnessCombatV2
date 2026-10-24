@@ -22,7 +22,8 @@ public class CrosshairScript : MonoBehaviour
     
     void Update()
     {
-
+        _gunManagement = GameObject.FindWithTag("Player").GetComponentInChildren<GunManagement>();
+        
         if (_gunManagement.aimPoint == null)
         {
             Value = 0;

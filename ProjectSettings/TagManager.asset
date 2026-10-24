@@ -16,6 +16,7 @@ TagManager:
   - Box
   - Chest
   - Weapons
+  - LoadingScreen
   layers:
   - Default
   - TransparentFX

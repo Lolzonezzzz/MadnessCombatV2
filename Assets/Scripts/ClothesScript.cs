@@ -210,14 +210,7 @@ public class ClothesScript : MonoBehaviour
     [Button("Randomize Clothes")]
     void RandomizeClothes()
     {
-        _headRenderer = head.GetComponent<SpriteRenderer>();
-        _faceRenderer = face.GetComponent<SpriteRenderer>();
-        _hatRenderer = hat.GetComponent<SpriteRenderer>();
-        _bodyRenderer = body.GetComponent<SpriteRenderer>();
-        _chestRenderer = chest.GetComponent<SpriteRenderer>();
-        _leftShoeRenderer = lShoe.GetComponent<SpriteRenderer>();
-        _rightShoeRenderer = rShoe.GetComponent<SpriteRenderer>();
-
+        
         FaceClothes[] faceClothesArray = Resources.LoadAll<FaceClothes>("Clothes/Face Acessories");
         HatClothes[]  hatClothesArray = Resources.LoadAll<HatClothes>("Clothes/Head Acessories");
         TorsoClothes[] torsoClothesArray = Resources.LoadAll<TorsoClothes>("Clothes/Shirt");
@@ -232,66 +225,25 @@ public class ClothesScript : MonoBehaviour
         chestArmour = chestArmourvar < chestArmoursArray.Length ? chestArmoursArray[(int)chestArmourvar] : null;
         shoes = shoesArray[Random.Range(0, shoesArray.Length)];
         
-        if (hatClothes != null)
-        {
-            _hatRenderer.sprite = hatClothes.right;
-        }
-        else
-        {
-            _hatRenderer.sprite = null;
-        }
-
-        if (faceClothes != null)
-        {
-            _faceRenderer.sprite = faceClothes.right;
-        }
-        else
-        {
-            _faceRenderer.sprite = null;
-        }
-
-        if (headClothes != null)
-        {
-            _headRenderer.sprite = headClothes.right;
-        }
-        else
-        {
-            _headRenderer.sprite = null;
-        }
-
-        if (torsoClothes != null)
-        {
-            _bodyRenderer.sprite = torsoClothes.right;
-        }
-        else
-        {
-            _bodyRenderer.sprite = null;
-        }
-
-        if (chestArmour != null)
-        {
-            _chestRenderer.sprite = chestArmour.right;
-        }
-        else
-        {
-            _chestRenderer.sprite = null;
-        }
-
-        if (shoes != null)
-        {
-            _leftShoeRenderer.sprite = shoes.right;
-            _rightShoeRenderer.sprite = shoes.right;
-        }
-        else
-        {
-            _leftShoeRenderer.sprite = null;
-            _rightShoeRenderer.sprite = null;
-        }
+        SwitchClothes(FacingDirection.Right);
     }
-    
+
     [Button]
     void WearClothes()
     {
+        SwitchClothes(FacingDirection.Right);
+    }
+
+    public void DeathPose()
+    {
+        SwitchClothes((FacingDirection)Random.Range(2, 3));
+    }
+
+
+
+    void SwitchClothes(FacingDirection direction)
+    {
+        
         _headRenderer = head.GetComponent<SpriteRenderer>();
         _faceRenderer = face.GetComponent<SpriteRenderer>();
         _hatRenderer = hat.GetComponent<SpriteRenderer>();
@@ -299,10 +251,25 @@ public class ClothesScript : MonoBehaviour
         _chestRenderer = chest.GetComponent<SpriteRenderer>();
         _leftShoeRenderer = lShoe.GetComponent<SpriteRenderer>();
         _rightShoeRenderer = rShoe.GetComponent<SpriteRenderer>();
-        
+
         if (hatClothes != null)
         {
-            _hatRenderer.sprite = hatClothes.right;
+            switch (direction)
+            {
+                case FacingDirection.Left:
+                    _hatRenderer.sprite = hatClothes.left;
+                    break;
+                case FacingDirection.Right:
+                    _hatRenderer.sprite = hatClothes.right;
+                    break;
+                case FacingDirection.Back:
+                    _hatRenderer.sprite = hatClothes.back;
+                    break;
+                case FacingDirection.Front:
+                    _hatRenderer.sprite = hatClothes.front;
+                    break;
+
+            }
         }
         else
         {
@@ -311,7 +278,22 @@ public class ClothesScript : MonoBehaviour
 
         if (faceClothes != null)
         {
-            _faceRenderer.sprite = faceClothes.right;
+            switch (direction)
+            {
+                case FacingDirection.Left:
+                    _faceRenderer.sprite = faceClothes.left;
+                    break;
+                case FacingDirection.Right:
+                    _faceRenderer.sprite = faceClothes.right;
+                    break;
+                case FacingDirection.Back:
+                    _faceRenderer.sprite = faceClothes.back;
+                    break;
+                case FacingDirection.Front:
+                    _faceRenderer.sprite = faceClothes.front;
+                    break;
+
+            }
         }
         else
         {
@@ -320,7 +302,22 @@ public class ClothesScript : MonoBehaviour
 
         if (headClothes != null)
         {
-            _headRenderer.sprite = headClothes.right;
+            switch (direction)
+            {
+                case FacingDirection.Left:
+                    _headRenderer.sprite = headClothes.left;
+                    break;
+                case FacingDirection.Right:
+                    _headRenderer.sprite = headClothes.right;
+                    break;
+                case FacingDirection.Back:
+                    _headRenderer.sprite = headClothes.back;
+                    break;
+                case FacingDirection.Front:
+                    _headRenderer.sprite = headClothes.front;
+                    break;
+
+            }
         }
         else
         {
@@ -329,7 +326,22 @@ public class ClothesScript : MonoBehaviour
 
         if (torsoClothes != null)
         {
-            _bodyRenderer.sprite = torsoClothes.right;
+            switch (direction)
+            {
+                case FacingDirection.Left:
+                    _bodyRenderer.sprite = torsoClothes.left;
+                    break;
+                case FacingDirection.Right:
+                    _bodyRenderer.sprite = torsoClothes.right;
+                    break;
+                case FacingDirection.Back:
+                    _bodyRenderer.sprite = torsoClothes.back;
+                    break;
+                case FacingDirection.Front:
+                    _bodyRenderer.sprite = torsoClothes.front;
+                    break;
+
+            }
         }
         else
         {
@@ -338,7 +350,22 @@ public class ClothesScript : MonoBehaviour
 
         if (chestArmour != null)
         {
-            _chestRenderer.sprite = chestArmour.right;
+            switch (direction)
+            {
+                case FacingDirection.Left:
+                    _chestRenderer.sprite = chestArmour.left;
+                    break;
+                case FacingDirection.Right:
+                    _chestRenderer.sprite = chestArmour.right;
+                    break;
+                case FacingDirection.Back:
+                    _chestRenderer.sprite = chestArmour.back;
+                    break;
+                case FacingDirection.Front:
+                    _chestRenderer.sprite = chestArmour.front;
+                    break;
+
+            }
         }
         else
         {
@@ -347,8 +374,26 @@ public class ClothesScript : MonoBehaviour
 
         if (shoes != null)
         {
-            _leftShoeRenderer.sprite = shoes.right;
-            _rightShoeRenderer.sprite = shoes.right;
+            switch (direction)
+            {
+                case FacingDirection.Left:
+                    _leftShoeRenderer.sprite = shoes.left;
+                    _rightShoeRenderer.sprite = shoes.left;
+                    break;
+                case FacingDirection.Right:
+                    _leftShoeRenderer.sprite = shoes.right;
+                    _rightShoeRenderer.sprite = shoes.right;
+                    break;
+                case FacingDirection.Back:
+                    _leftShoeRenderer.sprite = shoes.back;
+                    _rightShoeRenderer.sprite = shoes.back;
+                    break;
+                case FacingDirection.Front:
+                    _leftShoeRenderer.sprite = shoes.front;
+                    _rightShoeRenderer.sprite = shoes.front;
+                    break;
+
+            }
         }
         else
         {

@@ -27,7 +27,7 @@ public class HealingUIScript : MonoBehaviour, IPointerClickHandler
 
     void Start()
     {
-        _health = GameObject.FindGameObjectWithTag("Player").GetComponent<HealthScript>();
+
         if (capacityText != null)
             capacityText.text = capacity.ToString(CultureInfo.CurrentCulture);
         
@@ -59,6 +59,10 @@ public class HealingUIScript : MonoBehaviour, IPointerClickHandler
 
     void Update()
     {
+        if (_health == null)
+        {
+            _health = GameObject.FindGameObjectWithTag("Player").GetComponent<HealthScript>();
+        }
         if (SelectedItem != null && selectedBodyParts != HealthScript.BodyParts.None && healsBodyPart.Contains(selectedBodyParts))
         {
             print(selectedBodyParts);

@@ -103,18 +103,27 @@ public class HealthScript : MonoBehaviour
             switch (bodypart)
             {
                 case BodyParts.Brain:
+                    GetComponent<Animator>().Play("HeadHurt");
                     brainhealth -= damage;
                     break;
                 case BodyParts.Head:
+                    GetComponent<Animator>().Play("HeadHurt");
                     headhealth -= damage;
+                    brainhealth -= (damage / 2);
                     break;
                 case BodyParts.Torso:
+                    GetComponent<Animator>().Play("BodyHurt");
                     bodyhealth -= damage;
+                    hearthealth -= (damage / 2.4f);
+                    lungshealth -= (damage / 1.4f);
                     break;
                 case BodyParts.Heart:
+                    GetComponent<Animator>().Play("BodyHurt");
                     hearthealth -= damage;
+                    hearthealth -= (damage / 2.4f);
                     break;
                 case BodyParts.Lungs:
+                    GetComponent<Animator>().Play("BodyHurt");
                     lungshealth -= damage;
                     break;
             }
@@ -124,13 +133,15 @@ public class HealthScript : MonoBehaviour
             bodyhealth = Mathf.Clamp(bodyhealth, 0, Bodyhealth);
             hearthealth = Mathf.Clamp(hearthealth, 0, Hearthealth);
             lungshealth = Mathf.Clamp(lungshealth, 0, Lungshealth);
-
-            print(gameObject + "takes damage");
+            
             if (CompareTag("Player"))
             {
                 _invincibility = 0;
                 _canTakeDamage = false;
             }
+            
+
+            
             if (CompareTag("Player"))
             {
                 Transform head = transform.Find("Head");
@@ -235,8 +246,9 @@ public class HealthScript : MonoBehaviour
 
 
         _torso = transform;
-        print("DEAD");
+
         GetComponent<Animator>().enabled = false;
+        GetComponent<ClothesScript>().DeathPose();
         GetComponent<ClothesScript>().enabled = false;
 
 
@@ -246,6 +258,7 @@ public class HealthScript : MonoBehaviour
         {
             GetComponent<EnemyAI>().enabled = false;
             GetComponent<Collider2D>().enabled = false;
+            GetComponent<LineRenderer>().enabled = false;
             horizontal = _enemyAI != null && Mathf.Abs(_enemyAI.direction.x) > Mathf.Abs(_enemyAI.direction.y);
             headrb = _enemyAI != null && _enemyAI.Head != null
                 ? _enemyAI.Head.GetComponent<Rigidbody2D>()

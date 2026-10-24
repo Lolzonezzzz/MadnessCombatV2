@@ -165,6 +165,12 @@ MonoBehaviour:
   Legs:
   - {fileID: 3965317699402901206}
   - {fileID: 4480692358932115010}
+  switchMargin: 0.15
+  minMouseDistance: 0.75
+  signDeadZone: 0.2
+  aimOrigin: {fileID: 0}
+  maxHeadTilt: 50
+  headTurnSpeed: 18
 --- !u!114 &3351575178084739520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -853,7 +859,7 @@ SpriteRenderer:
   m_SortingLayerID: 1483749257
   m_SortingLayer: 2
   m_SortingOrder: 3
-  m_Sprite: {fileID: 1547497587, guid: 90acba0cc4b60074aac833c2cb466ce4, type: 3}
+  m_Sprite: {fileID: -1496157530, guid: b77ebdbf011fe834385c24e11f438b34, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1829,7 +1835,7 @@ Transform:
   m_GameObject: {fileID: 7853340006376670251}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.15999985, y: 7.781182, z: 0}
+  m_LocalPosition: {x: 0.1599998, y: 7.781182, z: 0}
   m_LocalScale: {x: 0.8476, y: 0.8476, z: 0.8476}
   m_ConstrainProportionsScale: 0
   m_Children:

@@ -40,7 +40,7 @@ public class SetTarget : MonoBehaviour
             findablePath = true;
             print("Exit has been found");
             floorScript.CreatePlayer();
-            
+            GameObject.FindWithTag("LoadingScreen").GetComponent<Transform>().gameObject.SetActive(false);
             
             Destroy(gameObject); // Destroy game object once everything has been done.
 

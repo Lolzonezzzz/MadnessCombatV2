@@ -142,4 +142,6 @@ public class FloorScript : MonoBehaviour
         checkforwallNaviagator.floorcheck = this;
         _isRebuilding = false;
     }
+    
+    
 }

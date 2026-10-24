@@ -8,7 +8,7 @@ public class MouseWeightedCameraScript : MonoBehaviour
 {
     [SerializeField] private Transform target;
     [SerializeField] private float smoothSpeed = 5f;
-    [SerializeField, Range(0f, 1.5f)] private float mouseWeight = 0.5f;
+    [SerializeField, Range(0f, 9f)] private float mouseWeight = 0.5f;
     [SerializeField, Tooltip("Max world-units the camera can shift toward the mouse, regardless of mouseWeight.")]
     private float maxOffset = 3f;
 

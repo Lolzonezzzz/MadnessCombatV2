@@ -11,7 +11,7 @@ public class HealthUIScript : MonoBehaviour, IPointerClickHandler
     [SerializeField] private RectTransform healingType;
     private void Start()
     {
-        _healthScript = GameObject.FindWithTag("Player").GetComponent<HealthScript>();
+
         image = gameObject.GetComponent<Image>();
     }
     
@@ -19,6 +19,7 @@ public class HealthUIScript : MonoBehaviour, IPointerClickHandler
 
     private void Update()
     {
+        if(_healthScript == null){_healthScript = GameObject.FindWithTag("Player").GetComponent<HealthScript>();}
 
         switch (bodyPart)
         {
